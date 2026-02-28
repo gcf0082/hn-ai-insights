@@ -152,17 +152,14 @@ function renderPagination() {
 
 /**
  * 渲染文章列表（移动端优化）
+ * 显示所有文章，不限制数量
  */
 function renderArticles(articles) {
     if (!articles || articles.length === 0) return '';
     
-    // 移动端只显示前 3 篇
-    const displayArticles = articles.slice(0, 3);
-    const remaining = articles.length - 3;
-    
     return `
         <ul class="article-list">
-            ${displayArticles.map(article => `
+            ${articles.map(article => `
                 <li class="article-item">
                     <a href="${article.url || article.hnUrl || '#'}" target="_blank" rel="noopener" class="article-title">
                         ${truncateTitle(article.title)}
@@ -174,7 +171,6 @@ function renderArticles(articles) {
                 </li>
             `).join('')}
         </ul>
-        ${remaining > 0 ? `<p style="font-size: 0.85rem; color: #888; text-align: center; margin-bottom: 12px;">还有 ${remaining} 篇文章 →</p>` : ''}
     `;
 }
 
