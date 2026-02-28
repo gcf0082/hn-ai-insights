@@ -71,7 +71,10 @@ async function loadReport() {
             throw new Error(`HTTP ${response.status}: 无法加载报告文件`);
         }
         
-        const markdown = await response.text();
+        let markdown = await response.text();
+        
+        // 预处理：将纯文本 URL 转换为 Markdown 链接
+        markdown = convertUrlsToLinks(markdown);
         
         // 提取元信息
         const metaInfo = extractMetaInfo(markdown);
@@ -133,6 +136,30 @@ function renderReport(container, metaInfo, html) {
             ${html}
         </div>
     `;
+}
+
+/**
+ * 将纯文本 URL 转换为 Markdown 链接
+ * 匹配格式：**标签:** https://url 或 链接：https://url
+ */
+function convertUrlsToLinks(markdown) {
+    // 匹配 **label:** URL 格式
+    markdown = markdown.replace(
+        /(\*\*[^\*]+\*\*:\s*)(https?:\/\/[^\s\n]+)/g,
+        (match, label, url) => {
+            // 提取标签文本（去掉 **）
+            const labelText = label.replace(/\*\*/g, '').trim();
+            return `${label}[${url}](${url})`;
+        }
+    );
+    
+    // 匹配 链接：URL 格式（中文冒号）
+    markdown = markdown.replace(
+        /链接：\s*(https?:\/\/[^\s\n]+)/g,
+        (match, url) => `链接：[${url}](${url})`
+    );
+    
+    return markdown;
 }
 
 /**
