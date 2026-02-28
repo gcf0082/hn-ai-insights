@@ -1,0 +1,78 @@
+[
+  {
+    "date": "2026-02-28",
+    "time": "12:30",
+    "file": "reports/12-30-00.md",
+    "summary": "Anthropic 对抗国防部 · OpenAI 1100 亿美元融资 · Claude 免费开放给开源维护者",
+    "articles": [
+      {
+        "title": "国防部将 Anthropic 列为供应链风险",
+        "url": "https://news.ycombinator.com/item?id=47186677",
+        "points": 1178,
+        "comments": 970
+      },
+      {
+        "title": "Anthropic 官方回应国防部声明",
+        "url": "https://news.ycombinator.com/item?id=47178371",
+        "points": 591,
+        "comments": 203
+      },
+      {
+        "title": "OpenAI 完成 1100 亿美元融资",
+        "url": "https://news.ycombinator.com/item?id=47181211",
+        "points": 426,
+        "comments": 484
+      },
+      {
+        "title": "Claude 免费向开源维护者开放",
+        "url": "https://news.ycombinator.com/item?id=47178371",
+        "points": 490,
+        "comments": 205
+      },
+      {
+        "title": "GitHub Copilot CLI 存在远程代码执行漏洞",
+        "url": "https://news.ycombinator.com/item?id=47181316",
+        "points": 16,
+        "comments": 2
+      }
+    ]
+  },
+  {
+    "date": "2026-02-28",
+    "time": "07:52",
+    "file": "reports/07-52-54.md",
+    "summary": "OpenAI 融资 · Anthropic 供应链风险 · 神经网络逆向工程挑战",
+    "articles": [
+      {
+        "title": "OpenAI raises $110B on $730B pre-money valuation",
+        "url": "https://news.ycombinator.com/item?id=47181211",
+        "points": 318,
+        "comments": 416
+      },
+      {
+        "title": "I am directing the Department of War to designate Anthropic a Supply-Chain Risk",
+        "url": "https://news.ycombinator.com/item?id=47186677",
+        "points": 518,
+        "comments": 377
+      },
+      {
+        "title": "Get free Claude max 20x for open-source maintainers",
+        "url": "https://news.ycombinator.com/item?id=47178371",
+        "points": 393,
+        "comments": 183
+      },
+      {
+        "title": "Can you reverse engineer our neural network?",
+        "url": "https://news.ycombinator.com/item?id=47146487",
+        "points": 252,
+        "comments": 181
+      },
+      {
+        "title": "Building secure, scalable agent sandbox infrastructure",
+        "url": "https://news.ycombinator.com/item?id=47181316",
+        "points": 44,
+        "comments": 9
+      }
+    ]
+  }
+]
