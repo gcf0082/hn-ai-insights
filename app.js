@@ -47,7 +47,7 @@ async function loadReports() {
                         </li>
                     `).join('')}
                 </ul>
-                <a href="${report.file}" class="view-btn" target="_blank">
+                <a href="report.html?file=${encodeURIComponent(report.file)}" class="view-btn">
                     📄 查看完整报告
                 </a>
             </article>
