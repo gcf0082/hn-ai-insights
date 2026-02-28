@@ -35,8 +35,10 @@ marked.use({
 
 /**
  * 将纯文本 URL 转换为 Markdown 链接
+ * 同时处理文章标题，添加 HN 链接
  */
 function convertUrlsToLinks(markdown) {
+    // 匹配 **标签:** URL 格式
     markdown = markdown.replace(
         /(\*\*[^\*]+\*\*:\s*)(https?:\/\/[^\s\n]+)/g,
         (match, label, url) => {
@@ -44,9 +46,28 @@ function convertUrlsToLinks(markdown) {
         }
     );
     
+    // 匹配 链接：URL 格式（中文冒号）
     markdown = markdown.replace(
         /链接：\s*(https?:\/\/[^\s\n]+)/g,
         (match, url) => `链接：[${url}](${url})`
+    );
+    
+    // 匹配 ### 数字。标题 (英文) 格式，将标题转换为带 HN 链接的格式
+    markdown = markdown.replace(
+        /###\s*(\d+)\.\s*([^\n]+?)\s*\(([^)]+)\)\s*\n\*\*HN ID:\*\*\s*(\d+)/g,
+        (match, num, cnTitle, enTitle, hnId) => {
+            const hnUrl = `https://news.ycombinator.com/item?id=${hnId}`;
+            return `### ${num}. [${cnTitle} (${enTitle})](${hnUrl})\n**HN ID:** ${hnId}`;
+        }
+    );
+    
+    // 匹配没有英文标题的情况：### 数字。中文标题
+    markdown = markdown.replace(
+        /###\s*(\d+)\.\s*([^\n(]+?)\s*\n\*\*HN ID:\*\*\s*(\d+)/g,
+        (match, num, cnTitle, hnId) => {
+            const hnUrl = `https://news.ycombinator.com/item?id=${hnId}`;
+            return `### ${num}. [${cnTitle.trim()}](${hnUrl})\n**HN ID:** ${hnId}`;
+        }
     );
     
     return markdown;
