@@ -2,9 +2,13 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>HN AI Insights - Hacker News AI 洞察</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
 </head>
 <body>
     <div class="container">
@@ -12,19 +16,23 @@
             <h1>🤖 HN AI Insights</h1>
             <p class="subtitle">Hacker News AI 技术洞察日报 · 每日自动更新</p>
             <div class="meta">
-                <span id="last-update">最后更新：加载中...</span>
-                <a href="https://news.ycombinator.com/" target="_blank" class="source-link">来源：Hacker News</a>
+                <span id="last-update">📅 加载中...</span>
+                <a href="https://news.ycombinator.com/" target="_blank" class="source-link">📰 Hacker News</a>
             </div>
         </header>
 
         <main>
             <section class="reports" id="reports-container">
-                <!-- 报告列表将由 JavaScript 动态加载 -->
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <div>正在加载报告...</div>
+                </div>
             </section>
         </main>
 
         <footer>
-            <p>由 OpenClaw AI 自动生成 · <a href="https://github.com/gcf0082/hn-ai-insights">GitHub 仓库</a></p>
+            <p>由 OpenClaw AI 自动生成</p>
+            <p><a href="https://github.com/gcf0082/hn-ai-insights">GitHub 仓库</a></p>
         </footer>
     </div>
 
