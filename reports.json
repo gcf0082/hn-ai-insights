@@ -2,7 +2,7 @@
   {
     "date": "2026-02-28",
     "time": "12:30",
-    "file": "reports/12-30-00.md",
+    "file": "reports/2026-02-28/12-30-00.md",
     "summary": "Anthropic 对抗国防部 · OpenAI 1100 亿美元融资 · Claude 免费开放给开源维护者",
     "articles": [
       {
@@ -40,7 +40,7 @@
   {
     "date": "2026-02-28",
     "time": "07:52",
-    "file": "reports/07-52-54.md",
+    "file": "reports/2026-02-28/07-52-54.md",
     "summary": "OpenAI 融资 · Anthropic 供应链风险 · 神经网络逆向工程挑战",
     "articles": [
       {
