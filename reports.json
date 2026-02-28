@@ -1,6 +1,49 @@
 [
   {
     "date": "2026-02-28",
+    "time": "15:34",
+    "file": "reports/2026-02-28/15-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-02-28",
+    "articles": [
+      {
+        "title": "Statement on the comments from Secretary of War Pete Hegseth",
+        "url": "https://news.ycombinator.com/item?id=47188697",
+        "hnUrl": "https://news.ycombinator.com/item?id=47188697",
+        "points": 834,
+        "comments": 0
+      },
+      {
+        "title": "OpenAI agrees with Dept. of War to deploy models in their classified network",
+        "url": "https://news.ycombinator.com/item?id=47189650",
+        "hnUrl": "https://news.ycombinator.com/item?id=47189650",
+        "points": 446,
+        "comments": 0
+      },
+      {
+        "title": "OpenAI raises $110B on $730B pre-money valuation",
+        "url": "https://news.ycombinator.com/item?id=47181211",
+        "hnUrl": "https://news.ycombinator.com/item?id=47181211",
+        "points": 340,
+        "comments": 0
+      },
+      {
+        "title": "How do I cancel my ChatGPT subscription?",
+        "url": "https://news.ycombinator.com/item?id=47190997",
+        "hnUrl": "https://news.ycombinator.com/item?id=47190997",
+        "points": 193,
+        "comments": 0
+      },
+      {
+        "title": "A Chinese official's use of ChatGPT revealed an intimidation operation",
+        "url": "https://news.ycombinator.com/item?id=47181944",
+        "hnUrl": "https://news.ycombinator.com/item?id=47181944",
+        "points": 124,
+        "comments": 0
+      }
+    ]
+  },
+  {
+    "date": "2026-02-28",
     "time": "12:30",
     "file": "reports/2026-02-28/12-30-00.md",
     "summary": "Anthropic 对抗国防部 · OpenAI 1100 亿美元融资 · Claude 免费开放给开源维护者",
