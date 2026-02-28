@@ -28,9 +28,11 @@ marked.setOptions({
 const renderer = new marked.Renderer();
 
 // 自定义链接渲染（添加 target="_blank"）
+// 注意：marked.js 新版中 href 可能是对象，需要转为字符串
 renderer.link = function(href, title, text) {
-    const target = href.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : '';
-    return `<a href="${href}"${target}${title ? ` title="${title}"` : ''}>${text}</a>`;
+    const hrefStr = String(href || '');
+    const target = hrefStr.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : '';
+    return `<a href="${hrefStr}"${target}${title ? ` title="${title}"` : ''}>${text}</a>`;
 };
 
 // 自定义表格渲染（添加响应式包装）
