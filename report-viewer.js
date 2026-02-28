@@ -24,28 +24,23 @@ marked.setOptions({
     langPrefix: 'hljs language-'  // highlight.js 类名前缀
 });
 
-// 自定义 Markdown 渲染器
+/**
+ * 自定义 Markdown 渲染器
+ * 注意：marked.js v4+ 使用 tokens 方式，renderer 方法接收 token 对象
+ */
 const renderer = new marked.Renderer();
 
 // 自定义链接渲染（添加 target="_blank"）
-// 注意：marked.js 新版中 href 可能是对象，需要转为字符串
-renderer.link = function(href, title, text) {
-    const hrefStr = String(href || '');
-    const target = hrefStr.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : '';
-    return `<a href="${hrefStr}"${target}${title ? ` title="${title}"` : ''}>${text}</a>`;
-};
-
-// 自定义表格渲染（添加响应式包装）
-renderer.table = function(header, body) {
-    return `
-        <div style="overflow-x: auto; margin: 20px 0;">
-            <table>
-                <thead>${header}</thead>
-                <tbody>${body}</tbody>
-            </table>
-        </div>
-    `;
-};
+// 使用 walkTokens 预处理，避免直接覆盖 renderer 导致的兼容性问题
+marked.use({
+    walkTokens(token) {
+        // 为链接 token 添加 target 属性
+        if (token.type === 'link' && token.href && String(token.href).startsWith('http')) {
+            token.target = '_blank';
+            token.rel = 'noopener noreferrer';
+        }
+    }
+});
 
 // 应用自定义渲染器
 marked.use({ renderer });
@@ -214,20 +209,27 @@ function extractMetaInfo(markdown) {
  * 后处理：优化渲染后的 HTML
  */
 function postProcess(container) {
-    // 为外部链接添加安全属性
+    // 为外部链接添加安全属性和样式
     container.querySelectorAll('a[href^="http"]').forEach(link => {
         link.setAttribute('target', '_blank');
         link.setAttribute('rel', 'noopener noreferrer');
+        link.classList.add('external-link');
     });
     
-    // 为表格添加额外样式类
+    // 为表格添加响应式包装（如果还没有）
     container.querySelectorAll('table').forEach(table => {
-        table.classList.add('table');
+        if (!table.parentElement.classList.contains('table-wrapper')) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'table-wrapper';
+            wrapper.style.overflowX = 'auto';
+            table.parentNode.insertBefore(wrapper, table);
+            wrapper.appendChild(table);
+        }
     });
     
-    // 为代码块添加复制按钮（可选）
+    // 为代码块添加语言类名
     container.querySelectorAll('pre code').forEach(block => {
-        // 可以在这里添加复制按钮功能
+        // highlight.js 会自动处理
     });
 }
 
