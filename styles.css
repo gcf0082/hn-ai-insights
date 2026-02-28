@@ -204,6 +204,69 @@ footer a {
     font-weight: 500;
 }
 
+/* Pagination - 分页控件 */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.page-info {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.page-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.page-btn {
+    min-width: 44px;
+    height: 44px;
+    padding: 0 12px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--primary);
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.page-btn:active {
+    transform: scale(0.95);
+    background: white;
+}
+
+.page-btn.active {
+    background: var(--bg-gradient);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.page-ellipsis {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    padding: 0 5px;
+}
+
+/* 桌面端分页优化 */
+@media (min-width: 768px) {
+    .page-btn {
+        min-width: 48px;
+        height: 48px;
+        font-size: 1rem;
+    }
+}
+
 /* Loading & Error States */
 .loading {
     text-align: center;
