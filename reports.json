@@ -1,6 +1,114 @@
 [
   {
     "date": "2026-02-28",
+    "time": "23:49",
+    "file": "reports/2026-02-28/23-45-00.md",
+    "summary": "HN AI 每日分析 - 2026-02-28",
+    "articles": [
+      {
+        "title": "[747 与编码代理]",
+        "title_en": "[747 与编码代理](https://news.ycombinator.com/item?id=47182986)",
+        "url": "",
+        "hnUrl": "",
+        "sourceUrl": "",
+        "points": 0,
+        "comments": 0,
+        "hnId": ""
+      },
+      {
+        "title": "[从噪声到图像——扩散模型交互指南]",
+        "title_en": "[从噪声到图像——扩散模型交互指南](https://news.ycombinator.com/item?id=47163167)",
+        "url": "",
+        "hnUrl": "",
+        "sourceUrl": "",
+        "points": 0,
+        "comments": 2,
+        "hnId": ""
+      },
+      {
+        "title": "[GitHub Copilot 在企业中是否仍然相关？]",
+        "title_en": "[GitHub Copilot 在企业中是否仍然相关？](https://news.ycombinator.com/item?id=47196263)",
+        "url": "",
+        "hnUrl": "",
+        "sourceUrl": "",
+        "points": 0,
+        "comments": 3,
+        "hnId": ""
+      },
+      {
+        "title": "[NNUE 的更好激活函数]",
+        "title_en": "[NNUE 的更好激活函数](https://news.ycombinator.com/item?id=47149348)",
+        "url": "",
+        "hnUrl": "",
+        "sourceUrl": "",
+        "points": 0,
+        "comments": 0,
+        "hnId": ""
+      },
+      {
+        "title": "[Claude 跃居 iOS App Store 第 2 名]",
+        "title_en": "[Claude 跃居 iOS App Store 第 2 名](https://news.ycombinator.com/item?id=47194555)",
+        "url": "",
+        "hnUrl": "",
+        "sourceUrl": "",
+        "points": 0,
+        "comments": 0,
+        "hnId": ""
+      },
+      {
+        "title": "[亚马逊的晶体化思维写作：AI 是否使其模糊？]",
+        "title_en": "[亚马逊的晶体化思维写作：AI 是否使其模糊？](https://news.ycombinator.com/item?id=47195127)",
+        "url": "",
+        "hnUrl": "",
+        "sourceUrl": "",
+        "points": 0,
+        "comments": 2,
+        "hnId": ""
+      },
+      {
+        "title": "[EUrouter——在不将数据送出欧盟的情况下集成最新 AI 模型]",
+        "title_en": "[EUrouter——在不将数据送出欧盟的情况下集成最新 AI 模型](https://news.ycombinator.com/item?id=47191201)",
+        "url": "",
+        "hnUrl": "",
+        "sourceUrl": "",
+        "points": 0,
+        "comments": 1,
+        "hnId": ""
+      },
+      {
+        "title": "[AI 编码怀疑论者尝试 AI 编码（超详细）]",
+        "title_en": "[AI 编码怀疑论者尝试 AI 编码（超详细）](https://news.ycombinator.com/item?id=47183527)",
+        "url": "",
+        "hnUrl": "",
+        "sourceUrl": "",
+        "points": 0,
+        "comments": 7,
+        "hnId": ""
+      },
+      {
+        "title": "[Parakeet.cpp——纯 C++ 实现的 Parakeet ASR 推理，支持 Metal GPU 加速]",
+        "title_en": "[Parakeet.cpp——纯 C++ 实现的 Parakeet ASR 推理，支持 Metal GPU 加速](https://news.ycombinator.com/item?id=47176239)",
+        "url": "",
+        "hnUrl": "",
+        "sourceUrl": "",
+        "points": 0,
+        "comments": 30,
+        "hnId": ""
+      },
+      {
+        "title": "[AI 公司告诉五角大楼\"滚蛋\"的那一天]",
+        "title_en": "[AI 公司告诉五角大楼\"滚蛋\"的那一天](https://news.ycombinator.com/item?id=47191770)",
+        "url": "",
+        "hnUrl": "",
+        "sourceUrl": "",
+        "points": 0,
+        "comments": 0,
+        "hnId": ""
+      }
+    ]
+  },
+  {
+    "date": "2026-02-28",
     "time": "22:50",
     "file": "reports/2026-02-28/22-50-00.md",
     "summary": "AI 安全与信任 · 政府与 AI 公司关系 · AI 编程反思 · 代理实验",
