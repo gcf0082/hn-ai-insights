@@ -21,10 +21,12 @@ Hacker News AI 技术洞察日报，每日自动更新。
 ├── index.html          # 主页
 ├── styles.css          # 样式
 ├── app.js              # 前端逻辑
+├── report.html         # 报告详情页
 ├── reports.json        # 报告索引
 ├── reports/            # 分析报告目录
-│   ├── YYYY-MM-DD-HH-MM-SS.md
-│   └── ...
+│   └── YYYY-MM-DD/     # 日期子目录
+│       ├── HH-MM-SS.md
+│       └── ...
 └── README.md
 ```
 
