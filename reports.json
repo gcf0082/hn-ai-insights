@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-01",
+    "time": "07:22",
+    "file": "reports/2026-03-01/07-20-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-01",
+    "articles": [
+      {
+        "title": "Qwen3.5 122B 和 35B 模型在本地电脑提供 Sonnet 4.5 性能",
+        "title_en": "Qwen3.5 122B and 35B models offer Sonnet 4.5 performance on local computers",
+        "url": "https://news.ycombinator.com/item?id=47199781",
+        "hnUrl": "https://news.ycombinator.com/item?id=47199781",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47199781",
+        "points": 122,
+        "comments": 70,
+        "hnId": "47199781"
+      },
+      {
+        "title": "整个事情是一场骗局",
+        "title_en": "The whole thing was a scam",
+        "url": "https://news.ycombinator.com/item?id=47197505",
+        "hnUrl": "https://news.ycombinator.com/item?id=47197505",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47197505",
+        "points": 480,
+        "comments": 136,
+        "hnId": "47197505"
+      },
+      {
+        "title": "我们与国防部的协议",
+        "title_en": "Our agreement with the Department of War",
+        "url": "https://news.ycombinator.com/item?id=47199948",
+        "hnUrl": "https://news.ycombinator.com/item?id=47199948",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47199948",
+        "points": 162,
+        "comments": 145,
+        "hnId": "47199948"
+      },
+      {
+        "title": "验证规范驱动开发 (VSDD)",
+        "title_en": "Verified Spec-Driven Development (VSDD)",
+        "url": "https://news.ycombinator.com/item?id=47197595",
+        "hnUrl": "https://news.ycombinator.com/item?id=47197595",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47197595",
+        "points": 130,
+        "comments": 65,
+        "hnId": "47197595"
+      },
+      {
+        "title": "GitHub Copilot CLI 下载并执行恶意软件",
+        "title_en": "GitHub Copilot CLI downloads and executes malware",
+        "url": "https://news.ycombinator.com/item?id=47183940",
+        "hnUrl": "https://news.ycombinator.com/item?id=47183940",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47183940",
+        "points": 51,
+        "comments": 20,
+        "hnId": "47183940"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-01",
     "time": "01:34",
     "file": "reports/2026-03-01/01-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-01",
