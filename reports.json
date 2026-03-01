@@ -1,6 +1,34 @@
 [
   {
     "date": "2026-03-01",
+    "time": "22:14",
+    "file": "reports/2026-03-01/22-13-55.md",
+    "summary": "HN AI 每日分析 - 2026-03-01",
+    "articles": [
+      {
+        "title": "AI 聊天免费化与广告支持模式 demo",
+        "title_en": "I built a demo of what AI chat will look like when it's \"free\" and ad-supported",
+        "url": "https://news.ycombinator.com/item?id=47205890",
+        "hnUrl": "https://news.ycombinator.com/item?id=47205890",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47205890",
+        "points": 139,
+        "comments": 68,
+        "hnId": "47205890"
+      },
+      {
+        "title": "康托尔抄袭戴德金的新证据？",
+        "title_en": "New evidence that Cantor plagiarized Dedekind?",
+        "url": "https://news.ycombinator.com/item?id=47154637",
+        "hnUrl": "https://news.ycombinator.com/item?id=47154637",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47154637",
+        "points": 134,
+        "comments": 77,
+        "hnId": "47154637"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-01",
     "time": "18:34",
     "file": "reports/2026-03-01/18-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-01",
