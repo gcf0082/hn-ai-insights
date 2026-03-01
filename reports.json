@@ -1,6 +1,24 @@
 [
   {
     "date": "2026-03-01",
+    "time": "16:27",
+    "file": "reports/2026-03-01/08-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-01",
+    "articles": [
+      {
+        "title": "Show HN: Xmloxide – AI 代理编写的 Rust XML 库",
+        "title_en": "Show HN: Xmloxide – an agent-made Rust replacement for libxml2",
+        "url": "https://news.ycombinator.com/item?id=47201816",
+        "hnUrl": "https://news.ycombinator.com/item?id=47201816",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47201816",
+        "points": 54,
+        "comments": 0,
+        "hnId": "47201816"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-01",
     "time": "14:23",
     "file": "reports/2026-03-01/12-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-01",
