@@ -1,6 +1,44 @@
 [
   {
     "date": "2026-03-01",
+    "time": "18:34",
+    "file": "reports/2026-03-01/18-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-01",
+    "articles": [
+      {
+        "title": "\"Cancel ChatGPT\"运动成为主流",
+        "title_en": "\"Cancel ChatGPT\" movement goes mainstream after OpenAI closes deal with U.S. DoW",
+        "url": "https://news.ycombinator.com/item?id=47198973",
+        "hnUrl": "https://news.ycombinator.com/item?id=47198973",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47198973",
+        "points": 143,
+        "comments": 43,
+        "hnId": "47198973"
+      },
+      {
+        "title": "Altman 支持 Anthropic 红线立场",
+        "title_en": "Altman says OpenAI agrees with Anthropic's red lines in Pentagon dispute",
+        "url": "https://news.ycombinator.com/item?id=47187488",
+        "hnUrl": "https://news.ycombinator.com/item?id=47187488",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47187488",
+        "points": 62,
+        "comments": 11,
+        "hnId": "47187488"
+      },
+      {
+        "title": "HN 被 AI 评论淹没",
+        "title_en": "HN is drowning in AI comments",
+        "url": "https://news.ycombinator.com/item?id=47201629",
+        "hnUrl": "https://news.ycombinator.com/item?id=47201629",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47201629",
+        "points": 68,
+        "comments": 59,
+        "hnId": "47201629"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-01",
     "time": "16:27",
     "file": "reports/2026-03-01/08-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-01",
