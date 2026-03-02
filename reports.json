@@ -1,5 +1,113 @@
 [
   {
+    "date": "2026-03-03",
+    "time": "01:36",
+    "file": "reports/2026-03-03/01-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-03",
+    "articles": [
+      {
+        "title": "Anthropic Cowork 功能在 macOS 上创建 10GB VM bundle 且无警告",
+        "title_en": "Anthropic Cowork feature creates 10GB VM bundle on macOS without warning",
+        "url": "https://news.ycombinator.com/item?id=47218288",
+        "hnUrl": "https://news.ycombinator.com/item?id=47218288",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47218288",
+        "points": 259,
+        "comments": 124,
+        "hnId": "47218288"
+      },
+      {
+        "title": "M4 Apple Neural Engine 内部揭秘：第一部分逆向工程",
+        "title_en": "Inside the M4 Apple Neural Engine, Part 1: Reverse Engineering",
+        "url": "https://news.ycombinator.com/item?id=47208573",
+        "hnUrl": "https://news.ycombinator.com/item?id=47208573",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47208573",
+        "points": 122,
+        "comments": 39,
+        "hnId": "47208573"
+      },
+      {
+        "title": "蒙德里安作品进入公有领域，基金会不同意",
+        "title_en": "Mondrian Entered the Public Domain. The Estate Disagrees",
+        "url": "https://news.ycombinator.com/item?id=47181656",
+        "hnUrl": "https://news.ycombinator.com/item?id=47181656",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47181656",
+        "points": 146,
+        "comments": 75,
+        "hnId": "47181656"
+      },
+      {
+        "title": "Show HN: Omni – 基于 Postgres 的开源工作场所搜索和聊天",
+        "title_en": "Show HN: Omni – Open-source workplace search and chat, built on Postgres",
+        "url": "https://news.ycombinator.com/item?id=47215427",
+        "hnUrl": "https://news.ycombinator.com/item?id=47215427",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47215427",
+        "points": 117,
+        "comments": 35,
+        "hnId": "47215427"
+      },
+      {
+        "title": "Apple 发布搭载 M4 芯片的新款 iPad Air",
+        "title_en": "Apple introduces the new iPad Air, powered by M4",
+        "url": "https://news.ycombinator.com/item?id=47218175",
+        "hnUrl": "https://news.ycombinator.com/item?id=47218175",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47218175",
+        "points": 116,
+        "comments": 140,
+        "hnId": "47218175"
+      },
+      {
+        "title": "Neocaml – Rubocop 创作者的新 OCaml Emacs 模式",
+        "title_en": "Neocaml – Rubocop Creator's New OCaml Mode for Emacs",
+        "url": "https://news.ycombinator.com/item?id=47185911",
+        "hnUrl": "https://news.ycombinator.com/item?id=47185911",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47185911",
+        "points": 73,
+        "comments": 12,
+        "hnId": "47185911"
+      },
+      {
+        "title": "首例子宫内干细胞治疗胎儿脊柱裂修复安全性研究",
+        "title_en": "First-ever in-utero stem cell therapy for fetal spina bifida repair is safe",
+        "url": "https://news.ycombinator.com/item?id=47218743",
+        "hnUrl": "https://news.ycombinator.com/item?id=47218743",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47218743",
+        "points": 72,
+        "comments": 6,
+        "hnId": "47218743"
+      },
+      {
+        "title": "Ask HN: 谁在招聘？(2026 年 3 月)",
+        "title_en": "Ask HN: Who is hiring? (March 2026)",
+        "url": "https://news.ycombinator.com/item?id=47219668",
+        "hnUrl": "https://news.ycombinator.com/item?id=47219668",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47219668",
+        "points": 53,
+        "comments": 71,
+        "hnId": "47219668"
+      },
+      {
+        "title": "Libxml2 企业版（AGPL 许可，来自前维护者）",
+        "title_en": "Libxml2 Enterprise Edition (AGPL, from the previous maintainer)",
+        "url": "https://news.ycombinator.com/item?id=47216541",
+        "hnUrl": "https://news.ycombinator.com/item?id=47216541",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47216541",
+        "points": 39,
+        "comments": 14,
+        "hnId": "47216541"
+      },
+      {
+        "title": "Anthropic 与国防部谈判如何破裂",
+        "title_en": "How Talks Between Anthropic and the Defense Dept. Fell Apart",
+        "url": "https://news.ycombinator.com/item?id=47216901",
+        "hnUrl": "https://news.ycombinator.com/item?id=47216901",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47216901",
+        "points": 32,
+        "comments": 5,
+        "hnId": "47216901"
+      }
+    ]
+  },
+  {
     "date": "2026-03-02",
     "time": "21:31",
     "file": "reports/2026-03-02/21-20-00.md",
