@@ -1,6 +1,44 @@
 [
   {
     "date": "2026-03-02",
+    "time": "18:37",
+    "file": "reports/2026-03-02/18-33-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-02",
+    "articles": [
+      {
+        "title": "在嵌入式硬件上运行 Neural Amp Modeler",
+        "title_en": "Running Neural Amp Modeler on embedded hardware",
+        "url": "https://news.ycombinator.com/item?id=47183793",
+        "hnUrl": "https://news.ycombinator.com/item?id=47183793",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47183793",
+        "points": 30,
+        "comments": 6,
+        "hnId": "47183793"
+      },
+      {
+        "title": "Show HN: 用 AI 创作 3D 模型",
+        "title_en": "Show HN: Vibe Code your 3D Models",
+        "url": "https://news.ycombinator.com/item?id=47183039",
+        "hnUrl": "https://news.ycombinator.com/item?id=47183039",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47183039",
+        "points": 55,
+        "comments": 16,
+        "hnId": "47183039"
+      },
+      {
+        "title": "智能手机市场因内存短缺预计今年下滑",
+        "title_en": "Smartphone market forecast to decline this year due to memory shortage",
+        "url": "https://news.ycombinator.com/item?id=47172664",
+        "hnUrl": "https://news.ycombinator.com/item?id=47172664",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47172664",
+        "points": 281,
+        "comments": 318,
+        "hnId": "47172664"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-02",
     "time": "12:36",
     "file": "reports/2026-03-02/12-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-02",
