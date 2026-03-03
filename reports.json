@@ -1,6 +1,114 @@
 [
   {
     "date": "2026-03-03",
+    "time": "12:37",
+    "file": "reports/2026-03-03/12-35-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-03",
+    "articles": [
+      {
+        "title": "Show HN: Govbase – 从法案原文追踪到新闻偏见再到社交帖子",
+        "title_en": "Show HN: Govbase – Follow a bill from source text to news bias to social posts",
+        "url": "https://news.ycombinator.com/item?id=47220809",
+        "hnUrl": "https://news.ycombinator.com/item?id=47220809",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47220809",
+        "points": 171,
+        "comments": 72,
+        "hnId": "47220809"
+      },
+      {
+        "title": "Ask HN: 你们如何保持理智？",
+        "title_en": "Ask HN: How are you all staying sane?",
+        "url": "https://news.ycombinator.com/item?id=47215569",
+        "hnUrl": "https://news.ycombinator.com/item?id=47215569",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47215569",
+        "points": 114,
+        "comments": 115,
+        "hnId": "47215569"
+      },
+      {
+        "title": "Zuckerberg 内部邮件以 Facebook Messenger 形式呈现",
+        "title_en": "Zuckerberg's internal emails rendered as Facebook Messenger",
+        "url": "https://news.ycombinator.com/item?id=47226816",
+        "hnUrl": "https://news.ycombinator.com/item?id=47226816",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47226816",
+        "points": 104,
+        "comments": 24,
+        "hnId": "47226816"
+      },
+      {
+        "title": "将 Gleam 应用打包为单一可执行文件 (2025)",
+        "title_en": "Packaging a Gleam app into a single executable (2025)",
+        "url": "https://news.ycombinator.com/item?id=47220020",
+        "hnUrl": "https://news.ycombinator.com/item?id=47220020",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47220020",
+        "points": 84,
+        "comments": 7,
+        "hnId": "47220020"
+      },
+      {
+        "title": "Ask HN: 谁想被雇佣？(2026 年 3 月)",
+        "title_en": "Ask HN: Who wants to be hired? (March 2026)",
+        "url": "https://news.ycombinator.com/item?id=47219667",
+        "hnUrl": "https://news.ycombinator.com/item?id=47219667",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47219667",
+        "points": 79,
+        "comments": 196,
+        "hnId": "47219667"
+      },
+      {
+        "title": "Launch HN: OctaPulse (YC W26) – 渔业养殖的机器人与计算机视觉",
+        "title_en": "Launch HN: OctaPulse (YC W26) – Robotics and computer vision for fish farming",
+        "url": "https://news.ycombinator.com/item?id=47220320",
+        "hnUrl": "https://news.ycombinator.com/item?id=47220320",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47220320",
+        "points": 69,
+        "comments": 30,
+        "hnId": "47220320"
+      },
+      {
+        "title": "Show HN: Web Audio Studio – Web Audio API 图谱的可视化调试器",
+        "title_en": "Show HN: Web Audio Studio – A Visual Debugger for Web Audio API Graphs",
+        "url": "https://news.ycombinator.com/item?id=47216773",
+        "hnUrl": "https://news.ycombinator.com/item?id=47216773",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47216773",
+        "points": 60,
+        "comments": 6,
+        "hnId": "47216773"
+      },
+      {
+        "title": "Ars Technica 因 AI 伪造引言争议解雇记者",
+        "title_en": "Ars Technica Fires Reporter After AI Controversy Involving Fabricated Quotes",
+        "url": "https://news.ycombinator.com/item?id=47226608",
+        "hnUrl": "https://news.ycombinator.com/item?id=47226608",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47226608",
+        "points": 47,
+        "comments": 18,
+        "hnId": "47226608"
+      },
+      {
+        "title": "反对基于查询的编译器",
+        "title_en": "Against Query Based Compilers",
+        "url": "https://news.ycombinator.com/item?id=47206280",
+        "hnUrl": "https://news.ycombinator.com/item?id=47206280",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47206280",
+        "points": 42,
+        "comments": 15,
+        "hnId": "47206280"
+      },
+      {
+        "title": "最高法院拒绝审理 AI 生成材料版权纠纷",
+        "title_en": "SCOTUS declines to hear dispute over copyrights for AI-generated material",
+        "url": "https://news.ycombinator.com/item?id=47223022",
+        "hnUrl": "https://news.ycombinator.com/item?id=47223022",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47223022",
+        "points": 39,
+        "comments": 31,
+        "hnId": "47223022"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-03",
     "time": "07:24",
     "file": "reports/2026-03-03/07-23-00.md",
     "summary": "HN AI 每日分析 - 2026-03-03",
