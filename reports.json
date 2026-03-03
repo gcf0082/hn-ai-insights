@@ -1,6 +1,54 @@
 [
   {
     "date": "2026-03-03",
+    "time": "18:36",
+    "file": "reports/2026-03-03/18-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-03",
+    "articles": [
+      {
+        "title": "Claude.ai 出现严重错误",
+        "title_en": "Elevated Errors in Claude.ai",
+        "url": "https://news.ycombinator.com/item?id=47227647",
+        "hnUrl": "https://news.ycombinator.com/item?id=47227647",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47227647",
+        "points": 150,
+        "comments": 125,
+        "hnId": "47227647"
+      },
+      {
+        "title": "微软 Copilot Discord 屏蔽\"Microslop\"一词",
+        "title_en": "\"Microslop\" filtered in the official Microsoft Copilot Discord server",
+        "url": "https://news.ycombinator.com/item?id=47216047",
+        "hnUrl": "https://news.ycombinator.com/item?id=47216047",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47216047",
+        "points": 1101,
+        "comments": 492,
+        "hnId": "47216047"
+      },
+      {
+        "title": "2026 年 AI 代理真的能赚钱吗？",
+        "title_en": "Do AI Agents Make Money in 2026? Or Is It Just Mac Minis and Vibes?",
+        "url": "https://news.ycombinator.com/item?id=47226958",
+        "hnUrl": "https://news.ycombinator.com/item?id=47226958",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47226958",
+        "points": 35,
+        "comments": 25,
+        "hnId": "47226958"
+      },
+      {
+        "title": "被\"逐出\"的游戏开发者：用 AI 做游戏",
+        "title_en": "The Excommunicated Devs Making Games with AI",
+        "url": "https://news.ycombinator.com/item?id=47227078",
+        "hnUrl": "https://news.ycombinator.com/item?id=47227078",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47227078",
+        "points": 50,
+        "comments": 57,
+        "hnId": "47227078"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-03",
     "time": "12:37",
     "file": "reports/2026-03-03/12-35-00.md",
     "summary": "HN AI 每日分析 - 2026-03-03",
