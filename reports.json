@@ -1,6 +1,104 @@
 [
   {
     "date": "2026-03-04",
+    "time": "18:39",
+    "file": "reports/2026-03-04/18-35-51.md",
+    "summary": "HN AI 每日分析 - 2026-03-04",
+    "articles": [
+      {
+        "title": "Agentic Engineering Patterns",
+        "title_en": "Agentic Engineering Patterns",
+        "url": "https://news.ycombinator.com/item?id=47243272",
+        "hnUrl": "https://news.ycombinator.com/item?id=47243272",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47243272",
+        "points": 154,
+        "comments": 51,
+        "hnId": "47243272"
+      },
+      {
+        "title": "Speculative Speculative Decoding (SSD)",
+        "title_en": "Speculative Speculative Decoding (SSD)",
+        "url": "https://news.ycombinator.com/item?id=47242637",
+        "hnUrl": "https://news.ycombinator.com/item?id=47242637",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47242637",
+        "points": 44,
+        "comments": 7,
+        "hnId": "47242637"
+      },
+      {
+        "title": "My spicy take on vibe coding for PMs",
+        "title_en": "My spicy take on vibe coding for PMs",
+        "url": "https://news.ycombinator.com/item?id=47240736",
+        "hnUrl": "https://news.ycombinator.com/item?id=47240736",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47240736",
+        "points": 104,
+        "comments": 101,
+        "hnId": "47240736"
+      },
+      {
+        "title": "LLMs can unmask pseudonymous users at scale",
+        "title_en": "LLMs can unmask pseudonymous users at scale with surprising accuracy",
+        "url": "https://news.ycombinator.com/item?id=47242453",
+        "hnUrl": "https://news.ycombinator.com/item?id=47242453",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47242453",
+        "points": 71,
+        "comments": 48,
+        "hnId": "47242453"
+      },
+      {
+        "title": "Talos: Hardware accelerator for deep convolutional neural networks",
+        "title_en": "Talos: Hardware accelerator for deep convolutional neural networks",
+        "url": "https://news.ycombinator.com/item?id=47240441",
+        "hnUrl": "https://news.ycombinator.com/item?id=47240441",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47240441",
+        "points": 52,
+        "comments": 22,
+        "hnId": "47240441"
+      },
+      {
+        "title": "OpenAI is Developing alternative to Microsoft's GitHub",
+        "title_en": "OpenAI is Developing alternative to Microsoft's GitHub",
+        "url": "https://news.ycombinator.com/item?id=47241272",
+        "hnUrl": "https://news.ycombinator.com/item?id=47241272",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47241272",
+        "points": 37,
+        "comments": 14,
+        "hnId": "47241272"
+      },
+      {
+        "title": "Claude Code escapes its own denylist and sandbox",
+        "title_en": "Claude Code escapes its own denylist and sandbox",
+        "url": "https://news.ycombinator.com/item?id=47236910",
+        "hnUrl": "https://news.ycombinator.com/item?id=47236910",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47236910",
+        "points": 30,
+        "comments": 14,
+        "hnId": "47236910"
+      },
+      {
+        "title": "RAG vs. Skill vs. MCP vs. RLM",
+        "title_en": "RAG vs. Skill vs. MCP vs. RLM",
+        "url": "https://news.ycombinator.com/item?id=47216273",
+        "hnUrl": "https://news.ycombinator.com/item?id=47216273",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47216273",
+        "points": 30,
+        "comments": 1,
+        "hnId": "47216273"
+      },
+      {
+        "title": "Cancel ChatGPT AI boycott surges after OpenAI pentagon deal",
+        "title_en": "Cancel ChatGPT AI boycott surges after OpenAI pentagon military deal",
+        "url": "https://news.ycombinator.com/item?id=47241092",
+        "hnUrl": "https://news.ycombinator.com/item?id=47241092",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47241092",
+        "points": 139,
+        "comments": 30,
+        "hnId": "47241092"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-04",
     "time": "12:36",
     "file": "reports/2026-03-04/12-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-04",
