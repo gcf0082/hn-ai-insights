@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-03-06",
+    "time": "01:32",
+    "file": "reports/2026-03-06/01-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-06",
+    "articles": []
+  },
+  {
     "date": "2026-03-05",
     "time": "21:32",
     "file": "reports/2026-03-05/21-30-00.md",
@@ -1671,44 +1678,6 @@
         "url": "https://news.ycombinator.com/item?id=47181316",
         "points": 16,
         "comments": 2
-      }
-    ]
-  },
-  {
-    "date": "2026-02-28",
-    "time": "07:52",
-    "file": "reports/2026-02-28/07-52-54.md",
-    "summary": "OpenAI 融资 · Anthropic 供应链风险 · 神经网络逆向工程挑战",
-    "articles": [
-      {
-        "title": "OpenAI raises $110B on $730B pre-money valuation",
-        "url": "https://news.ycombinator.com/item?id=47181211",
-        "points": 318,
-        "comments": 416
-      },
-      {
-        "title": "I am directing the Department of War to designate Anthropic a Supply-Chain Risk",
-        "url": "https://news.ycombinator.com/item?id=47186677",
-        "points": 518,
-        "comments": 377
-      },
-      {
-        "title": "Get free Claude max 20x for open-source maintainers",
-        "url": "https://news.ycombinator.com/item?id=47178371",
-        "points": 393,
-        "comments": 183
-      },
-      {
-        "title": "Can you reverse engineer our neural network?",
-        "url": "https://news.ycombinator.com/item?id=47146487",
-        "points": 252,
-        "comments": 181
-      },
-      {
-        "title": "Building secure, scalable agent sandbox infrastructure",
-        "url": "https://news.ycombinator.com/item?id=47181316",
-        "points": 44,
-        "comments": 9
       }
     ]
   }
