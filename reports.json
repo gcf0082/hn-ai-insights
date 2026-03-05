@@ -1,6 +1,104 @@
 [
   {
     "date": "2026-03-05",
+    "time": "21:32",
+    "file": "reports/2026-03-05/21-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-05",
+    "articles": [
+      {
+        "title": "Intel 18A 工艺节点首次亮相数据中心",
+        "title_en": "Intel's make-or-break 18A process node debuts for data center with 288-core Xeon",
+        "url": "https://news.ycombinator.com/item?id=47236958",
+        "hnUrl": "https://news.ycombinator.com/item?id=47236958",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47236958",
+        "points": 299,
+        "comments": 290,
+        "hnId": "47236958"
+      },
+      {
+        "title": "Something is afoot in the land of Qwen",
+        "title_en": "Something is afoot in the land of Qwen",
+        "url": "https://news.ycombinator.com/item?id=47249343",
+        "hnUrl": "https://news.ycombinator.com/item?id=47249343",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47249343",
+        "points": 707,
+        "comments": 306,
+        "hnId": "47249343"
+      },
+      {
+        "title": "Dario Amodei 称 OpenAI 军事协议声明是\"谎言\"",
+        "title_en": "Dario Amodei calls OpenAI's messaging around military deal 'straight up lies'",
+        "url": "https://news.ycombinator.com/item?id=47255662",
+        "hnUrl": "https://news.ycombinator.com/item?id=47255662",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47255662",
+        "points": 662,
+        "comments": 343,
+        "hnId": "47255662"
+      },
+      {
+        "title": "Agentic Engineering Patterns",
+        "title_en": "Agentic Engineering Patterns",
+        "url": "https://news.ycombinator.com/item?id=47243272",
+        "hnUrl": "https://news.ycombinator.com/item?id=47243272",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47243272",
+        "points": 524,
+        "comments": 290,
+        "hnId": "47243272"
+      },
+      {
+        "title": "Meta AI 智能眼镜与数据隐私担忧",
+        "title_en": "Meta's AI smart glasses and data privacy concerns",
+        "url": "https://news.ycombinator.com/item?id=47225130",
+        "hnUrl": "https://news.ycombinator.com/item?id=47225130",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47225130",
+        "points": 1416,
+        "comments": 804,
+        "hnId": "47225130"
+      },
+      {
+        "title": "GPT-5.3 Instant 发布",
+        "title_en": "GPT‑5.3 Instant",
+        "url": "https://news.ycombinator.com/item?id=47236169",
+        "hnUrl": "https://news.ycombinator.com/item?id=47236169",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47236169",
+        "points": 391,
+        "comments": 298,
+        "hnId": "47236169"
+      },
+      {
+        "title": "Qwen3.5 微调指南",
+        "title_en": "Qwen3.5 Fine-Tuning Guide",
+        "url": "https://news.ycombinator.com/item?id=47246296",
+        "hnUrl": "https://news.ycombinator.com/item?id=47246296",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47246296",
+        "points": 361,
+        "comments": 88,
+        "hnId": "47246296"
+      },
+      {
+        "title": "The L in \"LLM\" Stands for Lying",
+        "title_en": "The L in \"LLM\" Stands for Lying",
+        "url": "https://news.ycombinator.com/item?id=47257394",
+        "hnUrl": "https://news.ycombinator.com/item?id=47257394",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47257394",
+        "points": 327,
+        "comments": 189,
+        "hnId": "47257394"
+      },
+      {
+        "title": "Nvidia PersonaPlex 7B 在 Apple Silicon 上运行",
+        "title_en": "Nvidia PersonaPlex 7B on Apple Silicon: Full-Duplex Speech-to-Speech in Swift",
+        "url": "https://news.ycombinator.com/item?id=47258801",
+        "hnUrl": "https://news.ycombinator.com/item?id=47258801",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47258801",
+        "points": 183,
+        "comments": 58,
+        "hnId": "47258801"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-05",
     "time": "12:34",
     "file": "reports/2026-03-05/12-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-05",
