@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-05",
+    "time": "12:34",
+    "file": "reports/2026-03-05/12-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-05",
+    "articles": [
+      {
+        "title": "Anthropic CEO 称 OpenAI 国防部交易宣传是\"赤裸裸的谎言\"",
+        "title_en": "Dario Amodei calls OpenAI's messaging around military deal 'straight up lies'",
+        "url": "https://news.ycombinator.com/item?id=47255662",
+        "hnUrl": "https://news.ycombinator.com/item?id=47255662",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47255662",
+        "points": 358,
+        "comments": 173,
+        "hnId": "47255662"
+      },
+      {
+        "title": "Nvidia CEO 宣布停止投资 OpenAI 和 Anthropic",
+        "title_en": "Jensen Huang says Nvidia is pulling back from OpenAI and Anthropic",
+        "url": "https://news.ycombinator.com/item?id=47256781",
+        "hnUrl": "https://news.ycombinator.com/item?id=47256781",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47256781",
+        "points": 45,
+        "comments": 8,
+        "hnId": "47256781"
+      },
+      {
+        "title": "BMW 集团首次在德国工厂部署人形机器人",
+        "title_en": "BMW Group to deploy humanoid robots in production in Germany for the first time",
+        "url": "https://news.ycombinator.com/item?id=47253892",
+        "hnUrl": "https://news.ycombinator.com/item?id=47253892",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47253892",
+        "points": 97,
+        "comments": 79,
+        "hnId": "47253892"
+      },
+      {
+        "title": "美国科技公司承诺自行承担数据中心能源成本",
+        "title_en": "US tech firms pledge at White House to bear costs of energy for datacenters",
+        "url": "https://news.ycombinator.com/item?id=47256545",
+        "hnUrl": "https://news.ycombinator.com/item?id=47256545",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47256545",
+        "points": 43,
+        "comments": 37,
+        "hnId": "47256545"
+      },
+      {
+        "title": "监管机构就 Meta AI 眼镜隐私问题致函公司",
+        "title_en": "Regulator contacts Meta over workers watching intimate AI glasses videos",
+        "url": "https://news.ycombinator.com/item?id=47257020",
+        "hnUrl": "https://news.ycombinator.com/item?id=47257020",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47257020",
+        "points": 38,
+        "comments": 7,
+        "hnId": "47257020"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-05",
     "time": "07:26",
     "file": "reports/2026-03-05/07-24-00.md",
     "summary": "HN AI 每日分析 - 2026-03-05",
