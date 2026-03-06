@@ -1,6 +1,54 @@
 [
   {
     "date": "2026-03-07",
+    "time": "07:29",
+    "file": "reports/2026-03-07/07-20-report.md",
+    "summary": "HN AI 每日分析 - 2026-03-07",
+    "articles": [
+      {
+        "title": "Anthropic 请做个新 Slack",
+        "title_en": "Anthropic, please make a new Slack",
+        "url": "https://news.ycombinator.com/item?id=47280200",
+        "hnUrl": "https://news.ycombinator.com/item?id=47280200",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47280200",
+        "points": 139,
+        "comments": 0,
+        "hnId": "47280200"
+      },
+      {
+        "title": "Claude Code 误删生产数据库",
+        "title_en": "Claude Code wiped our production database with a Terraform command",
+        "url": "https://news.ycombinator.com/item?id=47278720",
+        "hnUrl": "https://news.ycombinator.com/item?id=47278720",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47278720",
+        "points": 120,
+        "comments": 0,
+        "hnId": "47278720"
+      },
+      {
+        "title": "移除开源 LLM 审查的工具",
+        "title_en": "A tool that removes censorship from open-weight LLMs",
+        "url": "https://news.ycombinator.com/item?id=47275291",
+        "hnUrl": "https://news.ycombinator.com/item?id=47275291",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47275291",
+        "points": 91,
+        "comments": 0,
+        "hnId": "47275291"
+      },
+      {
+        "title": "Claude-replay 会话回放器",
+        "title_en": "Show HN: Claude-replay – A video-like player for Claude Code sessions",
+        "url": "https://news.ycombinator.com/item?id=47276604",
+        "hnUrl": "https://news.ycombinator.com/item?id=47276604",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47276604",
+        "points": 51,
+        "comments": 0,
+        "hnId": "47276604"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-07",
     "time": "01:36",
     "file": "reports/2026-03-07/01-34-06.md",
     "summary": "HN AI 每日分析 - 2026-03-07",
@@ -1688,12 +1736,5 @@
         "hnId": "47183940"
       }
     ]
-  },
-  {
-    "date": "2026-03-01",
-    "time": "01:34",
-    "file": "reports/2026-03-01/01-30-00.md",
-    "summary": "HN AI 每日分析 - 2026-03-01",
-    "articles": []
   }
 ]
