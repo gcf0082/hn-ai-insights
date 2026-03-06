@@ -1,6 +1,84 @@
 [
   {
     "date": "2026-03-06",
+    "time": "11:13",
+    "file": "reports/2026-03-06/11-08-18.md",
+    "summary": "HN AI 每日分析 - 2026-03-06",
+    "articles": [
+      {
+        "title": "Anthropic 回应国防部声明",
+        "title_en": "Where things stand with the Department of War",
+        "url": "https://news.ycombinator.com/item?id=47269263",
+        "hnUrl": "https://news.ycombinator.com/item?id=47269263",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47269263",
+        "points": 209,
+        "comments": 156,
+        "hnId": "47269263"
+      },
+      {
+        "title": "GitHub Issue 标题漏洞影响 4k 开发者机器",
+        "title_en": "A GitHub Issue Title Compromised 4k Developer Machines",
+        "url": "https://news.ycombinator.com/item?id=47263595",
+        "hnUrl": "https://news.ycombinator.com/item?id=47263595",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47263595",
+        "points": 336,
+        "comments": 79,
+        "hnId": "47263595"
+      },
+      {
+        "title": "AI 生成 PR 处理标准协议",
+        "title_en": "A standard protocol to handle and discard low-effort, AI-Generated pull requests",
+        "url": "https://news.ycombinator.com/item?id=47267947",
+        "hnUrl": "https://news.ycombinator.com/item?id=47267947",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47267947",
+        "points": 97,
+        "comments": 28,
+        "hnId": "47267947"
+      },
+      {
+        "title": "Anthropic 劳动力市场影响研究",
+        "title_en": "Labor market impacts of AI: A new measure and early evidence",
+        "url": "https://news.ycombinator.com/item?id=47268391",
+        "hnUrl": "https://news.ycombinator.com/item?id=47268391",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47268391",
+        "points": 69,
+        "comments": 72,
+        "hnId": "47268391"
+      },
+      {
+        "title": "GLiNER2 统一模式信息提取",
+        "title_en": "GLiNER2: Unified Schema-Based Information Extraction",
+        "url": "https://news.ycombinator.com/item?id=47266736",
+        "hnUrl": "https://news.ycombinator.com/item?id=47266736",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47266736",
+        "points": 43,
+        "comments": 3,
+        "hnId": "47266736"
+      },
+      {
+        "title": "JDK Vector API 优化推荐系统",
+        "title_en": "Optimizing Recommendation Systems with JDK's Vector API",
+        "url": "https://news.ycombinator.com/item?id=47228091",
+        "hnUrl": "https://news.ycombinator.com/item?id=47228091",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47228091",
+        "points": 68,
+        "comments": 4,
+        "hnId": "47228091"
+      },
+      {
+        "title": "AI 公司旨在替代而非帮助工人",
+        "title_en": "AI companies aim 'not to help workers, but to replace them'",
+        "url": "https://news.ycombinator.com/item?id=47252051",
+        "hnUrl": "https://news.ycombinator.com/item?id=47252051",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47252051",
+        "points": 31,
+        "comments": 12,
+        "hnId": "47252051"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-06",
     "time": "11:06",
     "file": "reports/2026-03-06/11-02-59.md",
     "summary": "HN AI 每日分析 - 2026-03-06",
@@ -1657,48 +1735,5 @@
     "file": "reports/2026-02-28/18-30-00.md",
     "summary": "HN AI 每日分析 - 2026-02-28",
     "articles": []
-  },
-  {
-    "date": "2026-02-28",
-    "time": "15:34",
-    "file": "reports/2026-02-28/15-30-00.md",
-    "summary": "HN AI 每日分析 - 2026-02-28",
-    "articles": [
-      {
-        "title": "Statement on the comments from Secretary of War Pete Hegseth",
-        "url": "https://news.ycombinator.com/item?id=47188697",
-        "hnUrl": "https://news.ycombinator.com/item?id=47188697",
-        "points": 834,
-        "comments": 0
-      },
-      {
-        "title": "OpenAI agrees with Dept. of War to deploy models in their classified network",
-        "url": "https://news.ycombinator.com/item?id=47189650",
-        "hnUrl": "https://news.ycombinator.com/item?id=47189650",
-        "points": 446,
-        "comments": 0
-      },
-      {
-        "title": "OpenAI raises $110B on $730B pre-money valuation",
-        "url": "https://news.ycombinator.com/item?id=47181211",
-        "hnUrl": "https://news.ycombinator.com/item?id=47181211",
-        "points": 340,
-        "comments": 0
-      },
-      {
-        "title": "How do I cancel my ChatGPT subscription?",
-        "url": "https://news.ycombinator.com/item?id=47190997",
-        "hnUrl": "https://news.ycombinator.com/item?id=47190997",
-        "points": 193,
-        "comments": 0
-      },
-      {
-        "title": "A Chinese official's use of ChatGPT revealed an intimidation operation",
-        "url": "https://news.ycombinator.com/item?id=47181944",
-        "hnUrl": "https://news.ycombinator.com/item?id=47181944",
-        "points": 124,
-        "comments": 0
-      }
-    ]
   }
 ]
