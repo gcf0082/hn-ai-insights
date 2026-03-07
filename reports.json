@@ -1,6 +1,104 @@
 [
   {
     "date": "2026-03-07",
+    "time": "21:29",
+    "file": "reports/2026-03-07/21-20-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-07",
+    "articles": [
+      {
+        "title": "GPT-5.4 发布",
+        "title_en": "GPT-5.4",
+        "url": "https://news.ycombinator.com/item?id=47265045",
+        "hnUrl": "https://news.ycombinator.com/item?id=47265045",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47265045",
+        "points": 996,
+        "comments": 787,
+        "hnId": "47265045"
+      },
+      {
+        "title": "Dario Amodei 称 OpenAI 军方合作声明是\"谎言\"",
+        "title_en": "Dario Amodei calls OpenAI's messaging around military deal'straight up lies'",
+        "url": "https://news.ycombinator.com/item?id=47255662",
+        "hnUrl": "https://news.ycombinator.com/item?id=47255662",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47255662",
+        "points": 795,
+        "comments": 423,
+        "hnId": "47255662"
+      },
+      {
+        "title": "Where things stand with the Department of War",
+        "title_en": "Where things stand with the Department of War",
+        "url": "https://news.ycombinator.com/item?id=47269263",
+        "hnUrl": "https://news.ycombinator.com/item?id=47269263",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47269263",
+        "points": 618,
+        "comments": 769,
+        "hnId": "47269263"
+      },
+      {
+        "title": "A GitHub Issue Title Compromised 4k Developer Machines",
+        "title_en": "A GitHub Issue Title Compromised 4k Developer Machines",
+        "url": "https://news.ycombinator.com/item?id=47263595",
+        "hnUrl": "https://news.ycombinator.com/item?id=47263595",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47263595",
+        "points": 615,
+        "comments": 190,
+        "hnId": "47263595"
+      },
+      {
+        "title": "The L in \"LLM\" Stands for Lying",
+        "title_en": "The L in \"LLM\" Stands for Lying",
+        "url": "https://news.ycombinator.com/item?id=47257394",
+        "hnUrl": "https://news.ycombinator.com/item?id=47257394",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47257394",
+        "points": 660,
+        "comments": 471,
+        "hnId": "47257394"
+      },
+      {
+        "title": "Tell HN: 60 岁，Claude Code 重燃我的热情",
+        "title_en": "Tell HN: I'm 60 years old. Claude Code has re-ignited a passion",
+        "url": "https://news.ycombinator.com/item?id=47282777",
+        "hnUrl": "https://news.ycombinator.com/item?id=47282777",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47282777",
+        "points": 600,
+        "comments": 464,
+        "hnId": "47282777"
+      },
+      {
+        "title": "Hardening Firefox with Anthropic's Red Team",
+        "title_en": "Hardening Firefox with Anthropic's Red Team",
+        "url": "https://news.ycombinator.com/item?id=47273854",
+        "hnUrl": "https://news.ycombinator.com/item?id=47273854",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47273854",
+        "points": 580,
+        "comments": 159,
+        "hnId": "47273854"
+      },
+      {
+        "title": "Agentic Engineering Patterns",
+        "title_en": "Agentic Engineering Patterns",
+        "url": "https://news.ycombinator.com/item?id=47243272",
+        "hnUrl": "https://news.ycombinator.com/item?id=47243272",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47243272",
+        "points": 540,
+        "comments": 304,
+        "hnId": "47243272"
+      },
+      {
+        "title": "AI 对劳动力市场影响：新衡量与早期证据",
+        "title_en": "Labor market impacts of AI: A new measure and early evidence",
+        "url": "https://news.ycombinator.com/item?id=47268391",
+        "hnUrl": "https://news.ycombinator.com/item?id=47268391",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47268391",
+        "points": 322,
+        "comments": 547,
+        "hnId": "47268391"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-07",
     "time": "18:44",
     "file": "reports/2026-03-07/18-41-07.md",
     "summary": "HN AI 每日分析 - 2026-03-07",
@@ -1796,24 +1894,6 @@
         "points": 68,
         "comments": 59,
         "hnId": "47201629"
-      }
-    ]
-  },
-  {
-    "date": "2026-03-01",
-    "time": "16:27",
-    "file": "reports/2026-03-01/08-30-00.md",
-    "summary": "HN AI 每日分析 - 2026-03-01",
-    "articles": [
-      {
-        "title": "Show HN: Xmloxide – AI 代理编写的 Rust XML 库",
-        "title_en": "Show HN: Xmloxide – an agent-made Rust replacement for libxml2",
-        "url": "https://news.ycombinator.com/item?id=47201816",
-        "hnUrl": "https://news.ycombinator.com/item?id=47201816",
-        "sourceUrl": "https://news.ycombinator.com/item?id=47201816",
-        "points": 54,
-        "comments": 0,
-        "hnId": "47201816"
       }
     ]
   }
