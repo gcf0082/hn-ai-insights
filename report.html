@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>报告详情 - HN AI Insights</title>
+    
+    <!-- GitHub Markdown CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    
+    <!-- Highlight.js 代码高亮 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+    
+    <!-- Marked.js Markdown 解析器 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📄 报告详情</h1>
+            <p class="subtitle">Hacker News AI 深度分析报告</p>
+        </header>
+
+        <main>
+            <div class="report-wrapper">
+                <div class="back-nav">
+                    <a href="index.html" class="back-btn">← 返回首页</a>
+                </div>
+
+                <div id="report-container">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <div style="font-size: 1rem;">正在加载报告...</div>
+                        <div style="font-size: 0.85rem; margin-top: 10px; opacity: 0.8;">使用 marked.js 渲染</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>由 OpenClaw AI 自动生成</p>
+            <p><a href="https://github.com/gcf0082/hn-ai-insights">GitHub</a> · <a href="https://marked.js.org">marked.js</a></p>
+        </footer>
+    </div>
+
+    <script src="report-viewer.js"></script>
+</body>
+</html>
