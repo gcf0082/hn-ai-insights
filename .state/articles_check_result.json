@@ -1,0 +1,275 @@
+{
+  "total": 38,
+  "analyzed_count": 36,
+  "not_analyzed_count": 2,
+  "analyzed": [
+    {
+      "id": "47202708",
+      "title": "Microgpt",
+      "points": 436,
+      "comments": 81,
+      "source": "http://karpathy.github.io/2026/02/12/microgpt/"
+    },
+    {
+      "id": "47200420",
+      "title": "We do not think Anthropic should be designated as a supply chain risk",
+      "points": 426,
+      "comments": 184,
+      "source": "https://twitter.com/OpenAI/status/2027846016423321831"
+    },
+    {
+      "id": "47195371",
+      "title": "Addressing Antigravity Bans and Reinstating Access",
+      "points": 223,
+      "comments": 181,
+      "source": "https://github.com/google-gemini/gemini-cli/discussions/20632"
+    },
+    {
+      "id": "47193064",
+      "title": "MCP server that reduces Claude Code context consumption by 98%",
+      "points": 304,
+      "comments": 70,
+      "source": "https://mksg.lu/blog/context-mode"
+    },
+    {
+      "id": "47199781",
+      "title": "Qwen3.5 122B and 35B models offer Sonnet 4.5 performance on local computers",
+      "points": 295,
+      "comments": 184,
+      "source": "https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance"
+    },
+    {
+      "id": "47200828",
+      "title": "Building a Minimal Transformer for 10-digit Addition",
+      "points": 47,
+      "comments": 7,
+      "source": "https://alexlitzenberger.com/blog/post.html?post=/building_a_minimal_transformer_for_10_digit_addition"
+    },
+    {
+      "id": "47199948",
+      "title": "Our Agreement with the Department of War",
+      "points": 255,
+      "comments": 205,
+      "source": "https://openai.com/index/our-agreement-with-the-department-of-war"
+    },
+    {
+      "id": "47197505",
+      "title": "The whole thing was a scam",
+      "points": 706,
+      "comments": 215,
+      "source": "https://garymarcus.substack.com/p/the-whole-thing-was-scam"
+    },
+    {
+      "id": "47182986",
+      "title": "747s and Coding Agents",
+      "points": 141,
+      "comments": 62,
+      "source": "https://carlkolon.com/2026/02/27/engineering-747-coding-agents/"
+    },
+    {
+      "id": "47158834",
+      "title": "Deterministic Programming with LLMs",
+      "points": 36,
+      "comments": 19,
+      "source": "https://www.mcherm.com/deterministic-programming-with-llms.html"
+    },
+    {
+      "id": "47202614",
+      "title": "Running a One Trillion-Parameter LLM Locally on AMD Ryzen AI Max+ Cluster",
+      "points": 49,
+      "comments": 9,
+      "source": "https://www.amd.com/en/developer/resources/technical-articles/2026/how-to-run-a-one-trillion-parameter-llm-locally-an-amd.html"
+    },
+    {
+      "id": "47147597",
+      "title": "The Eternal Promise: A History of Attempts to Eliminate Programmers",
+      "points": 259,
+      "comments": 173,
+      "source": "https://www.ivanturkovic.com/2026/01/22/history-software-simplification-cobol-ai-hype/"
+    },
+    {
+      "id": "47192505",
+      "title": "Unsloth Dynamic 2.0 GGUFs",
+      "points": 215,
+      "comments": 59,
+      "source": "https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs"
+    },
+    {
+      "id": "47163167",
+      "title": "From Noise to Image – interactive guide to diffusion",
+      "points": 123,
+      "comments": 16,
+      "source": "https://lighthousesoftware.co.uk/projects/from-noise-to-image/"
+    },
+    {
+      "id": "47189650",
+      "title": "OpenAI agrees with Dept. of War to deploy models in their classified network",
+      "points": 1352,
+      "comments": 626,
+      "source": "https://twitter.com/sama/status/2027578652477821175"
+    },
+    {
+      "id": "47193476",
+      "title": "The Future of AI",
+      "points": 123,
+      "comments": 98,
+      "source": "https://lucijagregov.com/2026/02/26/the-future-of-ai/"
+    },
+    {
+      "id": "47170030",
+      "title": "Smallest transformer that can add two 10-digit numbers",
+      "points": 230,
+      "comments": 94,
+      "source": "https://github.com/anadim/AdderBoard"
+    },
+    {
+      "id": "47195317",
+      "title": "OpenAI fires an employee for prediction market insider trading",
+      "points": 274,
+      "comments": 142,
+      "source": "https://www.wired.com/story/openai-fires-employee-insider-trading-polymarket-kalshi/"
+    },
+    {
+      "id": "47201882",
+      "title": "Pentagon chief blocks officers from Ivy League schools and top universities",
+      "points": 89,
+      "comments": 32,
+      "source": "https://fortune.com/2026/02/28/pentagon-officer-education-ivy-league-schools-universities-partners-ai-space/"
+    },
+    {
+      "id": "47181944",
+      "title": "A Chinese official's use of ChatGPT revealed an intimidation operation",
+      "points": 247,
+      "comments": 156,
+      "source": "https://www.cnn.com/2026/02/25/politics/chatgpt-china-intimidation-operation"
+    },
+    {
+      "id": "47194611",
+      "title": "Don't trust AI agents",
+      "points": 311,
+      "comments": 177,
+      "source": "https://nanoclaw.dev/blog/nanoclaw-security-model"
+    },
+    {
+      "id": "47188697",
+      "title": "Statement on the comments from Secretary of War Pete Hegseth",
+      "points": 1133,
+      "comments": 349,
+      "source": "https://www.anthropic.com/news/statement-comments-secretary-war"
+    },
+    {
+      "id": "47181801",
+      "title": "We gave terabytes of CI logs to an LLM",
+      "points": 217,
+      "comments": 107,
+      "source": "https://www.mendral.com/blog/llms-are-good-at-sql"
+    },
+    {
+      "id": "47181211",
+      "title": "OpenAI raises $110B on $730B pre-money valuation",
+      "points": 555,
+      "comments": 580,
+      "source": "https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/"
+    },
+    {
+      "id": "47194847",
+      "title": "What AI coding costs you",
+      "points": 297,
+      "comments": 177,
+      "source": "https://tomwojcik.com/posts/2026-02-15/finding-the-right-amount-of-ai/"
+    },
+    {
+      "id": "47182387",
+      "title": "Show HN: Claude-File-Recovery, recover files from your ~/.claude sessions",
+      "points": 94,
+      "comments": 39,
+      "source": "https://github.com/hjtenklooster/claude-file-recovery"
+    },
+    {
+      "id": "47183940",
+      "title": "GitHub Copilot CLI downloads and executes malware",
+      "points": 55,
+      "comments": 21,
+      "source": "https://www.promptarmor.com/resources/github-copilot-cli-downloads-and-executes-malware"
+    },
+    {
+      "id": "47195530",
+      "title": "Show HN: Decided to play god this morning, so I built an agent civilisation",
+      "points": 43,
+      "comments": 31,
+      "source": "https://github.com/nocodemf/werld"
+    },
+    {
+      "id": "47193478",
+      "title": "OpenAI – How to delete your account",
+      "points": 1839,
+      "comments": 345,
+      "source": "https://help.openai.com/en/articles/6378407-how-to-delete-your-account"
+    },
+    {
+      "id": "47178371",
+      "title": "Get free Claude max 20x for open-source maintainers",
+      "points": 557,
+      "comments": 233,
+      "source": "https://claude.com/contact-sales/claude-for-oss"
+    },
+    {
+      "id": "47181316",
+      "title": "Building secure, scalable agent sandbox infrastructure",
+      "points": 75,
+      "comments": 16,
+      "source": "https://browser-use.com/posts/two-ways-to-sandbox-agents"
+    },
+    {
+      "id": "47201028",
+      "title": "Anthropic's Claude rises to No. 2 in the App Store following Pentagon dispute",
+      "points": 31,
+      "comments": 2,
+      "source": "https://techcrunch.com/2026/02/28/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute/"
+    },
+    {
+      "id": "47186031",
+      "title": "President Trump bans Anthropic from use in government systems",
+      "points": 317,
+      "comments": 212,
+      "source": "https://www.npr.org/2026/02/27/nx-s1-5729118/trump-anthropic-pentagon-openai-ai-weapons-ban"
+    },
+    {
+      "id": "47149829",
+      "title": "Implementing a Z80 / ZX Spectrum emulator with Claude Code",
+      "points": 150,
+      "comments": 71,
+      "source": "https://antirez.com/news/160"
+    },
+    {
+      "id": "47173121",
+      "title": "Statement from Dario Amodei on our discussions with the Department of War",
+      "points": 2902,
+      "comments": 1558,
+      "source": "https://www.anthropic.com/news/statement-department-of-war"
+    },
+    {
+      "id": "47156925",
+      "title": "Google API keys weren't secrets, but then Gemini changed the rules",
+      "points": 1273,
+      "comments": 304,
+      "source": "https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules"
+    }
+  ],
+  "not_analyzed": [
+    {
+      "id": "47201816",
+      "title": "Show HN: Xmloxide – an agent made rust replacement for libxml2",
+      "points": 49,
+      "comments": 33,
+      "source": "https://github.com/jonwiggins/xmloxide"
+    },
+    {
+      "id": "47197003",
+      "title": "Show HN: SQLite for Rivet Actors – one database per agent, tenant, or document",
+      "points": 39,
+      "comments": 13,
+      "source": "https://github.com/rivet-dev/rivet"
+    }
+  ]
+}

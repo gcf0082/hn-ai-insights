@@ -1,0 +1,280 @@
+{
+  "fetch_time": "2026-03-03T12:31:56.256989",
+  "total_fetched": 150,
+  "ai_related": 56,
+  "filtered_low_score": 22,
+  "articles": [
+    {
+      "id": 47224295,
+      "title": "Show HN: I built a sub-500ms latency voice agent from scratch",
+      "score": 256,
+      "descendants": 72,
+      "url": "https://www.ntik.me/posts/voice-agent",
+      "hn_url": "https://news.ycombinator.com/item?id=47224295"
+    },
+    {
+      "id": 47226608,
+      "title": "Ars Technica Fires Reporter After AI Controversy Involving Fabricated Quotes",
+      "score": 47,
+      "descendants": 18,
+      "url": "https://futurism.com/artificial-intelligence/ars-technica-fires-reporter-ai-quotes",
+      "hn_url": "https://news.ycombinator.com/item?id=47226608"
+    },
+    {
+      "id": 47218175,
+      "title": "New iPad Air, powered by M4",
+      "score": 345,
+      "descendants": 552,
+      "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-ipad-air-powered-by-m4/",
+      "hn_url": "https://news.ycombinator.com/item?id=47218175"
+    },
+    {
+      "id": 47218743,
+      "title": "First in-utero stem cell therapy for fetal spina bifida repair is safe: study",
+      "score": 262,
+      "descendants": 50,
+      "url": "https://health.ucdavis.edu/news/headlines/first-ever-in-utero-stem-cell-therapy-for-fetal-spina-bifida-repair-is-safe-study-finds/2026/02",
+      "hn_url": "https://news.ycombinator.com/item?id=47218743"
+    },
+    {
+      "id": 47206280,
+      "title": "Against Query Based Compilers",
+      "score": 42,
+      "descendants": 15,
+      "url": "https://matklad.github.io/2026/02/25/against-query-based-compilers.html",
+      "hn_url": "https://news.ycombinator.com/item?id=47206280"
+    },
+    {
+      "id": 47220809,
+      "title": "Show HN: Govbase – Follow a bill from source text to news bias to social posts",
+      "score": 171,
+      "descendants": 72,
+      "url": "https://govbase.com",
+      "hn_url": "https://news.ycombinator.com/item?id=47220809"
+    },
+    {
+      "id": 47219668,
+      "title": "Ask HN: Who is hiring? (March 2026)",
+      "score": 185,
+      "descendants": 233,
+      "url": "",
+      "hn_url": "https://news.ycombinator.com/item?id=47219668"
+    },
+    {
+      "id": 47208573,
+      "title": "Inside the M4 Apple Neural Engine, Part 1: Reverse Engineering",
+      "score": 288,
+      "descendants": 75,
+      "url": "https://maderix.substack.com/p/inside-the-m4-apple-neural-engine",
+      "hn_url": "https://news.ycombinator.com/item?id=47208573"
+    },
+    {
+      "id": 47220320,
+      "title": "Launch HN: OctaPulse (YC W26) – Robotics and computer vision for fish farming",
+      "score": 69,
+      "descendants": 30,
+      "url": "",
+      "hn_url": "https://news.ycombinator.com/item?id=47220320"
+    },
+    {
+      "id": 47219667,
+      "title": "Ask HN: Who wants to be hired? (March 2026)",
+      "score": 79,
+      "descendants": 196,
+      "url": "",
+      "hn_url": "https://news.ycombinator.com/item?id=47219667"
+    },
+    {
+      "id": 47218318,
+      "title": "Parallel coding agents with tmux and Markdown specs",
+      "score": 133,
+      "descendants": 107,
+      "url": "https://schipper.ai/posts/parallel-coding-agents/",
+      "hn_url": "https://news.ycombinator.com/item?id=47218318"
+    },
+    {
+      "id": 47220020,
+      "title": "Packaging a Gleam app into a single executable (2025)",
+      "score": 84,
+      "descendants": 7,
+      "url": "https://www.dhzdhd.dev/blog/gleam-executable",
+      "hn_url": "https://news.ycombinator.com/item?id=47220020"
+    },
+    {
+      "id": 47181656,
+      "title": "Mondrian Entered the Public Domain. The Estate Disagrees",
+      "score": 199,
+      "descendants": 129,
+      "url": "https://copyrightlately.com/mondrian-public-domain-controversy/",
+      "hn_url": "https://news.ycombinator.com/item?id=47181656"
+    },
+    {
+      "id": 47219387,
+      "title": "Language Model Contains Personality Subnetworks",
+      "score": 46,
+      "descendants": 27,
+      "url": "https://arxiv.org/abs/2602.07164",
+      "hn_url": "https://news.ycombinator.com/item?id=47219387"
+    },
+    {
+      "id": 47222270,
+      "title": "A case for Go as the best language for AI agents",
+      "score": 160,
+      "descendants": 228,
+      "url": "https://getbruin.com/blog/go-is-the-best-language-for-agents/",
+      "hn_url": "https://news.ycombinator.com/item?id=47222270"
+    },
+    {
+      "id": 47215427,
+      "title": "Show HN: Omni – Open-source workplace search and chat, built on Postgres",
+      "score": 152,
+      "descendants": 42,
+      "url": "https://github.com/getomnico/omni",
+      "hn_url": "https://news.ycombinator.com/item?id=47215427"
+    },
+    {
+      "id": 47226816,
+      "title": "Zuckerberg's internal emails rendered as Facebook Messenger",
+      "score": 104,
+      "descendants": 24,
+      "url": "https://zuckmail.vercel.app/",
+      "hn_url": "https://news.ycombinator.com/item?id=47226816"
+    },
+    {
+      "id": 47218288,
+      "title": "Anthropic Cowork feature creates 10GB VM bundle on macOS without warning",
+      "score": 356,
+      "descendants": 182,
+      "url": "https://github.com/anthropics/claude-code/issues/22543",
+      "hn_url": "https://news.ycombinator.com/item?id=47218288"
+    },
+    {
+      "id": 47211830,
+      "title": "Right-sizes LLM models to your system's RAM, CPU, and GPU",
+      "score": 265,
+      "descendants": 62,
+      "url": "https://github.com/AlexsJones/llmfit",
+      "hn_url": "https://news.ycombinator.com/item?id=47211830"
+    },
+    {
+      "id": 47212576,
+      "title": "Show HN: Timber – Ollama for classical ML models, 336x faster than Python",
+      "score": 186,
+      "descendants": 31,
+      "url": "https://github.com/kossisoroyce/timber",
+      "hn_url": "https://news.ycombinator.com/item?id=47212576"
+    },
+    {
+      "id": 47185911,
+      "title": "Neocaml – Rubocop Creator's New OCaml Mode for Emacs",
+      "score": 82,
+      "descendants": 12,
+      "url": "https://github.com/bbatsov/neocaml",
+      "hn_url": "https://news.ycombinator.com/item?id=47185911"
+    },
+    {
+      "id": 47216773,
+      "title": "Show HN: Web Audio Studio – A Visual Debugger for Web Audio API Graphs",
+      "score": 60,
+      "descendants": 6,
+      "url": "https://webaudio.studio/",
+      "hn_url": "https://news.ycombinator.com/item?id=47216773"
+    },
+    {
+      "id": 47212355,
+      "title": "If AI writes code, should the session be part of the commit?",
+      "score": 466,
+      "descendants": 376,
+      "url": "https://github.com/mandel-macaque/memento",
+      "hn_url": "https://news.ycombinator.com/item?id=47212355"
+    },
+    {
+      "id": 47202708,
+      "title": "Microgpt",
+      "score": 1899,
+      "descendants": 319,
+      "url": "http://karpathy.github.io/2026/02/12/microgpt/",
+      "hn_url": "https://news.ycombinator.com/item?id=47202708"
+    },
+    {
+      "id": 47223022,
+      "title": "SCOTUS declines to hear dispute over copyrights for AI-generated material",
+      "score": 39,
+      "descendants": 31,
+      "url": "https://www.reuters.com/legal/government/us-supreme-court-declines-hear-dispute-over-copyrights-ai-generated-material-2026-03-02/",
+      "hn_url": "https://news.ycombinator.com/item?id=47223022"
+    },
+    {
+      "id": 47216541,
+      "title": "Libxml2 Enterprise Edition (AGPL, from the previous maintainer)",
+      "score": 51,
+      "descendants": 18,
+      "url": "https://codeberg.org/nwellnhof/libxml2-ee",
+      "hn_url": "https://news.ycombinator.com/item?id=47216541"
+    },
+    {
+      "id": 47214250,
+      "title": "Evolving descriptive text of mental content from human brain activity",
+      "score": 39,
+      "descendants": 37,
+      "url": "https://www.bbc.com/future/article/20260226-how-ai-can-read-your-thoughts",
+      "hn_url": "https://news.ycombinator.com/item?id=47214250"
+    },
+    {
+      "id": 47211249,
+      "title": "WebMCP is available for early preview",
+      "score": 355,
+      "descendants": 201,
+      "url": "https://developer.chrome.com/blog/webmcp-epp",
+      "hn_url": "https://news.ycombinator.com/item?id=47211249"
+    },
+    {
+      "id": 47205890,
+      "title": "I built a demo of what AI chat will look like when it's “free” and ad-supported",
+      "score": 580,
+      "descendants": 307,
+      "url": "https://99helpers.com/tools/ad-supported-chat",
+      "hn_url": "https://news.ycombinator.com/item?id=47205890"
+    },
+    {
+      "id": 47215683,
+      "title": "Vercel down in Dubai, EU affected also",
+      "score": 33,
+      "descendants": 13,
+      "url": "https://www.vercel-status.com",
+      "hn_url": "https://news.ycombinator.com/item?id=47215683"
+    },
+    {
+      "id": 47204559,
+      "title": "10-202: Introduction to Modern AI (CMU)",
+      "score": 254,
+      "descendants": 60,
+      "url": "https://modernaicourse.org",
+      "hn_url": "https://news.ycombinator.com/item?id=47204559"
+    },
+    {
+      "id": 47200420,
+      "title": "We do not think Anthropic should be designated as a supply chain risk",
+      "score": 821,
+      "descendants": 443,
+      "url": "https://twitter.com/OpenAI/status/2027846016423321831",
+      "hn_url": "https://news.ycombinator.com/item?id=47200420"
+    },
+    {
+      "id": 47217359,
+      "title": "The Looming AI Clownpocalypse",
+      "score": 50,
+      "descendants": 13,
+      "url": "https://honnibal.dev/blog/clownpocalypse",
+      "hn_url": "https://news.ycombinator.com/item?id=47217359"
+    },
+    {
+      "id": 47215569,
+      "title": "Ask HN: How are you all staying sane?",
+      "score": 114,
+      "descendants": 115,
+      "url": "",
+      "hn_url": "https://news.ycombinator.com/item?id=47215569"
+    }
+  ]
+}
