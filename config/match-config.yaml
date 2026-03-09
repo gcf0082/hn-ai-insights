@@ -1,0 +1,324 @@
+# HN AI 文章匹配配置
+# 支持多种匹配模式：exact, icontains, word, regex
+
+# 匹配模式说明:
+# - exact: 精确匹配（区分大小写）
+# - icontains: 包含匹配（不区分大小写）
+# - word: 单词匹配（\bkeyword\b，区分大小写）
+# - iword: 单词匹配（\bkeyword\b，不区分大小写）
+# - regex: 正则表达式匹配
+
+# AI 关键词配置
+ai_keywords:
+  # 不区分大小写的包含匹配（最宽松）
+  - pattern: "artificial intelligence"
+    mode: icontains
+  - pattern: "machine learning"
+    mode: icontains
+  - pattern: "deep learning"
+    mode: icontains
+  - pattern: "neural network"
+    mode: icontains
+  
+  # 单词匹配（避免匹配到包含该词的其他词）
+  - pattern: "llm"
+    mode: iword
+  - pattern: "gpt"
+    mode: iword
+  - pattern: "claude"
+    mode: iword
+  - pattern: "anthropic"
+    mode: iword
+  - pattern: "openai"
+    mode: iword
+  - pattern: "gemini"
+    mode: iword
+  - pattern: "mistral"
+    mode: iword
+  - pattern: "llama"
+    mode: iword
+  - pattern: "agent"
+    mode: iword
+  - pattern: "agents"
+    mode: iword
+  - pattern: "agi"
+    mode: iword
+  - pattern: "mcp"
+    mode: iword
+  - pattern: "rag"
+    mode: iword
+  - pattern: "moe"
+    mode: iword
+  
+  # 带连字符/版本号的模式
+  - pattern: "gpt-[345]"
+    mode: regex
+  - pattern: "llama[23]"
+    mode: regex
+  - pattern: "llama [23]"
+    mode: regex
+  
+  # 公司/产品名
+  - pattern: "google deepmind"
+    mode: icontains
+  - pattern: "meta ai"
+    mode: icontains
+  - pattern: "github copilot"
+    mode: icontains
+  - pattern: "hugging face"
+    mode: icontains
+  - pattern: "stability ai"
+    mode: icontains
+  - pattern: "midjourney"
+    mode: icontains
+  - pattern: "runway ml"
+    mode: icontains
+  - pattern: "scale ai"
+    mode: icontains
+  - pattern: "perplexity"
+    mode: icontains
+  - pattern: "grok"
+    mode: iword
+  - pattern: "cursor"
+    mode: iword
+  - pattern: "windsurf"
+    mode: icontains
+  - pattern: "aider"
+    mode: iword
+  - pattern: "devin"
+    mode: icontains
+  - pattern: "replit"
+    mode: icontains
+  - pattern: "ollama"
+    mode: icontains
+  - pattern: "lm studio"
+    mode: icontains
+  
+  # 技术术语
+  - pattern: "transformer"
+    mode: icontains
+  - pattern: "diffusion model"
+    mode: icontains
+  - pattern: "stable diffusion"
+    mode: icontains
+  - pattern: "computer vision"
+    mode: icontains
+  - pattern: "reinforcement learning"
+    mode: icontains
+  - pattern: "rlhf"
+    mode: iword
+  - pattern: "fine-tuning"
+    mode: icontains
+  - pattern: "fine tuning"
+    mode: icontains
+  - pattern: "pre-training"
+    mode: icontains
+  - pattern: "post-training"
+    mode: icontains
+  - pattern: "foundation model"
+    mode: icontains
+  - pattern: "multimodal"
+    mode: icontains
+  - pattern: "embedding"
+    mode: icontains
+  - pattern: "quantization"
+    mode: icontains
+  - pattern: "kv cache"
+    mode: icontains
+  - pattern: "mixture of experts"
+    mode: icontains
+  - pattern: "inference engine"
+    mode: icontains
+  - pattern: "model serving"
+    mode: icontains
+  - pattern: "vllm"
+    mode: iword
+  - pattern: "text generation inference"
+    mode: icontains
+  
+  # AI 安全/研究
+  - pattern: "ai safety"
+    mode: icontains
+  - pattern: "ai alignment"
+    mode: icontains
+  - pattern: "ai regulation"
+    mode: icontains
+  - pattern: "ai ethics"
+    mode: icontains
+  - pattern: "existential risk"
+    mode: icontains
+  - pattern: "ai risk"
+    mode: icontains
+  - pattern: "superintelligence"
+    mode: icontains
+  - pattern: "ai bubble"
+    mode: icontains
+  - pattern: "ai winter"
+    mode: icontains
+  - pattern: "scaling law"
+    mode: icontains
+  
+  # 生成式 AI
+  - pattern: "generative ai"
+    mode: icontains
+  - pattern: "image generation"
+    mode: icontains
+  - pattern: "video generation"
+    mode: icontains
+  - pattern: "audio generation"
+    mode: icontains
+  - pattern: "voice ai"
+    mode: icontains
+  - pattern: "speech synthesis"
+    mode: icontains
+  - pattern: "text to speech"
+    mode: icontains
+  - pattern: "text to image"
+    mode: icontains
+  - pattern: "text to video"
+    mode: icontains
+  - pattern: "sora"
+    mode: iword
+  - pattern: "whisper"
+    mode: iword
+  
+  # 其他
+  - pattern: "ai-powered"
+    mode: icontains
+  - pattern: "ai-driven"
+    mode: icontains
+  - pattern: "ai agent"
+    mode: icontains
+  - pattern: "ai agents"
+    mode: icontains
+  - pattern: "coding agent"
+    mode: icontains
+  - pattern: "autonomous agent"
+    mode: icontains
+  - pattern: "agent framework"
+    mode: icontains
+  - pattern: "langchain"
+    mode: icontains
+  - pattern: "crewai"
+    mode: icontains
+  - pattern: "auto-gen"
+    mode: icontains
+  - pattern: "smol agents"
+    mode: icontains
+  - pattern: "ai assistant"
+    mode: icontains
+  - pattern: "vibe coding"
+    mode: icontains
+  - pattern: "ai coding"
+    mode: icontains
+  - pattern: "code generation"
+    mode: icontains
+  - pattern: "code completion"
+    mode: icontains
+  - pattern: "character.ai"
+    mode: icontains
+  - pattern: "reka ai"
+    mode: icontains
+  - pattern: "fireworks ai"
+    mode: icontains
+  - pattern: "together ai"
+    mode: icontains
+  - pattern: "anysphere"
+    mode: icontains
+  - pattern: "harvey ai"
+    mode: icontains
+  - pattern: "ai chip"
+    mode: icontains
+  - pattern: "h100"
+    mode: iword
+  - pattern: "h200"
+    mode: iword
+  - pattern: "blackwell"
+    mode: icontains
+  - pattern: "rubin"
+    mode: icontains
+  - pattern: "tpu"
+    mode: iword
+  - pattern: "npu"
+    mode: iword
+  - pattern: "local llm"
+    mode: icontains
+  - pattern: "open source ai"
+    mode: icontains
+  - pattern: "ai model"
+    mode: icontains
+  - pattern: "ai system"
+    mode: icontains
+  - pattern: "ai research"
+    mode: icontains
+  - pattern: "ai paper"
+    mode: icontains
+  - pattern: "ai breakthrough"
+    mode: icontains
+  - pattern: "synthetic data"
+    mode: icontains
+  - pattern: "world model"
+    mode: icontains
+  - pattern: "embodied ai"
+    mode: icontains
+  - pattern: "humanoid robot"
+    mode: icontains
+  - pattern: "humanoid"
+    mode: icontains
+  - pattern: "vector database"
+    mode: icontains
+  - pattern: "vector db"
+    mode: icontains
+  - pattern: "retrieval augmented"
+    mode: icontains
+
+# AI 相关域名（包含匹配）
+ai_domains:
+  - "anthropic.com"
+  - "openai.com"
+  - "deepmind.com"
+  - "huggingface.co"
+  - "huggingface.co"
+  - "grith.ai"
+  - "fastino-ai"
+  - "alibaba.github.io"
+  - "jido.run"
+  - "tensorspy.com"
+  - "character.ai"
+  - "cohere.com"
+  - "ai21.com"
+  - "mistral.ai"
+  - "runwayml.com"
+  - "midjourney.com"
+  - "stability.ai"
+  - "reka.ai"
+  - "fireworks.ai"
+  - "together.ai"
+  - "anysphere.inc"
+  - "harvey.ai"
+  - "perplexity.ai"
+  - "grok.com"
+  - "x.ai"
+  - "ollama.com"
+  - "lmstudio.ai"
+
+# 特殊规则配置
+special_rules:
+  # agent 需要 AI 上下文才匹配
+  - keyword: "agent"
+    require_context: ["ai", "llm", "model", "autonomous", "coding", "local", "sandbox"]
+    mode: iword
+  - keyword: "agents"
+    require_context: ["ai", "llm", "model", "autonomous", "coding", "local", "sandbox"]
+    mode: iword
+
+# 全局配置
+config:
+  # 最小分数过滤
+  min_points: 30
+  # 最大抓取页数
+  max_pages: 5
+  # 是否启用特殊规则
+  enable_special_rules: true
+  # 匹配模式：any（任一匹配即可）/ all（全部匹配）
+  match_mode: any
