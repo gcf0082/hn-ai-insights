@@ -1,0 +1,76 @@
+# HN AI 文章匹配配置
+# 支持多种匹配模式：exact, icontains, word, regex
+
+# 匹配模式说明:
+# - exact: 精确匹配（区分大小写）
+# - icontains: 包含匹配（不区分大小写）
+# - word: 单词匹配（\bkeyword\b，区分大小写）
+# - iword: 单词匹配（\bkeyword\b，不区分大小写）
+# - regex: 正则表达式匹配
+
+# AI 关键词配置
+ai_keywords:
+  # 单词匹配（避免匹配到包含该词的其他词）
+  - pattern: "llm"
+    mode: iword
+  - pattern: "gpt"
+    mode: iword
+  - pattern: "claude"
+    mode: iword
+  - pattern: "opencode"
+    mode: iword    
+  - pattern: "openclaw"
+    mode: iword       
+  - pattern: "anthropic"
+    mode: iword
+  - pattern: "openai"
+    mode: iword
+  - pattern: "gemini"
+    mode: iword
+  - pattern: "llama"
+    mode: iword
+  - pattern: "agi"
+    mode: iword
+  - pattern: "mcp"
+    mode: iword
+  - pattern: "rag"
+    mode: iword
+
+  - pattern: "AI"
+    mode: word
+  - pattern: "minimax"
+    mode: icontains
+  - pattern: "claude code"
+    mode: icontains
+  - pattern: "grok"
+    mode: iword
+  - pattern: "cursor"
+    mode: iword
+  - pattern: "qwen"
+    mode: icontains
+  - pattern: "glm"
+    mode: iword
+  - pattern: "deepseek"
+    mode: icontains
+  - pattern: "ollama"
+    mode: icontains  
+
+# AI 相关域名（包含匹配）
+ai_domains:
+  - "anthropic.com"
+  - "openai.com"
+  - "grok.com"
+  - "x.ai"
+  - "ollama.com"
+  - "lmstudio.ai"
+
+# 全局配置
+config:
+  # 最小分数过滤
+  min_points: 30
+  # 最大抓取页数
+  max_pages: 2
+  # 是否启用特殊规则
+  enable_special_rules: true
+  # 匹配模式：any（任一匹配即可）/ all（全部匹配）
+  match_mode: any
