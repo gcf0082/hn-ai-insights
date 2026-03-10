@@ -17,13 +17,15 @@ ai_keywords:
     mode: iword
   - pattern: "claude"
     mode: iword
+  - pattern: "opencode"
+    mode: iword    
+  - pattern: "openclaw"
+    mode: iword       
   - pattern: "anthropic"
     mode: iword
   - pattern: "openai"
     mode: iword
   - pattern: "gemini"
-    mode: iword
-  - pattern: "mistral"
     mode: iword
   - pattern: "llama"
     mode: iword
@@ -34,8 +36,6 @@ ai_keywords:
   - pattern: "rag"
     mode: iword
 
-  
-  # 带连字符/版本号的模式
   - pattern: "AI"
     mode: word
   - pattern: "minimax"
