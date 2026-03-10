@@ -14,8 +14,8 @@ echo "   数据目录：$HACKNEWS_DIR"
 
 cd "$REPO_DIR"
 
-# 获取最新日期目录
-LATEST_DATE=$(ls -1 "$HACKNEWS_DIR" | sort -r | head -1)
+# 获取最新日期目录（只匹配 YYYY-MM-DD 格式）
+LATEST_DATE=$(ls -1d "$HACKNEWS_DIR"/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9] 2>/dev/null | sort -r | head -1 | xargs -n1 basename)
 if [ -z "$LATEST_DATE" ]; then
     echo "❌ 未找到报告目录"
     exit 1
@@ -51,7 +51,11 @@ cd "$REPO_DIR"
 git config user.name "HN AI Bot"
 git config user.email "hn-ai-bot@local"
 
-# 添加并检查是否有变化
+# 先提交脚本自身的修改（如果有）
+git add -u
+git diff --cached --quiet || git commit -m "Update scripts (auto-sync)" || true
+
+# 添加报告文件
 git add "datas/reports/$LATEST_DATE/" reports.json
 CHANGED=$(git status --porcelain | wc -l)
 
@@ -60,7 +64,7 @@ if [ "$CHANGED" -eq 0 ]; then
     exit 0
 fi
 
-# 提交
+# 提交报告
 git commit -m "Add HN AI analysis reports $LATEST_DATE (auto-sync)"
 
 # 推送
