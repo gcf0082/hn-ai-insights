@@ -1,5 +1,179 @@
 [
   {
+    "date": "2026-03-11",
+    "time": "07:22",
+    "file": "datas/reports/2026-03-11/07-22-27.md",
+    "summary": "HN AI 每日分析 - 2026-03-11 · 抓取 100 篇 · 过滤 71 篇非 AI · 深度分析 10 篇",
+    "articles": [
+      {
+        "title": "计算机科学先驱 Tony Hoare 逝世",
+        "title_en": "Tony Hoare has died",
+        "url": "https://news.ycombinator.com/item?id=47324054",
+        "hnUrl": "https://news.ycombinator.com/item?id=47324054",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47324054",
+        "points": 1333,
+        "comments": 185,
+        "hnId": "47324054"
+      },
+      {
+        "title": "亚马逊要求高级工程师签署 AI 辅助变更",
+        "title_en": "After outages, Amazon to make senior engineers sign off on AI-assisted changes",
+        "url": "https://news.ycombinator.com/item?id=47323017",
+        "hnUrl": "https://news.ycombinator.com/item?id=47323017",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47323017",
+        "points": 338,
+        "comments": 336,
+        "hnId": "47323017"
+      },
+      {
+        "title": "在我睡觉时运行的 AI 代理",
+        "title_en": "macOS Tahoe windows have different corner radiuses",
+        "url": "https://news.ycombinator.com/item?id=47327559",
+        "hnUrl": "https://news.ycombinator.com/item?id=47327559",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47327559",
+        "points": 175,
+        "comments": 123,
+        "hnId": "47327559"
+      },
+      {
+        "title": "Yann LeCun 融资 10 亿美元打造理解物理世界的 AI",
+        "title_en": "Yann LeCun raises $1B to build AI that understands the physical world",
+        "url": "https://news.ycombinator.com/item?id=47320600",
+        "hnUrl": "https://news.ycombinator.com/item?id=47320600",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47320600",
+        "points": 270,
+        "comments": 296,
+        "hnId": "47320600"
+      },
+      {
+        "title": "Launch HN: RunAnywhere 加速 Apple Silicon 上的 AI 推理",
+        "title_en": "Agents that run while I sleep",
+        "url": "https://news.ycombinator.com/item?id=47326101",
+        "hnUrl": "https://news.ycombinator.com/item?id=47326101",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47326101",
+        "points": 166,
+        "comments": 76,
+        "hnId": "47326101"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-11",
+    "time": "01:33",
+    "file": "datas/reports/2026-03-11/01-33-19.md",
+    "summary": "HN AI 每日分析 - 2026-03-11 · 抓取 35 篇 · 过滤 18 篇低分 (<30) · 跳过 18 篇已分析 · 深度分析 7 篇",
+    "articles": [
+      {
+        "title": "Debian 决定不对 AI 生成贡献做决定",
+        "title_en": "Debian decides not to decide on AI-generated contributions",
+        "url": "https://news.ycombinator.com/item?id=47324087",
+        "hnUrl": "https://news.ycombinator.com/item?id=47324087",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47324087",
+        "points": 129,
+        "comments": 92,
+        "hnId": "47324087"
+      },
+      {
+        "title": "Show HN: 如何用两块游戏显卡登顶 HuggingFace Open LLM 榜单",
+        "title_en": "Show HN: How I Topped the HuggingFace Open LLM Leaderboard on Two Gaming GPUs",
+        "url": "https://news.ycombinator.com/item?id=47322887",
+        "hnUrl": "https://news.ycombinator.com/item?id=47322887",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47322887",
+        "points": 108,
+        "comments": 41,
+        "hnId": "47322887"
+      },
+      {
+        "title": "Meta 收购 Moltbook",
+        "title_en": "Meta acquires Moltbook",
+        "url": "https://news.ycombinator.com/item?id=47323900",
+        "hnUrl": "https://news.ycombinator.com/item?id=47323900",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47323900",
+        "points": 166,
+        "comments": 98,
+        "hnId": "47323900"
+      },
+      {
+        "title": "Amazon 召开关于 AI 破坏其系统的强制会议",
+        "title_en": "Amazon is holding a mandatory meeting about AI breaking its systems",
+        "url": "https://news.ycombinator.com/item?id=47324211",
+        "hnUrl": "https://news.ycombinator.com/item?id=47324211",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47324211",
+        "points": 208,
+        "comments": 139,
+        "hnId": "47324211"
+      },
+      {
+        "title": "PgAdmin 4 9.13 推出 AI 助手面板",
+        "title_en": "PgAdmin 4 9.13 with AI Assistant Panel",
+        "url": "https://news.ycombinator.com/item?id=47322033",
+        "hnUrl": "https://news.ycombinator.com/item?id=47322033",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47322033",
+        "points": 58,
+        "comments": 18,
+        "hnId": "47322033"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-10",
+    "time": "18:32",
+    "file": "datas/reports/2026-03-10/18-32-58.md",
+    "summary": "HN AI 每日分析 - 2026-03-10 · 抓取 45 篇 · 过滤 20 篇低分 (<30) · 跳过 19 篇已分析 · 深度分析 6 篇",
+    "articles": [
+      {
+        "title": "Redox OS 采用严格无 LLM 政策",
+        "title_en": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy",
+        "url": "https://news.ycombinator.com/item?id=47320661",
+        "hnUrl": "https://news.ycombinator.com/item?id=47320661",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47320661",
+        "points": 102,
+        "comments": 73,
+        "hnId": "47320661"
+      },
+      {
+        "title": "LoGeR：从超长视频进行 3D 重建 (DeepMind)",
+        "title_en": "LoGeR – 3D reconstruction from extremely long videos (DeepMind, UC Berkeley)",
+        "url": "https://news.ycombinator.com/item?id=47319620",
+        "hnUrl": "https://news.ycombinator.com/item?id=47319620",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47319620",
+        "points": 39,
+        "comments": 14,
+        "hnId": "47319620"
+      },
+      {
+        "title": "Anthropic 每用户成本并非 5000 美元",
+        "title_en": "No, it doesn't cost Anthropic $5k per Claude Code user",
+        "url": "https://news.ycombinator.com/item?id=47317132",
+        "hnUrl": "https://news.ycombinator.com/item?id=47317132",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47317132",
+        "points": 227,
+        "comments": 161,
+        "hnId": "47317132"
+      },
+      {
+        "title": "OpenAI 放弃与 Oracle 扩展 Stargate 数据中心",
+        "title_en": "OpenAI is walking away from expanding its Stargate data center with Oracle",
+        "url": "https://news.ycombinator.com/item?id=47315128",
+        "hnUrl": "https://news.ycombinator.com/item?id=47315128",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47315128",
+        "points": 356,
+        "comments": 210,
+        "hnId": "47315128"
+      },
+      {
+        "title": "Claude Code、Claude Cowork 与 Codex #5",
+        "title_en": "Claude Code, Claude Cowork and Codex #5",
+        "url": "https://news.ycombinator.com/item?id=47319294",
+        "hnUrl": "https://news.ycombinator.com/item?id=47319294",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47319294",
+        "points": 39,
+        "comments": 44,
+        "hnId": "47319294"
+      }
+    ]
+  },
+  {
     "date": "2026-03-10",
     "time": "12:30",
     "file": "datas/reports/2026-03-10/12-30-00.md",
