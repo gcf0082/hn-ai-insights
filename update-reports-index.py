@@ -8,7 +8,7 @@ import re
 from pathlib import Path
 from datetime import datetime
 
-REPORTS_DIR = Path(__file__).parent / 'reports'
+REPORTS_DIR = Path(__file__).parent / 'datas' / 'reports'
 REPORTS_JSON = Path(__file__).parent / 'reports.json'
 
 def parse_markdown_report(filepath):
@@ -57,10 +57,17 @@ def parse_markdown_report(filepath):
     if stats_match:
         summary += f" · {stats_match.group(1).strip()}"
     
+    # 计算相对于仓库根目录的路径（包含 datas/reports/）
+    # 路径结构：repo_root/datas/reports/YYYY-MM-DD/HH-MM-SS.md
+    # filepath.parent = date_dir (e.g., 2026-03-10)
+    # filepath.parent.parent = reports_dir (e.g., reports)
+    # filepath.parent.parent.parent = datas_dir
+    relative_path = 'datas/reports/' + filepath.parent.name + '/' + filepath.name
+    
     return {
         'date': date_match.group(1) if date_match else filepath.parent.name,
         'time': time_match.group(1) if time_match else filepath.stem.split('-')[0] + ':' + filepath.stem.split('-')[1],
-        'file': str(filepath.relative_to(filepath.parent.parent)),
+        'file': str(relative_path),
         'summary': summary,
         'articles': articles[:5]  # 只保留前 5 篇用于预览
     }
