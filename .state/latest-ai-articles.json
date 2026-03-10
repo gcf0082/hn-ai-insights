@@ -1,0 +1,267 @@
+{
+  "total": 100,
+  "ai_related": 29,
+  "articles": [
+    {
+      "id": "47324054",
+      "title": "Tony Hoare has died",
+      "score": 1333,
+      "comments": 185,
+      "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
+      "hn_url": "https://news.ycombinator.com/item?id=47324054",
+      "text": ""
+    },
+    {
+      "id": "47323017",
+      "title": "After outages, Amazon to make senior engineers sign off on AI-assisted changes",
+      "score": 338,
+      "comments": 336,
+      "url": "https://arstechnica.com/ai/2026/03/after-outages-amazon-to-make-senior-engineers-sign-off-on-ai-assisted-changes/",
+      "hn_url": "https://news.ycombinator.com/item?id=47323017",
+      "text": "<a href=\"https:&#x2F;&#x2F;www.ft.com&#x2F;content&#x2F;7cab4ec7-4712-4137-b602-119a44f771de\" rel=\"nofollow\">https:&#x2F;&#x2F;www.ft.com&#x2F;content&#x2F;7cab4ec7-4712-4137-b602-119a44f77...</a> (<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;wXvF3\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;wXvF3</a>)<p><a href=\"https:&#x2F;&#x2F;twitter.com&#x2F;lukolejnik&#x2F;status&#x2F;2031257644724342957\" rel=\"nofollow\">https:&#x2F;&#x2F;twitter.com&#x2F;lukolejnik&#x2F;status&#x2F;2031257644724342957</a> (<a href=\"https:&#x2F;&#x2F;xcancel.com&#x2F;lukolejnik&#x2F;status&#x2F;2031257644724342957\" rel=\"nofollow\">https:&#x2F;&#x2F;xcancel.com&#x2F;lukolejnik&#x2F;status&#x2F;2031257644724342957</a>)"
+    },
+    {
+      "id": "47329605",
+      "title": "U+237C ⍼ Is Azimuth",
+      "score": 35,
+      "comments": 3,
+      "url": "https://ionathan.ch/2026/02/16/angzarr.html",
+      "hn_url": "https://news.ycombinator.com/item?id=47329605",
+      "text": ""
+    },
+    {
+      "id": "47327559",
+      "title": "Agents that run while I sleep",
+      "score": 175,
+      "comments": 123,
+      "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
+      "hn_url": "https://news.ycombinator.com/item?id=47327559",
+      "text": ""
+    },
+    {
+      "id": "47320600",
+      "title": "Yann LeCun raises $1B to build AI that understands the physical world",
+      "score": 270,
+      "comments": 296,
+      "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
+      "hn_url": "https://news.ycombinator.com/item?id=47320600",
+      "text": "<a href=\"https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260310153721&#x2F;https:&#x2F;&#x2F;www.wired.com&#x2F;story&#x2F;yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260310153721&#x2F;https:&#x2F;&#x2F;www.wired...</a><p><a href=\"https:&#x2F;&#x2F;www.ft.com&#x2F;content&#x2F;e5245ec3-1a58-4eff-ab58-480b6259aaf1\" rel=\"nofollow\">https:&#x2F;&#x2F;www.ft.com&#x2F;content&#x2F;e5245ec3-1a58-4eff-ab58-480b6259a...</a> (<a href=\"https:&#x2F;&#x2F;archive.md&#x2F;5eZWq\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.md&#x2F;5eZWq</a>)"
+    },
+    {
+      "id": "47326101",
+      "title": "Launch HN: RunAnywhere (YC W26) – Faster AI Inference on Apple Silicon",
+      "score": 166,
+      "comments": 76,
+      "url": "https://github.com/RunanywhereAI/rcli",
+      "hn_url": "https://news.ycombinator.com/item?id=47326101",
+      "text": "Hi HN, we&#x27;re Sanchit and Shubham (YC W26). We built a fast inference engine for Apple Silicon. LLMs, speech-to-text, text-to-speech – MetalRT beats llama.cpp, Apple&#x27;s MLX, Ollama, and sherpa-onnx on every modality we tested. Custom Metal shaders, no framework overhead.<p>Also, we&#x27;ve open-sourced RCLI, the fastest end-to-end voice AI pipeline on Apple Silicon. Mic to spoken response, entirely on-device. No cloud, no API keys.<p>To get started:<p><pre><code>  brew tap RunanywhereAI&#x2F;rcli https:&#x2F;&#x2F;github.com&#x2F;RunanywhereAI&#x2F;RCLI.git\n  brew install rcli\n  rcli setup   # downloads ~1 GB of models\n  rcli         # interactive mode with push-to-talk\n</code></pre>\nOr:<p><pre><code>  curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;RunanywhereAI&#x2F;RCLI&#x2F;main&#x2F;install.sh | bash\n</code></pre>\nThe numbers (M4 Max, 64 GB, reproducible via `rcli bench`):<p>LLM decode – 1.67x faster than llama.cpp, 1.19x faster than Apple MLX (same model files):\n- Qwen3-0.6B: 658 tok&#x2F;s (vs mlx-lm 552, llama.cpp 295)\n- Qwen3-4B: 186 tok&#x2F;s (vs mlx-lm 170, llama.cpp 87)\n- LFM2.5-1.2B: 570 tok&#x2F;s (vs mlx-lm 509, llama.cpp 372)\n- Time-to-first-token: 6.6 ms<p>STT – 70 seconds of audio transcribed in *101 ms*. That&#x27;s 714x real-time. 4.6x faster than mlx-whisper.<p>TTS – 178 ms synthesis. 2.8x faster than mlx-audio and sherpa-onnx.<p>We built this because demoing on-device AI is easy but shipping it is brutal. Voice is the hardest test: you&#x27;re chaining STT, LLM, and TTS sequentially, and if any stage is slow, the user feels it. Most teams fall back to cloud APIs not because local models are bad, but because local inference infrastructure is.<p>The thing that&#x27;s hard to solve is latency compounding. In a voice pipeline, you&#x27;re stacking three models in sequence. If each adds 200ms, you&#x27;re at 600ms before the user hears a word, and that feels broken. You can&#x27;t optimize one stage and call it done. Every stage needs to be fast, on one device, with no network round-trip to hide behind.<p>We went straight to Metal. Custom GPU compute shaders, all memory pre-allocated at init (zero allocations during inference), and one unified engine for all three modalities instead of stitching separate runtimes together.<p>MetalRT is the first engine to handle all three modalities natively on Apple Silicon. Full methodology:<p>LLM benchmarks: <a href=\"https:&#x2F;&#x2F;www.runanywhere.ai&#x2F;blog&#x2F;metalrt-fastest-llm-decode-engine-apple-silicon\">https:&#x2F;&#x2F;www.runanywhere.ai&#x2F;blog&#x2F;metalrt-fastest-llm-decode-e...</a><p>Speech benchmarks: <a href=\"https:&#x2F;&#x2F;www.runanywhere.ai&#x2F;blog&#x2F;metalrt-speech-fastest-stt-tts-apple-silicon\">https:&#x2F;&#x2F;www.runanywhere.ai&#x2F;blog&#x2F;metalrt-speech-fastest-stt-t...</a><p>How: Most inference engines add layers between you and the GPU: graph schedulers, runtime dispatchers, memory managers. MetalRT skips all of it. Custom Metal compute shaders for quantized matmul, attention, and activation - compiled ahead of time, dispatched directly.<p>Voice Pipeline optimizations details: <a href=\"https:&#x2F;&#x2F;www.runanywhere.ai&#x2F;blog&#x2F;fastvoice-on-device-voice-ai-pipeline-apple-silicon\">https:&#x2F;&#x2F;www.runanywhere.ai&#x2F;blog&#x2F;fastvoice-on-device-voice-ai...</a>\nRAG optimizations: <a href=\"https:&#x2F;&#x2F;www.runanywhere.ai&#x2F;blog&#x2F;fastvoice-rag-on-device-retrieval-augmented-voice-ai\">https:&#x2F;&#x2F;www.runanywhere.ai&#x2F;blog&#x2F;fastvoice-rag-on-device-retr...</a><p>RCLI is the open-source voice pipeline (MIT) built on MetalRT: three concurrent threads with lock-free ring buffers, double-buffered TTS, 38 macOS actions by voice, local RAG (~4 ms over 5K+ chunks), 20 hot-swappable models, and a full-screen TUI with per-op latency readouts. Falls back to llama.cpp when MetalRT isn&#x27;t installed.<p>Source: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;RunanywhereAI&#x2F;RCLI\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;RunanywhereAI&#x2F;RCLI</a> (MIT)<p>Demo: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=eTYwkgNoaKg\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=eTYwkgNoaKg</a><p>What would you build if on-device AI were genuinely as fast as cloud?"
+    },
+    {
+      "id": "47324087",
+      "title": "Debian decides not to decide on AI-generated contributions",
+      "score": 256,
+      "comments": 202,
+      "url": "https://lwn.net/SubscriberLink/1061544/125f911834966dd0/",
+      "hn_url": "https://news.ycombinator.com/item?id=47324087",
+      "text": ""
+    },
+    {
+      "id": "47327015",
+      "title": "FFmpeg-over-IP – Connect to remote FFmpeg servers",
+      "score": 90,
+      "comments": 39,
+      "url": "https://github.com/steelbrain/ffmpeg-over-ip",
+      "hn_url": "https://news.ycombinator.com/item?id=47327015",
+      "text": ""
+    },
+    {
+      "id": "47326555",
+      "title": "Billion-Parameter Theories",
+      "score": 84,
+      "comments": 56,
+      "url": "https://www.worldgov.org/complexity.html",
+      "hn_url": "https://news.ycombinator.com/item?id=47326555",
+      "text": ""
+    },
+    {
+      "id": "47320614",
+      "title": "Levels of Agentic Engineering",
+      "score": 100,
+      "comments": 52,
+      "url": "https://www.bassimeledath.com/blog/levels-of-agentic-engineering",
+      "hn_url": "https://news.ycombinator.com/item?id=47320614",
+      "text": ""
+    },
+    {
+      "id": "47323900",
+      "title": "Meta acquires Moltbook",
+      "score": 370,
+      "comments": 245,
+      "url": "https://www.axios.com/2026/03/10/meta-facebook-moltbook-agent-social-network",
+      "hn_url": "https://news.ycombinator.com/item?id=47323900",
+      "text": "<a href=\"https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260310154640&#x2F;https:&#x2F;&#x2F;www.axios.com&#x2F;2026&#x2F;03&#x2F;10&#x2F;meta-facebook-moltbook-agent-social-network\" rel=\"nofollow\">https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260310154640&#x2F;https:&#x2F;&#x2F;www.axios...</a>, <a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;igqsh\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;igqsh</a><p><a href=\"https:&#x2F;&#x2F;www.reuters.com&#x2F;business&#x2F;meta-acquires-ai-agent-social-network-moltbook-2026-03-10&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.reuters.com&#x2F;business&#x2F;meta-acquires-ai-agent-soci...</a><p><a href=\"https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;03&#x2F;10&#x2F;meta-acquired-moltbook-the-ai-agent-social-network-that-went-viral-because-of-fake-posts&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;techcrunch.com&#x2F;2026&#x2F;03&#x2F;10&#x2F;meta-acquired-moltbook-the...</a>"
+    },
+    {
+      "id": "47320661",
+      "title": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy",
+      "score": 359,
+      "comments": 364,
+      "url": "https://gitlab.redox-os.org/redox-os/redox/-/blob/master/CONTRIBUTING.md",
+      "hn_url": "https://news.ycombinator.com/item?id=47320661",
+      "text": ""
+    },
+    {
+      "id": "47322635",
+      "title": "Online age-verification tools for child safety are surveilling adults",
+      "score": 499,
+      "comments": 290,
+      "url": "https://www.cnbc.com/2026/03/08/social-media-child-safety-internet-ai-surveillance.html",
+      "hn_url": "https://news.ycombinator.com/item?id=47322635",
+      "text": ""
+    },
+    {
+      "id": "47317288",
+      "title": "Open Weights isn't Open Training",
+      "score": 72,
+      "comments": 23,
+      "url": "https://www.workshoplabs.ai/blog/open-weights-open-training",
+      "hn_url": "https://news.ycombinator.com/item?id=47317288",
+      "text": ""
+    },
+    {
+      "id": "47323105",
+      "title": "Rebasing in Magit",
+      "score": 175,
+      "comments": 119,
+      "url": "https://entropicthoughts.com/rebasing-in-magit",
+      "hn_url": "https://news.ycombinator.com/item?id=47323105",
+      "text": ""
+    },
+    {
+      "id": "47322887",
+      "title": "Show HN: How I Topped the HuggingFace Open LLM Leaderboard on Two Gaming GPUs",
+      "score": 240,
+      "comments": 79,
+      "url": "https://dnhkng.github.io/posts/rys/",
+      "hn_url": "https://news.ycombinator.com/item?id=47322887",
+      "text": ""
+    },
+    {
+      "id": "47324296",
+      "title": "Launch HN: Didit (YC W26) – Stripe for Identity Verification",
+      "score": 48,
+      "comments": 46,
+      "url": "",
+      "hn_url": "https://news.ycombinator.com/item?id=47324296",
+      "text": "Hi HN, I’m Alberto. I co-founded Didit (<a href=\"https:&#x2F;&#x2F;didit.me\">https:&#x2F;&#x2F;didit.me</a>) with my identical twin brother Alejandro. We are building a unified identity layer—a single integration that handles KYC, AML, biometrics, authentication, and fraud prevention globally. Here’s a demo: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=eTdcg7JCc4M&amp;t=7s\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=eTdcg7JCc4M&amp;t=7s</a>.<p>Being identical twins, we’ve spent our whole lives dealing with identity confusion, so it is a bit of irony that we ended up building a company to solve it for the internet.<p>Growing up in Barcelona, we spent years working on products where identity issues were a massive pain. We eventually realized that for most engineering teams, &quot;global identity&quot; is a fiction—in reality it is a fragmented mess. You end up stitching together one provider for US driver&#x27;s licenses, another for NFC chip extraction in Europe, a third for AML screening, a fourth for government database validation in Brazil, a fifth for liveness detection on low-end Android devices, and yet another for biometric authentication and age estimation. Orchestrating these into a cohesive flow while adapting to localized regulations like GDPR or CCPA is a nightmare that makes no sense for most teams to be working on.<p>When we looked at the existing &quot;enterprise&quot; solutions, we were baffled. Most require a three-week sales cycle just to see a single page of documentation. Pricing is hidden behind &quot;Contact Us&quot; buttons, and the products themselves are often bloated legacy systems with high latency and abysmal accuracy.<p>We also noticed a recurring pattern: these tools are frequently optimized only for the latest iOS hardware, performing poorly on the mid-range or older Android devices that make up a huge percentage of the market. This results in a &quot;leaky&quot; funnel where legitimate users drop off due to technical friction and fraud goes undetected because data points are spread across disparate systems. Also, these systems are expensive, often requiring massive annual commits that price out early-stage startups.<p>We wanted to build a system that is accessible to everyone—a tool that works like Stripe for identity, where you can get a sandbox key in thirty seconds and start running real verifications with world-class UX and transparent pricing.<p>To solve this, we took the &quot;delusional&quot; path of full vertical integration. Rather than just wrapping existing APIs, we built our own ID verification and biometric AI models—from classification and fraud detection to OCR models for almost every language. This vertical integration is fundamental to how we handle user data. Because we own the entire stack, we control the flow of sensitive information from end-to-end. Your users&#x27; data doesn&#x27;t get bounced around through a chain of third-party black boxes or regional middle-men. This allows us to provide a level of security and privacy that is impossible when you are just an orchestration layer for other people&#x27;s APIs.<p>We believe that identity verification is one of the most critical problems on the internet, and must be solved correctly and ethically. Many people are rightfully skeptical, especially given recent news about projects that have turned identity into a tool for mass data collection or surveillance. We don’t do anything of the sort, but we also don’t want to be coerced in the future, so we facilitate data minimization on the customer side. Instead of a business asking for a full ID scan, we allow them to simply verify a specific attribute—like &quot;is this person over 18?&quot;—without ever seeing the document itself. Our goal is to move the industry away from data hoarding and toward zero knowledge, or at least minimal knowledge, verification.<p>The result of our all-in-one approach is a platform that increases onboarding rates while lowering identity costs. We’ve focused on building a high-confidence automated loop that reduces the need for manual review by up to 90%, catching sophisticated deepfakes and spoofing attempts that standard vision models miss. Our SDK is optimized for low bandwidth connections, ensuring it works on spotty 3G networks where legacy providers usually fail.<p>We are fully live, and you can jump into the dashboard at \n<a href=\"https:&#x2F;&#x2F;business.didit.me\">https:&#x2F;&#x2F;business.didit.me</a> to see the workflow orchestration immediately. Our pricing is transparent and success-based; we don’t believe in hiding costs behind a sales call.<p>We’re here all day to answer any question—whether it’s about how we handle NFC verification, our approach to deepfake detection, the general ethics behind biometric data retention, or how we think about the future of identity. We’d love your brutal HN feedback on our APIs, platform, and integration flow!"
+    },
+    {
+      "id": "47325595",
+      "title": "I built a programming language using Claude Code",
+      "score": 97,
+      "comments": 143,
+      "url": "https://ankursethi.com/blog/programming-language-claude-code/",
+      "hn_url": "https://news.ycombinator.com/item?id=47325595",
+      "text": ""
+    },
+    {
+      "id": "47286657",
+      "title": "The Gervais Principle, or the Office According to “The Office” (2009)",
+      "score": 283,
+      "comments": 120,
+      "url": "https://www.ribbonfarm.com/2009/10/07/the-gervais-principle-or-the-office-according-to-the-office/",
+      "hn_url": "https://news.ycombinator.com/item?id=47286657",
+      "text": ""
+    },
+    {
+      "id": "47322033",
+      "title": "PgAdmin 4 9.13 with AI Assistant Panel",
+      "score": 83,
+      "comments": 28,
+      "url": "https://www.pgadmin.org/docs/pgadmin4/9.13/query_tool.html#ai-assistant-panel",
+      "hn_url": "https://news.ycombinator.com/item?id=47322033",
+      "text": ""
+    },
+    {
+      "id": "47317132",
+      "title": "No, it doesn't cost Anthropic $5k per Claude Code user",
+      "score": 438,
+      "comments": 316,
+      "url": "https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user/",
+      "hn_url": "https://news.ycombinator.com/item?id=47317132",
+      "text": ""
+    },
+    {
+      "id": "47322838",
+      "title": "Show HN: DD Photos – open-source photo album site generator (Go and SvelteKit)",
+      "score": 56,
+      "comments": 17,
+      "url": "https://github.com/dougdonohoe/ddphotos",
+      "hn_url": "https://news.ycombinator.com/item?id=47322838",
+      "text": "I was frustrated with photo sharing sites. Apple&#x27;s iCloud shared albums take 20+ seconds to load, and everything else comes with ads, cumbersome UIs, or social media distractions. I just want to share photos with friends and family: fast, mobile-friendly, distraction-free.<p>So I built DD Photos. You export photos from whatever you already use (Lightroom, Apple Photos, etc.) into folders, run `photogen` (a Go CLI) to resize them to WebP and generate JSON indexes, then deploy the SvelteKit static site anywhere that serves files. Apache, S3, whatever. No server-side code, no database.<p>Built over several weeks with heavy use of Claude Code, which I found genuinely useful for this kind of full-stack project spanning Go, SvelteKit&#x2F;TypeScript, Apache config, Docker, and Playwright tests. Happy to discuss that experience too.<p>Live example: <a href=\"https:&#x2F;&#x2F;photos.donohoe.info\" rel=\"nofollow\">https:&#x2F;&#x2F;photos.donohoe.info</a>\nRepo: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;dougdonohoe&#x2F;ddphotos\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;dougdonohoe&#x2F;ddphotos</a>"
+    },
+    {
+      "id": "47277865",
+      "title": "The hidden compile-time cost of C++26 reflection",
+      "score": 56,
+      "comments": 39,
+      "url": "https://vittorioromeo.com/index/blog/refl_compiletime.html",
+      "hn_url": "https://news.ycombinator.com/item?id=47277865",
+      "text": ""
+    },
+    {
+      "id": "47325988",
+      "title": "Microsoft Copilot Update Hijacks Default Browser Links",
+      "score": 38,
+      "comments": 4,
+      "url": "https://reclaimthenet.org/microsoft-copilot-update-hijacks-default-browser-links",
+      "hn_url": "https://news.ycombinator.com/item?id=47325988",
+      "text": ""
+    },
+    {
+      "id": "47311179",
+      "title": "An opinionated take on how to do important research that matters",
+      "score": 158,
+      "comments": 41,
+      "url": "https://nicholas.carlini.com/writing/2026/how-to-win-a-best-paper-award.html",
+      "hn_url": "https://news.ycombinator.com/item?id=47311179",
+      "text": ""
+    },
+    {
+      "id": "47311657",
+      "title": "Launch HN: Terminal Use (YC W26) – Vercel for filesystem-based agents",
+      "score": 112,
+      "comments": 77,
+      "url": "",
+      "hn_url": "https://news.ycombinator.com/item?id=47311657",
+      "text": "Hello Hacker News! We&#x27;re Filip, Stavros, and Vivek from Terminal Use (<a href=\"https:&#x2F;&#x2F;www.terminaluse.com&#x2F;\">https:&#x2F;&#x2F;www.terminaluse.com&#x2F;</a>). We built Terminal Use to make it easier to deploy agents that work in a sandboxed environment and need filesystems to do work. This includes coding agents, research agents, document processing agents, and internal tools that read and write files.<p>Here&#x27;s a demo: <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ttMl96l9xPA\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ttMl96l9xPA</a>.<p>Our biggest pain point with hosting agents was that you&#x27;d need to stitch together multiple pieces: packaging your agent, running it in a sandbox, streaming messages back to users, persisting state across turns, and managing getting files to and from the agent workspace.<p>We wanted something like Cog from Replicate, but for agents: a simple way to package agent code from a repo and serve it behind a clean API&#x2F;SDK. We wanted to provide a protocol to communicate with your agent, but not constraint the agent logic or harness itself.<p>On Terminal Use, you package your agent from a repo with a config.yaml and Dockerfile, then deploy it with our CLI. You define the logic of three endpoints (on_create, on_event, and on_cancel) which track the lifecycle of a task (conversation). The config.yaml contains details about resources, build context, etc.<p>Out of the box, we support Claude Agent SDK and Codex SDK agents. By support, we mean that we have an adapter that converts from the SDK message types to ours. If you&#x27;d like to use your own custom harness, you can convert and send messages with our types (Vercel AI SDK v6 compatible). For the frontend, we have a Vercel AI SDK provider that lets you use your agent with Vercel&#x27;s AI SDK, and have a messages module so that you don&#x27;t have to manage streaming and persistence yourself.<p>The part we think is most different is storage.<p>We treat filesystems as first-class primitives, separate from the lifecycle of a task. That means you can persist a workspace across turns, share it between different agents, or upload &#x2F; download files independent of the sandbox being active. Further, our filesystem SDK provides presigned urls which makes it easy for your users to directly upload and download files which means that you don&#x27;t need to proxy file transfer through your backend.<p>Since your agent logic and filesystem storage are decoupled, this makes it easy to iterate on your agents without worrying about the files in the sandbox: if you ship a bug, you can deploy and auto-migrate all your tasks to the new deployment. If you make a breaking change, you can specify that existing tasks stay on the existing version, and only new tasks use the new version.<p>We&#x27;re also adding support for multi-filesystem mounts with configurable mount paths and read&#x2F;write modes, so storage stays durable and reusable while mount layout stays task-specific.<p>On the deployment side, we&#x27;ve been influenced by modern developer platforms: simple CLI deployments, preview&#x2F;production environments, git-based environment targeting, logs, and rollback. All the configuration you need to build, deploy &amp; manage resources for your agent is stored in the config.yaml file which makes it easy to build &amp; deploy your agent in CI&#x2F;CD pipelines.<p>Finally, we&#x27;ve explicitly designed our platform for your CLI coding agents to help you build, test, &amp; iterate with your agents. With our CLI, your coding agents can send messages to your deployed agents, and download filesystem contents to help you understand your agent&#x27;s output. A common way we test our agents is that we make markdown files with user scenarios we&#x27;d like to test, and then ask Claude Code to impersonate our users and chat with our deployed agent.<p>What we do not have yet: full parity with general-purpose sandbox providers. For example, preview URLs and lower-level sandbox.exec(...) style APIs are still on the roadmap.<p>We&#x27;re excited to hear any thoughts, insights, questions, and concerns in the comments below!"
+    },
+    {
+      "id": "47284587",
+      "title": "TCXO Failure Analysis",
+      "score": 99,
+      "comments": 46,
+      "url": "https://serd.es/2026/03/06/TCXO-failure-analysis.html",
+      "hn_url": "https://news.ycombinator.com/item?id=47284587",
+      "text": ""
+    },
+    {
+      "id": "47279761",
+      "title": "macOS Tahoe windows have different corner radiuses",
+      "score": 301,
+      "comments": 217,
+      "url": "https://lapcatsoftware.com/articles/2026/3/1.html",
+      "hn_url": "https://news.ycombinator.com/item?id=47279761",
+      "text": ""
+    },
+    {
+      "id": "47310160",
+      "title": "Is legal the same as legitimate: AI reimplementation and the erosion of copyleft",
+      "score": 554,
+      "comments": 561,
+      "url": "https://writings.hongminhee.org/2026/03/legal-vs-legitimate/",
+      "hn_url": "https://news.ycombinator.com/item?id=47310160",
+      "text": ""
+    }
+  ]
+}
