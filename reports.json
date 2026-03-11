@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-11",
+    "time": "18:30",
+    "file": "datas/reports/2026-03-11/18-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-11 · 抓取 35 篇 · 过滤 12 篇低分 (<30) · 跳过 17 篇已分析 · 深度分析 6 篇",
+    "articles": [
+      {
+        "title": "创造价值而非担忧回报",
+        "title_en": "Create value for others and don't worry about the returns",
+        "url": "https://news.ycombinator.com/item?id=47332074",
+        "hnUrl": "https://news.ycombinator.com/item?id=47332074",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47332074",
+        "points": 345,
+        "comments": 190,
+        "hnId": "47332074"
+      },
+      {
+        "title": "TADA：快速可靠的语音生成技术",
+        "title_en": "I built a programming language using Claude Code",
+        "url": "https://news.ycombinator.com/item?id=47332054",
+        "hnUrl": "https://news.ycombinator.com/item?id=47332054",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47332054",
+        "points": 44,
+        "comments": 8,
+        "hnId": "47332054"
+      },
+      {
+        "title": "使用 Claude Code 构建编程语言",
+        "title_en": "TADA: Fast, Reliable Speech Generation Through Text-Acoustic Synchronization",
+        "url": "https://news.ycombinator.com/item?id=47325595",
+        "hnUrl": "https://news.ycombinator.com/item?id=47325595",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47325595",
+        "points": 120,
+        "comments": 164,
+        "hnId": "47325595"
+      },
+      {
+        "title": "因为算法语言",
+        "title_en": "Because Algospeak",
+        "url": "https://news.ycombinator.com/item?id=47291767",
+        "hnUrl": "https://news.ycombinator.com/item?id=47291767",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47291767",
+        "points": 36,
+        "comments": 16,
+        "hnId": "47291767"
+      },
+      {
+        "title": "反对感觉：生成模型何时有用",
+        "title_en": "Against Vibes: When is a Generative Model Useful",
+        "url": "https://news.ycombinator.com/item?id=47328071",
+        "hnUrl": "https://news.ycombinator.com/item?id=47328071",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47328071",
+        "points": 30,
+        "comments": 1,
+        "hnId": "47328071"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-11",
     "time": "12:30",
     "file": "datas/reports/2026-03-11/12-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-11 · 抓取 300+ 篇 · 过滤 270+ 篇低分 (<30) · 跳过 20+ 篇已分析 · 深度分析 4 篇",
