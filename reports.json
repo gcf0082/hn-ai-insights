@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-11",
+    "time": "21:51",
+    "file": "datas/reports/2026-03-11/21-51-11.md",
+    "summary": "HN AI 每日分析 - 2026-03-11 · 抓取 35 篇 · 过滤 12 篇低分 (<30) · 跳过 20 篇已分析 · 深度分析 10 篇",
+    "articles": [
+      {
+        "title": " outage 后亚马逊要求高级工程师签署 AI 辅助变更",
+        "title_en": "After outages, Amazon to make senior engineers sign off on AI-assisted changes",
+        "url": "https://news.ycombinator.com/item?id=47323017",
+        "hnUrl": "https://news.ycombinator.com/item?id=47323017",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47323017",
+        "points": 593,
+        "comments": 449,
+        "hnId": "47323017"
+      },
+      {
+        "title": "Yann LeCun 融资 10 亿美元构建理解物理世界的 AI",
+        "title_en": "Yann LeCun raises $1B to build AI that understands the physical world",
+        "url": "https://news.ycombinator.com/item?id=47320600",
+        "hnUrl": "https://news.ycombinator.com/item?id=47320600",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47320600",
+        "points": 520,
+        "comments": 432,
+        "hnId": "47320600"
+      },
+      {
+        "title": "为他人创造价值，不要担心回报",
+        "title_en": "Create value for others and don't worry about the returns",
+        "url": "https://news.ycombinator.com/item?id=47332074",
+        "hnUrl": "https://news.ycombinator.com/item?id=47332074",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47332074",
+        "points": 488,
+        "comments": 332,
+        "hnId": "47332074"
+      },
+      {
+        "title": "不，Anthropic 每位 Claude Code 用户成本不是 5000 美元",
+        "title_en": "No, it doesn't cost Anthropic $5k per Claude Code user",
+        "url": "https://news.ycombinator.com/item?id=47317132",
+        "hnUrl": "https://news.ycombinator.com/item?id=47317132",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47317132",
+        "points": 459,
+        "comments": 334,
+        "hnId": "47317132"
+      },
+      {
+        "title": "展示：如何用两张游戏显卡登顶 HuggingFace 开放 LLM 排行榜",
+        "title_en": "Show HN: How I topped the HuggingFace open LLM leaderboard on two gaming GPUs",
+        "url": "https://news.ycombinator.com/item?id=47322887",
+        "hnUrl": "https://news.ycombinator.com/item?id=47322887",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47322887",
+        "points": 403,
+        "comments": 105,
+        "hnId": "47322887"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-11",
     "time": "18:30",
     "file": "datas/reports/2026-03-11/18-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-11 · 抓取 35 篇 · 过滤 12 篇低分 (<30) · 跳过 17 篇已分析 · 深度分析 6 篇",
