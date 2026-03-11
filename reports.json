@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-12",
+    "time": "07:20",
+    "file": "datas/reports/2026-03-12/07-20-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-12 · 抓取 150 篇 · 过滤 115 篇低分 (<30) · 跳过 25 篇已分析 · 深度分析 10 篇",
+    "articles": [
+      {
+        "title": "HN 指南更新：禁止发布 AI 生成/编辑的评论",
+        "title_en": "Don't post generated/AI-edited comments. HN is for conversation between humans.",
+        "url": "https://news.ycombinator.com/item?id=47340079",
+        "hnUrl": "https://news.ycombinator.com/item?id=47340079",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47340079",
+        "points": 2266,
+        "comments": 848,
+        "hnId": "47340079"
+      },
+      {
+        "title": "死互联网理论已成现实",
+        "title_en": "The dead Internet is not a theory anymore",
+        "url": "https://news.ycombinator.com/item?id=47340935",
+        "hnUrl": "https://news.ycombinator.com/item?id=47340935",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47340935",
+        "points": 301,
+        "comments": 208,
+        "hnId": "47340935"
+      },
+      {
+        "title": "我很高兴 Anthropic 的抗争现在发生",
+        "title_en": "I'm glad the Anthropic fight is happening now",
+        "url": "https://news.ycombinator.com/item?id=47340071",
+        "hnUrl": "https://news.ycombinator.com/item?id=47340071",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47340071",
+        "points": 114,
+        "comments": 137,
+        "hnId": "47340071"
+      },
+      {
+        "title": "Show HN: 面向 AI 代理的开源浏览器",
+        "title_en": "Show HN: Open-source browser for AI agents",
+        "url": "https://news.ycombinator.com/item?id=47336171",
+        "hnUrl": "https://news.ycombinator.com/item?id=47336171",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47336171",
+        "points": 91,
+        "comments": 28,
+        "hnId": "47336171"
+      },
+      {
+        "title": "我被 AI 机器人面试了",
+        "title_en": "I was interviewed by an AI bot for a job",
+        "url": "https://news.ycombinator.com/item?id=47339164",
+        "hnUrl": "https://news.ycombinator.com/item?id=47339164",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47339164",
+        "points": 84,
+        "comments": 79,
+        "hnId": "47339164"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-12",
     "time": "01:33",
     "file": "datas/reports/2026-03-12/01-33-43.md",
     "summary": "HN AI 每日分析 - 2026-03-12 · 抓取 25 篇 · 过滤 0 篇低分 (<30) · 跳过 19 篇已分析 · 深度分析 6 篇",
