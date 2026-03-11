@@ -1,354 +1,258 @@
 #!/usr/bin/env python3
 """
-HN AI 文章抓取和分析脚本 - 配置化版本
-支持从 YAML 配置文件读取匹配规则
+HN AI 文章抓取和识别脚本
 """
 
 import requests
 import re
 import json
 import sys
-import yaml
-from pathlib import Path
-from bs4 import BeautifulSoup
-from datetime import datetime
+from html.parser import HTMLParser
 
-# 默认配置路径（脚本所在目录的父目录下的 config 文件夹）
-DEFAULT_CONFIG_PATH = Path(__file__).parent.parent / 'config' / 'match-config.yaml'
-
-class KeywordMatcher:
-    """关键词匹配器 - 支持多种匹配模式"""
-    
-    def __init__(self, config_path=None):
-        self.config_path = config_path or DEFAULT_CONFIG_PATH
-        self.config = self._load_config()
-        self.ai_keywords = self.config.get('ai_keywords', [])
-        self.ai_domains = self.config.get('ai_domains', [])
-        self.special_rules = self.config.get('special_rules', [])
-        self.global_config = self.config.get('config', {})
+class HNParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.articles = []
+        self.current_article = {}
+        self.in_title = False
+        self.in_score = False
+        self.in_age = False
+        self.current_tag = None
         
-        # 预编译正则表达式
-        self._compiled_patterns = []
-        self._compile_patterns()
-    
-    def _load_config(self):
-        """加载 YAML 配置"""
-        try:
-            with open(self.config_path, 'r', encoding='utf-8') as f:
-                return yaml.safe_load(f)
-        except FileNotFoundError:
-            print(f"警告：配置文件未找到 {self.config_path}，使用默认配置", file=sys.stderr)
-            return self._get_default_config()
-        except Exception as e:
-            print(f"错误：加载配置文件失败：{e}", file=sys.stderr)
-            return self._get_default_config()
-    
-    def _get_default_config(self):
-        """返回默认配置（向后兼容）"""
-        return {
-            'ai_keywords': [],
-            'ai_domains': [],
-            'special_rules': [],
-            'config': {'min_points': 30, 'max_pages': 5}
-        }
-    
-    def _compile_patterns(self):
-        """预编译正则表达式"""
-        for kw in self.ai_keywords:
-            pattern = kw.get('pattern', '')
-            mode = kw.get('mode', 'icontains')
+    def handle_starttag(self, tag, attrs):
+        attrs_dict = dict(attrs)
+        
+        if tag == 'tr' and 'class' in attrs_dict and 'athing' in attrs_dict['class']:
+            self.current_article = {}
+            if 'id' in attrs_dict:
+                self.current_article['id'] = attrs_dict['id']
+        
+        elif tag == 'a' and 'class' in attrs_dict and 'titleline' in attrs_dict.get('class', ''):
+            self.in_title = True
+            self.current_article['title'] = ''
+            if 'href' in attrs_dict and attrs_dict['href'].startswith('http'):
+                self.current_article['source_url'] = attrs_dict['href']
+        
+        elif tag == 'a' and self.in_title and 'href' in attrs_dict:
+            self.current_article['hn_url'] = attrs_dict['href']
             
-            try:
-                if mode == 'exact':
-                    # 精确匹配
-                    compiled = re.compile(re.escape(pattern))
-                elif mode == 'icontains':
-                    # 包含匹配（不区分大小写）
-                    compiled = re.compile(re.escape(pattern), re.IGNORECASE)
-                elif mode == 'word':
-                    # 单词匹配
-                    compiled = re.compile(r'\b' + re.escape(pattern) + r'\b')
-                elif mode == 'iword':
-                    # 单词匹配（不区分大小写）
-                    compiled = re.compile(r'\b' + re.escape(pattern) + r'\b', re.IGNORECASE)
-                elif mode == 'regex':
-                    # 正则表达式
-                    compiled = re.compile(pattern, re.IGNORECASE)
+        elif tag == 'span' and 'class' in attrs_dict and attrs_dict['class'] == 'score':
+            self.in_score = True
+            self.current_article['score_text'] = ''
+            
+        elif tag == 'span' and 'class' in attrs_dict and 'age' in attrs_dict.get('class', ''):
+            self.in_age = True
+            
+        elif tag == 'a' and self.in_age and 'href' in attrs_dict and 'item?id=' in attrs_dict['href']:
+            # 提取评论数
+            parent = self.get_starttag_text()
+            
+        elif tag == 'span' and 'class' in attrs_dict and 'subline' in attrs_dict.get('class', ''):
+            # 解析 subtext 行获取评论数
+            pass
+    
+    def handle_endtag(self, tag):
+        if tag == 'a' and self.in_title:
+            self.in_title = False
+        elif tag == 'span' and self.in_score:
+            self.in_score = False
+            # 解析分数
+            if 'score_text' in self.current_article:
+                match = re.search(r'(\d+)', self.current_article['score_text'])
+                if match:
+                    self.current_article['points'] = int(match.group(1))
                 else:
-                    # 默认：包含匹配
-                    compiled = re.compile(re.escape(pattern), re.IGNORECASE)
-                
-                self._compiled_patterns.append({
-                    'pattern': compiled,
-                    'mode': mode,
-                    'original': pattern
-                })
-            except re.error as e:
-                print(f"警告：正则表达式编译失败 '{pattern}': {e}", file=sys.stderr)
+                    self.current_article['points'] = 0
+        elif tag == 'span' and self.in_age:
+            self.in_age = False
+        elif tag == 'tr' and 'class' in self.current_article:
+            pass
     
-    def match(self, text, source=''):
-        """
-        判断文本是否匹配 AI 关键词
-        
-        Args:
-            text: 要匹配的文本（通常是标题）
-            source: 来源域名（可选）
-        
-        Returns:
-            bool: 是否匹配
-        """
-        full_text = f" {text} {source} "
-        
-        # 1. 检查关键词匹配
-        for item in self._compiled_patterns:
-            if item['pattern'].search(full_text):
-                # 检查是否有特殊规则
-                original = item['original']
-                special_rule = self._find_special_rule(original)
-                
-                if special_rule and special_rule.get('require_context'):
-                    # 需要上下文验证
-                    context_keywords = special_rule['require_context']
-                    for ctx in context_keywords:
-                        if ctx.lower() in full_text.lower():
-                            return True
-                    # 上下文不匹配，继续检查其他关键词
-                    continue
-                else:
-                    return True
-        
-        # 2. 检查域名匹配
-        for domain in self.ai_domains:
-            if domain.lower() in source.lower():
-                return True
-        
-        return False
+    def handle_data(self, data):
+        if self.in_title:
+            self.current_article['title'] += data
+        elif self.in_score:
+            self.current_article['score_text'] += data
+        elif self.current_article and 'id' in self.current_article:
+            # 尝试从 subtext 中提取评论数
+            if 'comments' not in self.current_article:
+                match = re.search(r'(\d+)\s*comments?', data)
+                if match:
+                    self.current_article['comments'] = int(match.group(1))
+                elif '0 comments' in data.lower() or data.strip() == 'discuss':
+                    self.current_article['comments'] = 0
     
-    def _find_special_rule(self, keyword):
-        """查找特殊规则"""
-        for rule in self.special_rules:
-            if rule.get('keyword', '').lower() == keyword.lower():
-                return rule
-        return None
-    
-    def get_match_info(self, text, source=''):
-        """
-        获取匹配详情（用于调试）
-        
-        Returns:
-            dict: 匹配的关键词和模式
-        """
-        full_text = f" {text} {source} "
-        matches = []
-        
-        for item in self._compiled_patterns:
-            if item['pattern'].search(full_text):
-                matches.append({
-                    'keyword': item['original'],
-                    'mode': item['mode']
-                })
-        
-        # 检查域名
-        for domain in self.ai_domains:
-            if domain.lower() in source.lower():
-                matches.append({
-                    'keyword': domain,
-                    'mode': 'domain'
-                })
-        
-        return {
-            'matched': len(matches) > 0,
-            'matches': matches,
-            'text': text,
-            'source': source
-        }
-
+    def feed_article(self, html):
+        self.feed(html)
+        return self.articles
 
 def fetch_hn_page(page=1):
-    """抓取 HN 页面"""
-    url = f"https://news.ycombinator.com/?p={page}" if page > 1 else "https://news.ycombinator.com/"
-    response = requests.get(url, headers={
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-    }, timeout=10)
+    """获取 HN 页面"""
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    }
+    url = f'https://news.ycombinator.com/?p={page}' if page > 1 else 'https://news.ycombinator.com/'
+    response = requests.get(url, headers=headers, timeout=30)
     return response.text
 
-
-def parse_hn_stories(html):
-    """解析 HN 故事列表"""
-    soup = BeautifulSoup(html, 'html.parser')
-    stories = []
-    
-    for tr in soup.find_all('tr', class_='athing'):
-        story = {
-            'id': '',
-            'rank': None,
-            'title': '',
-            'url': '',
-            'source': '',
-            'source_url': '',
-            'points': 0,
-            'comments': 0,
-            'time_ago': '',
-            'user': ''
-        }
-        
-        # 获取 ID
-        story_id = tr.get('id', '')
-        if story_id:
-            story['id'] = story_id
-        
-        # 排名
-        rank_td = tr.find('td', class_='rank')
-        if rank_td:
-            story['rank'] = int(rank_td.text.strip().rstrip('.'))
-        
-        # 标题和链接
-        title_span = tr.find('span', class_='titleline')
-        if title_span:
-            link = title_span.find('a')
-            if link:
-                story['title'] = link.text.strip()
-                story['url'] = link.get('href', '')
-            
-            # 来源
-            sitebit = title_span.find('span', class_='sitebit')
-            if sitebit:
-                site_link = sitebit.find('a')
-                if site_link:
-                    sitestr = site_link.find('span', class_='sitestr')
-                    story['source'] = sitestr.text if sitestr else ''
-                    story['source_url'] = site_link.get('href', '')
-        
-        # 获取 subtext（分数、评论等）
-        next_tr = tr.find_next_sibling('tr')
-        if next_tr and 'subtext' in str(next_tr.get('class', [])):
-            subtext = next_tr.find('span', class_='subline')
-            if subtext:
-                # 分数
-                score = subtext.find('span', class_='score')
-                if score:
-                    points_text = score.text.strip()
-                    match = re.search(r'(\d+)', points_text)
-                    if match:
-                        story['points'] = int(match.group(1))
-                
-                # 评论数
-                comments_links = subtext.find_all('a')
-                for link in comments_links:
-                    if 'comment' in link.text:
-                        match = re.search(r'(\d+)', link.text)
-                        if match:
-                            story['comments'] = int(match.group(1))
-                        break
-                
-                # 时间
-                age = subtext.find('span', class_='age')
-                if age:
-                    story['time_ago'] = age.text.strip()
-                
-                # 用户
-                user = subtext.find('a', class_='hnuser')
-                if user:
-                    story['user'] = user.text.strip()
-        
-        if story['id'] and story['title']:
-            stories.append(story)
-    
-    return stories
-
-
-def fetch_ai_stories(matcher, min_points=30, max_pages=5):
-    """抓取 AI 相关文章"""
-    all_stories = []
-    ai_stories_all = []
-    page = 1
-    
-    while page <= max_pages:
-        print(f"抓取第 {page} 页...", file=sys.stderr)
+def fetch_multiple_pages(max_pages=3):
+    """获取多页内容"""
+    all_html = ""
+    for page in range(1, max_pages + 1):
         try:
             html = fetch_hn_page(page)
-            stories = parse_hn_stories(html)
-            
-            if not stories:
-                break
-            
-            # 检查 AI 相关文章
-            for story in stories:
-                if matcher.match(story['title'], story['source']):
-                    ai_stories_all.append(story)
-            
-            all_stories.extend(stories)
-            
-            # 如果已经有足够多的高分文章，可以提前停止
-            high_score = [s for s in ai_stories_all if s['points'] >= min_points]
-            if len(high_score) >= 25:
-                break
-            
-            page += 1
+            all_html += html
+            print(f"   已抓取第 {page} 页", file=sys.stderr)
         except Exception as e:
-            print(f"抓取第 {page} 页失败：{e}", file=sys.stderr)
+            print(f"   第 {page} 页抓取失败：{e}", file=sys.stderr)
             break
-    
-    # 过滤分数
-    filtered = [s for s in ai_stories_all if s['points'] >= min_points]
-    
-    # 按分数排序
-    filtered.sort(key=lambda x: x['points'], reverse=True)
-    
-    print(f"总共抓取 {len(all_stories)} 篇文章，识别 {len(ai_stories_all)} 篇 AI 相关，过滤后 {len(filtered)} 篇（分数>={min_points}）", file=sys.stderr)
-    
-    return filtered, len(ai_stories_all), len(all_stories)
+    return all_html
 
+def is_ai_related(title, source_url=''):
+    """判断文章是否与 AI 相关"""
+    title_lower = title.lower()
+    source_lower = source_url.lower()
+    
+    ai_keywords = [
+        'ai ', ' ai,', ' ai.', ' ai!',
+        'artificial intelligence',
+        'machine learning', 'ml ', ' ml,',
+        'deep learning',
+        'neural network', 'neural networks',
+        'llm', 'llms',
+        'transformer', 'transformers',
+        'gpt', 'claude', 'gemini', 'llama',
+        'agent', 'agents', 'agentic',
+        'inference', 'inference engine',
+        'model', 'models',  # 需要结合上下文
+        'training', 'trained',
+        'fine-tuning', 'fine tuning',
+        'prompt', 'prompting',
+        'rag', 'retrieval-augmented',
+        'embedding', 'embeddings',
+        'diffusion', 'stable diffusion',
+        'generative', 'generation',
+        'nlp', 'natural language',
+        'computer vision',
+        'reinforcement learning',
+        'autonomous', 'auto-',
+        'hume.ai', 'openai', 'anthropic', 'meta ai',
+        'bitnet', 'vllm', 'ollama',
+        'gpu kernel', 'inference stack',
+    ]
+    
+    # 检查标题
+    for keyword in ai_keywords:
+        if keyword in title_lower:
+            return True
+    
+    # 检查来源
+    ai_domains = [
+        'hume.ai', 'openai.com', 'anthropic.com', 'ai.',
+        'arxiv.org', 'paperswithcode.com',
+        'huggingface', 'replicate',
+    ]
+    
+    for domain in ai_domains:
+        if domain in source_lower:
+            return True
+    
+    return False
+
+def parse_hn_html(html):
+    """解析 HN HTML 提取文章"""
+    articles = []
+    
+    # 提取所有 athing 行
+    article_pattern = r'<tr class="athing[^"]*"[^>]*id="(\d+)">'
+    article_ids = re.findall(article_pattern, html)
+    
+    for article_id in article_ids:
+        # 查找对应的标题区域
+        title_area_pattern = rf'id="{article_id}".*?<td class="title">(.*?)</td>'
+        title_match = re.search(title_area_pattern, html, re.DOTALL)
+        
+        if not title_match:
+            continue
+            
+        title_area = title_match.group(1)
+        
+        # 提取标题和链接
+        title_link_pattern = r'<a href="([^"]+)">([^<]+)</a>'
+        title_matches = re.findall(title_link_pattern, title_area)
+        
+        if not title_matches:
+            continue
+            
+        # 第一个链接是文章链接
+        source_url = title_matches[0][0]
+        title = title_matches[0][1].strip()
+        
+        # 查找分数 (在 subtext 行)
+        score_pattern = rf'id="{article_id}".*?<span class="score"[^>]*>(\d+) points</span>'
+        score_match = re.search(score_pattern, html, re.DOTALL)
+        points = int(score_match.group(1)) if score_match else 0
+        
+        # 查找评论数
+        comments_pattern = rf'id="{article_id}".*?href="item\?id={article_id}">(\d+)\s*comments?</a>'
+        comments_match = re.search(comments_pattern, html, re.DOTALL)
+        comments = int(comments_match.group(1)) if comments_match else 0
+        
+        # 处理相对链接
+        if source_url.startswith('item?'):
+            source_url = f'https://news.ycombinator.com/{source_url}'
+        elif not source_url.startswith('http'):
+            source_url = f'https://news.ycombinator.com/{source_url}'
+        
+        articles.append({
+            'id': article_id,
+            'source_url': source_url,
+            'title': title,
+            'points': points,
+            'comments': comments,
+            'hn_url': f'https://news.ycombinator.com/item?id={article_id}'
+        })
+    
+    return articles
 
 def main():
-    # 解析命令行参数
-    config_path = None
-    min_points = 30
-    debug = False
+    import os
+    print("📰 抓取 Hacker News...", file=sys.stderr)
     
-    args = sys.argv[1:]
-    i = 0
-    while i < len(args):
-        if args[i] == '--config' and i + 1 < len(args):
-            config_path = args[i + 1]
-            i += 2
-        elif args[i] == '--min-points' and i + 1 < len(args):
-            min_points = int(args[i + 1])
-            i += 2
-        elif args[i] == '--debug':
-            debug = True
-            i += 1
-        elif args[i].isdigit():
-            min_points = int(args[i])
-            i += 1
-        else:
-            i += 1
+    try:
+        html = fetch_multiple_pages(8)  # 抓取 8 页
+    except Exception as e:
+        print(f"❌ 抓取失败：{e}", file=sys.stderr)
+        sys.exit(1)
     
-    # 初始化匹配器
-    if config_path:
-        matcher = KeywordMatcher(Path(config_path))
-    else:
-        matcher = KeywordMatcher()
+    print("🔍 解析文章...", file=sys.stderr)
+    articles = parse_hn_html(html)
+    print(f"   共找到 {len(articles)} 篇文章", file=sys.stderr)
     
-    # 从配置读取最小分数（如果未指定）
-    if min_points == 30:
-        min_points = matcher.global_config.get('min_points', 30)
+    # 筛选 AI 相关文章
+    print("🤖 筛选 AI 相关文章...", file=sys.stderr)
+    ai_articles = [a for a in articles if is_ai_related(a['title'], a.get('source_url', ''))]
+    print(f"   找到 {len(ai_articles)} 篇 AI 相关文章", file=sys.stderr)
     
-    max_pages = matcher.global_config.get('max_pages', 5)
-    
-    print(f"使用配置文件：{matcher.config_path}", file=sys.stderr)
-    print(f"最小分数：{min_points}, 最大页数：{max_pages}", file=sys.stderr)
-    
-    # 抓取文章
-    stories, ai_total, total = fetch_ai_stories(matcher, min_points=min_points, max_pages=max_pages)
+    # 过滤分数>=30 的
+    print("📊 过滤分数>=30 的文章...", file=sys.stderr)
+    high_score_articles = [a for a in ai_articles if a['points'] >= 30]
+    low_score_count = len(ai_articles) - len(high_score_articles)
+    print(f"   高分文章：{len(high_score_articles)} 篇 | 低分过滤：{low_score_count} 篇", file=sys.stderr)
     
     # 输出结果
-    for story in stories:
-        if debug:
-            match_info = matcher.get_match_info(story['title'], story['source'])
-            story['_match_info'] = match_info
-        print(json.dumps(story, ensure_ascii=False))
-
+    result = {
+        'total_articles': len(articles),
+        'ai_articles': len(ai_articles),
+        'low_score_filtered': low_score_count,
+        'high_score_articles': len(high_score_articles),
+        'articles': sorted(high_score_articles, key=lambda x: x['points'], reverse=True)
+    }
+    
+    # 输出 JSON 到 stdout
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    
+    return result
 
 if __name__ == '__main__':
     main()
