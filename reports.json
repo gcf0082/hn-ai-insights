@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-13",
+    "time": "07:22",
+    "file": "datas/reports/2026-03-13/07-22-32.md",
+    "summary": "HN AI 每日分析 - 2026-03-13 · 抓取 34 篇 · 过滤 5 篇低分 (<30) · 跳过 22 篇已分析 · 深度分析 7 篇",
+    "articles": [
+      {
+        "title": "RAG 系统中的文档投毒：攻击者如何污染 AI 数据源",
+        "title_en": "Innocent woman jailed after being misidentified using AI facial recognition",
+        "url": "https://news.ycombinator.com/item?id=47350407",
+        "hnUrl": "https://news.ycombinator.com/item?id=47350407",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47350407",
+        "points": 34,
+        "comments": 11,
+        "hnId": "47350407"
+      },
+      {
+        "title": "无辜女性因 AI 人脸识别错误被判入狱",
+        "title_en": "Show HN: OneCLI – Vault for AI Agents in Rust",
+        "url": "https://news.ycombinator.com/item?id=47356968",
+        "hnUrl": "https://news.ycombinator.com/item?id=47356968",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47356968",
+        "points": 241,
+        "comments": 137,
+        "hnId": "47356968"
+      },
+      {
+        "title": "Show HN: OneCLI – Rust 编写的 AI 代理密钥管理工具",
+        "title_en": "Show HN: Understudy – Teach a desktop agent by demonstrating a task once",
+        "url": "https://news.ycombinator.com/item?id=47353558",
+        "hnUrl": "https://news.ycombinator.com/item?id=47353558",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47353558",
+        "points": 110,
+        "comments": 37,
+        "hnId": "47353558"
+      },
+      {
+        "title": "Launch HN: IonRouter – 高吞吐低成本的 AI 推理服务",
+        "title_en": "The Emotional Labor Behind AI Intimacy",
+        "url": "https://news.ycombinator.com/item?id=47355410",
+        "hnUrl": "https://news.ycombinator.com/item?id=47355410",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47355410",
+        "points": 35,
+        "comments": 14,
+        "hnId": "47355410"
+      },
+      {
+        "title": "Show HN: Understudy – 通过一次演示教桌面代理完成任务",
+        "title_en": "Amazon Employees Say AI Is Just Increasing Workload",
+        "url": "https://news.ycombinator.com/item?id=47353957",
+        "hnUrl": "https://news.ycombinator.com/item?id=47353957",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47353957",
+        "points": 73,
+        "comments": 20,
+        "hnId": "47353957"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-13",
     "time": "01:30",
     "file": "datas/reports/2026-03-13/01-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-13 · 抓取 270 篇 · 过滤 220 篇低分 (<30) · 跳过 44 篇已分析 · 深度分析 6 篇",
