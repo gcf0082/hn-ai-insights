@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-12",
+    "time": "12:30",
+    "file": "datas/reports/2026-03-12/12-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-12 · 抓取 150 篇 · 过滤 120 篇低分 (<30) · 跳过 37 篇已分析 · 深度分析 8 篇",
+    "articles": [
+      {
+        "title": "Show HN: Claude Code 的上下文感知权限守卫",
+        "title_en": "Show HN: A context-aware permission guard for Claude Code",
+        "url": "https://news.ycombinator.com/item?id=47343927",
+        "hnUrl": "https://news.ycombinator.com/item?id=47343927",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47343927",
+        "points": 61,
+        "comments": 31,
+        "hnId": "47343927"
+      },
+      {
+        "title": "CNN Explainer – 在浏览器中学习卷积神经网络",
+        "title_en": "CNN Explainer – Learn Convolutional Neural Network in Your Browser",
+        "url": "https://news.ycombinator.com/item?id=47296461",
+        "hnUrl": "https://news.ycombinator.com/item?id=47296461",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47296461",
+        "points": 38,
+        "comments": 2,
+        "hnId": "47296461"
+      },
+      {
+        "title": "Show HN: Autoresearch@home 自动研究工具",
+        "title_en": "Show HN: Autoresearch@home",
+        "url": "https://news.ycombinator.com/item?id=47343935",
+        "hnUrl": "https://news.ycombinator.com/item?id=47343935",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47343935",
+        "points": 50,
+        "comments": 10,
+        "hnId": "47343935"
+      },
+      {
+        "title": "HN 上有多少内容是 AI 生成的？",
+        "title_en": "How much of HN is AI?",
+        "url": "https://news.ycombinator.com/item?id=47344999",
+        "hnUrl": "https://news.ycombinator.com/item?id=47344999",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47344999",
+        "points": 78,
+        "comments": 36,
+        "hnId": "47344999"
+      },
+      {
+        "title": "AI 生产力提升的纵向研究初步数据",
+        "title_en": "Preliminary data from a longitudinal AI impact study",
+        "url": "https://news.ycombinator.com/item?id=47342139",
+        "hnUrl": "https://news.ycombinator.com/item?id=47342139",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47342139",
+        "points": 39,
+        "comments": 30,
+        "hnId": "47342139"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-12",
     "time": "07:20",
     "file": "datas/reports/2026-03-12/07-20-00.md",
     "summary": "HN AI 每日分析 - 2026-03-12 · 抓取 150 篇 · 过滤 115 篇低分 (<30) · 跳过 25 篇已分析 · 深度分析 10 篇",
