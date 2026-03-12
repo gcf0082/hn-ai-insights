@@ -1,6 +1,44 @@
 [
   {
     "date": "2026-03-12",
+    "time": "21:20",
+    "file": "datas/reports/2026-03-12/21-20-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-12 · 抓取 120 篇 · 过滤 85 篇低分 (<30) · 跳过 32 篇已分析 · 深度分析 3 篇",
+    "articles": [
+      {
+        "title": "LLM 时代的可靠软件",
+        "title_en": "Reliable Software in the LLM Era",
+        "url": "https://news.ycombinator.com/item?id=47347901",
+        "hnUrl": "https://news.ycombinator.com/item?id=47347901",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47347901",
+        "points": 33,
+        "comments": 13,
+        "hnId": "47347901"
+      },
+      {
+        "title": "LLM 是否不再进步？",
+        "title_en": "Are LLMs not getting better?",
+        "url": "https://news.ycombinator.com/item?id=47349334",
+        "hnUrl": "https://news.ycombinator.com/item?id=47349334",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47349334",
+        "points": 63,
+        "comments": 63,
+        "hnId": "47349334"
+      },
+      {
+        "title": "Sentrial: AI Agent 失败检测",
+        "title_en": "Launch HN: Sentrial (YC W26) – Catch AI agent failures before your users do",
+        "url": "https://news.ycombinator.com/item?id=47337659",
+        "hnUrl": "https://news.ycombinator.com/item?id=47337659",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47337659",
+        "points": 30,
+        "comments": 11,
+        "hnId": "47337659"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-12",
     "time": "18:34",
     "file": "datas/reports/2026-03-12/18-34-00.md",
     "summary": "HN AI 每日分析 - 2026-03-12 · 抓取 390 篇 · 过滤 350 篇低分 (<30) · 跳过 34 篇已分析 · 深度分析 6 篇",
