@@ -1,6 +1,24 @@
 [
   {
     "date": "2026-03-13",
+    "time": "21:20",
+    "file": "datas/reports/2026-03-13/21-20-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-13 · 抓取 60+ 篇 · 过滤 35 篇低分 (<30) · 跳过 49 篇已分析 · 深度分析 1 篇",
+    "articles": [
+      {
+        "title": "Prompt-caching 自动注入 Anthropic 缓存断点",
+        "title_en": "Prompt-caching – auto-injects Anthropic cache breakpoints (90% token savings)",
+        "url": "https://news.ycombinator.com/item?id=47363074",
+        "hnUrl": "https://news.ycombinator.com/item?id=47363074",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47363074",
+        "points": 36,
+        "comments": 18,
+        "hnId": "47363074"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-13",
     "time": "18:34",
     "file": "datas/reports/2026-03-13/18-34-00.md",
     "summary": "HN AI 每日分析 - 2026-03-13 · 抓取 150 篇 · 过滤 115 篇低分 (<30) · 跳过 33 篇已分析 · 深度分析 2 篇",
