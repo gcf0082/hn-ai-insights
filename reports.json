@@ -1,5 +1,33 @@
 [
   {
+    "date": "2026-03-15",
+    "time": "01:30",
+    "file": "datas/reports/2026-03-15/01-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-15 · 抓取 150 篇 · 过滤 132 篇低分 (<30) · 跳过 16 篇已分析 · 深度分析 10 篇",
+    "articles": [
+      {
+        "title": "田纳西州祖母因 AI 人脸识别错误入狱",
+        "title_en": "Tennessee grandmother jailed after AI face recognition error links her to fraud",
+        "url": "https://news.ycombinator.com/item?id=47359136",
+        "hnUrl": "https://news.ycombinator.com/item?id=47359136",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47359136",
+        "points": 102,
+        "comments": 25,
+        "hnId": "47359136"
+      },
+      {
+        "title": "Cursor 云代理的安全密钥管理方案",
+        "title_en": "Secure Secrets Management for Cursor Cloud Agents",
+        "url": "https://news.ycombinator.com/item?id=47318528",
+        "hnUrl": "https://news.ycombinator.com/item?id=47318528",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47318528",
+        "points": 32,
+        "comments": 5,
+        "hnId": "47318528"
+      }
+    ]
+  },
+  {
     "date": "2026-03-14",
     "time": "21:27",
     "file": "datas/reports/2026-03-14/21-27-00.md",
