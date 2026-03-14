@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-15",
+    "time": "07:23",
+    "file": "datas/reports/2026-03-15/07-23-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-15 · 抓取 210 篇 · 过滤 185 篇低分 (<30) · 跳过 15 篇已分析 · 深度分析 10 篇",
+    "articles": [
+      {
+        "title": "Claude 三月 2026 使用量促销",
+        "title_en": "Claude March 2026 usage promotion",
+        "url": "https://news.ycombinator.com/item?id=47380647",
+        "hnUrl": "https://news.ycombinator.com/item?id=47380647",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47380647",
+        "points": 148,
+        "comments": 96,
+        "hnId": "47380647"
+      },
+      {
+        "title": "请不要 A/B 测试我的工作流程",
+        "title_en": "Please do not A/B test my workflow",
+        "url": "https://news.ycombinator.com/item?id=47375682",
+        "hnUrl": "https://news.ycombinator.com/item?id=47375682",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47375682",
+        "points": 154,
+        "comments": 200,
+        "hnId": "47375682"
+      },
+      {
+        "title": "2026 年 3 月科技裁员达 45,000 人",
+        "title_en": "2026 tech layoffs reach 45,000 in March",
+        "url": "https://news.ycombinator.com/item?id=47380405",
+        "hnUrl": "https://news.ycombinator.com/item?id=47380405",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47380405",
+        "points": 140,
+        "comments": 120,
+        "hnId": "47380405"
+      },
+      {
+        "title": "MCP 已死；MCP 万岁",
+        "title_en": "MCP is dead; long live MCP",
+        "url": "https://news.ycombinator.com/item?id=47380270",
+        "hnUrl": "https://news.ycombinator.com/item?id=47380270",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47380270",
+        "points": 95,
+        "comments": 87,
+        "hnId": "47380270"
+      },
+      {
+        "title": "GitAgent：将任何 Git 仓库变成 AI agent 的开放标准",
+        "title_en": "Show HN: GitAgent – An open standard that turns any Git repo into an AI agent",
+        "url": "https://news.ycombinator.com/item?id=47376584",
+        "hnUrl": "https://news.ycombinator.com/item?id=47376584",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47376584",
+        "points": 82,
+        "comments": 12,
+        "hnId": "47376584"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-15",
     "time": "01:30",
     "file": "datas/reports/2026-03-15/01-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-15 · 抓取 150 篇 · 过滤 132 篇低分 (<30) · 跳过 16 篇已分析 · 深度分析 10 篇",
