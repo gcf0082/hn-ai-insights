@@ -1,6 +1,92 @@
 [
   {
     "date": "2026-03-14",
+    "time": "21:27",
+    "file": "datas/reports/2026-03-14/21-27-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-14 · 抓取 209 篇 · 过滤 161 篇非 AI · 跳过 41 篇已分析 · 深度分析 2 篇",
+    "articles": [
+      {
+        "title": "XML 是一种廉价的 DSL",
+        "title_en": "XML Is a Cheap DSL",
+        "url": "https://news.ycombinator.com/item?id=47375764",
+        "hnUrl": "https://news.ycombinator.com/item?id=47375764",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47375764",
+        "points": 60,
+        "comments": 20,
+        "hnId": "47375764"
+      },
+      {
+        "title": "DDR4 SDRAM – 初始化、训练和校准",
+        "title_en": "DDR4 Sdram – Initialization, Training and Calibration",
+        "url": "https://news.ycombinator.com/item?id=47319539",
+        "hnUrl": "https://news.ycombinator.com/item?id=47319539",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47319539",
+        "points": 101,
+        "comments": 27,
+        "hnId": "47319539"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-14",
+    "time": "21:25",
+    "file": "datas/reports/2026-03-14/21-25-47.md",
+    "summary": "HN AI 每日分析 - 2026-03-14 · 抓取 100 篇 · 过滤 71 篇非 AI · 深度分析 10 篇",
+    "articles": [
+      {
+        "title": "计算机科学先驱 Tony Hoare 逝世",
+        "title_en": "Tony Hoare has died",
+        "url": "https://news.ycombinator.com/item?id=47324054",
+        "hnUrl": "https://news.ycombinator.com/item?id=47324054",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47324054",
+        "points": 1333,
+        "comments": 185,
+        "hnId": "47324054"
+      },
+      {
+        "title": "亚马逊要求高级工程师签署 AI 辅助变更",
+        "title_en": "After outages, Amazon to make senior engineers sign off on AI-assisted changes",
+        "url": "https://news.ycombinator.com/item?id=47323017",
+        "hnUrl": "https://news.ycombinator.com/item?id=47323017",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47323017",
+        "points": 338,
+        "comments": 336,
+        "hnId": "47323017"
+      },
+      {
+        "title": "在我睡觉时运行的 AI 代理",
+        "title_en": "macOS Tahoe windows have different corner radiuses",
+        "url": "https://news.ycombinator.com/item?id=47327559",
+        "hnUrl": "https://news.ycombinator.com/item?id=47327559",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47327559",
+        "points": 175,
+        "comments": 123,
+        "hnId": "47327559"
+      },
+      {
+        "title": "Yann LeCun 融资 10 亿美元打造理解物理世界的 AI",
+        "title_en": "Yann LeCun raises $1B to build AI that understands the physical world",
+        "url": "https://news.ycombinator.com/item?id=47320600",
+        "hnUrl": "https://news.ycombinator.com/item?id=47320600",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47320600",
+        "points": 270,
+        "comments": 296,
+        "hnId": "47320600"
+      },
+      {
+        "title": "Launch HN: RunAnywhere 加速 Apple Silicon 上的 AI 推理",
+        "title_en": "Agents that run while I sleep",
+        "url": "https://news.ycombinator.com/item?id=47326101",
+        "hnUrl": "https://news.ycombinator.com/item?id=47326101",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47326101",
+        "points": 166,
+        "comments": 76,
+        "hnId": "47326101"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-14",
     "time": "18:38",
     "file": "datas/reports/2026-03-14/18-38-08.md",
     "summary": "HN AI 每日分析 - 2026-03-14 · 抓取 270 篇 · 过滤 245 篇低分 (<30) · 跳过 221 篇已分析 · 深度分析 4 篇",
