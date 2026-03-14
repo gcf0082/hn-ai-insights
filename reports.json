@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-14",
+    "time": "12:30",
+    "file": "datas/reports/2026-03-14/12-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-14 · 抓取 42 篇 · 过滤 17 篇低分 (<30) · 跳过 37 篇已分析 · 深度分析 5 篇",
+    "articles": [
+      {
+        "title": "1M 上下文窗口正式可用：Opus 4.6 和 Sonnet 4.6",
+        "title_en": "1M context is now generally available for Opus 4.6 and Sonnet 4.6",
+        "url": "https://news.ycombinator.com/item?id=47367129",
+        "hnUrl": "https://news.ycombinator.com/item?id=47367129",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47367129",
+        "points": 419,
+        "comments": 143,
+        "hnId": "47367129"
+      },
+      {
+        "title": "John Carmack 谈开源与反 AI 活动家",
+        "title_en": "John Carmack about open source and anti-AI activists",
+        "url": "https://news.ycombinator.com/item?id=47367463",
+        "hnUrl": "https://news.ycombinator.com/item?id=47367463",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47367463",
+        "points": 264,
+        "comments": 373,
+        "hnId": "47367463"
+      },
+      {
+        "title": "编程之后：AI 时代编程工作的终结",
+        "title_en": "Coding after coders: The end of computer programming as we know it",
+        "url": "https://news.ycombinator.com/item?id=47348733",
+        "hnUrl": "https://news.ycombinator.com/item?id=47348733",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47348733",
+        "points": 82,
+        "comments": 59,
+        "hnId": "47348733"
+      },
+      {
+        "title": "JEPA 用于实时语音翻译探索",
+        "title_en": "Exploring JEPA for real-time speech translation",
+        "url": "https://news.ycombinator.com/item?id=47332883",
+        "hnUrl": "https://news.ycombinator.com/item?id=47332883",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47332883",
+        "points": 38,
+        "comments": 8,
+        "hnId": "47332883"
+      },
+      {
+        "title": "你可以关闭 Claude 最烦人的功能",
+        "title_en": "You can turn Claude's most annoying feature off",
+        "url": "https://news.ycombinator.com/item?id=47356360",
+        "hnUrl": "https://news.ycombinator.com/item?id=47356360",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47356360",
+        "points": 31,
+        "comments": 17,
+        "hnId": "47356360"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-14",
     "time": "07:20",
     "file": "datas/reports/2026-03-14/07-20-00.md",
     "summary": "HN AI 每日分析 - 2026-03-14 · 抓取 85 篇 · 过滤 1 篇低分 (<30) · 跳过 8 篇已分析 · 深度分析 10 篇",
