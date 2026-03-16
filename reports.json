@@ -1,5 +1,63 @@
 [
   {
+    "date": "2026-03-17",
+    "time": "01:30",
+    "file": "datas/reports/2026-03-17/01-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-17 · 抓取 300 篇 · 过滤 270 篇低分 (<30) · 跳过 223 篇已分析 · 深度分析 7 篇",
+    "articles": [
+      {
+        "title": "本地语音助手实践之旅",
+        "title_en": "My Journey to a reliable and enjoyable locally hosted voice assistant",
+        "url": "https://news.ycombinator.com/item?id=47398534",
+        "hnUrl": "https://news.ycombinator.com/item?id=47398534",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47398534",
+        "points": 153,
+        "comments": 44,
+        "hnId": "47398534"
+      },
+      {
+        "title": "Andrej Karpathy 美国就业市场可视化",
+        "title_en": "US Job Market Visualizer – Andrej Karpathy",
+        "url": "https://news.ycombinator.com/item?id=47400060",
+        "hnUrl": "https://news.ycombinator.com/item?id=47400060",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47400060",
+        "points": 170,
+        "comments": 148,
+        "hnId": "47400060"
+      },
+      {
+        "title": "宝可梦玩家无意中用 300 亿张图像训练配送机器人",
+        "title_en": "'Pokémon Go' players unknowingly trained delivery robots with 30B images",
+        "url": "https://news.ycombinator.com/item?id=47398479",
+        "hnUrl": "https://news.ycombinator.com/item?id=47398479",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47398479",
+        "points": 101,
+        "comments": 56,
+        "hnId": "47398479"
+      },
+      {
+        "title": "MCP 服务器正在吞噬你的上下文窗口",
+        "title_en": "MCP Server Is Eating Your Context Window. There's a Simpler Way",
+        "url": "https://news.ycombinator.com/item?id=47400261",
+        "hnUrl": "https://news.ycombinator.com/item?id=47400261",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47400261",
+        "points": 51,
+        "comments": 61,
+        "hnId": "47400261"
+      },
+      {
+        "title": "机器人执行器中的电机缩放定律与惯性",
+        "title_en": "Electric motor scaling laws and inertia in robot actuators",
+        "url": "https://news.ycombinator.com/item?id=47350016",
+        "hnUrl": "https://news.ycombinator.com/item?id=47350016",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47350016",
+        "points": 151,
+        "comments": 30,
+        "hnId": "47350016"
+      }
+    ]
+  },
+  {
     "date": "2026-03-16",
     "time": "21:30",
     "file": "datas/reports/2026-03-16/21-30-00.md",
