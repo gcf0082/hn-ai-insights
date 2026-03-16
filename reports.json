@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-16",
+    "time": "12:30",
+    "file": "datas/reports/2026-03-16/12-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-16 · 抓取 270 篇 · 过滤 240 篇低分 (<30) · 跳过 24 篇已分析 · 深度分析 10 篇",
+    "articles": [
+      {
+        "title": "什么是代理工程？",
+        "title_en": "What is agentic engineering?",
+        "url": "https://news.ycombinator.com/item?id=47393908",
+        "hnUrl": "https://news.ycombinator.com/item?id=47393908",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47393908",
+        "points": 88,
+        "comments": 51,
+        "hnId": "47393908"
+      },
+      {
+        "title": "LLM 让人筋疲力尽",
+        "title_en": "LLMs can be exhausting",
+        "url": "https://news.ycombinator.com/item?id=47391803",
+        "hnUrl": "https://news.ycombinator.com/item?id=47391803",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47391803",
+        "points": 128,
+        "comments": 94,
+        "hnId": "47391803"
+      },
+      {
+        "title": "AI 工具让我对 CS 基础失去兴趣",
+        "title_en": "AI tools are making me lose interest in CS fundamentals",
+        "url": "https://news.ycombinator.com/item?id=47394291",
+        "hnUrl": "https://news.ycombinator.com/item?id=47394291",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47394291",
+        "points": 47,
+        "comments": 38,
+        "hnId": "47394291"
+      },
+      {
+        "title": "我如何用 LLM 编写软件",
+        "title_en": "How I write software with LLMs",
+        "url": "https://news.ycombinator.com/item?id=47394022",
+        "hnUrl": "https://news.ycombinator.com/item?id=47394022",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47394022",
+        "points": 42,
+        "comments": 6,
+        "hnId": "47394022"
+      },
+      {
+        "title": "Show HN: 用 ChatGPT 账号免费获取 OpenAI API",
+        "title_en": "Show HN: Free OpenAI API Access with ChatGPT Account",
+        "url": "https://news.ycombinator.com/item?id=47392158",
+        "hnUrl": "https://news.ycombinator.com/item?id=47392158",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47392158",
+        "points": 39,
+        "comments": 16,
+        "hnId": "47392158"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-16",
     "time": "07:20",
     "file": "datas/reports/2026-03-16/07-20-00.md",
     "summary": "HN AI 每日分析 - 2026-03-16 · 抓取 270 篇 · 过滤 263 篇低分 (<30) · 跳过 193 篇已分析 · 深度分析 7 篇",
