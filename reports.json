@@ -1,6 +1,34 @@
 [
   {
     "date": "2026-03-16",
+    "time": "18:30",
+    "file": "datas/reports/2026-03-16/18-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-16 · 抓取 390 篇 · 过滤 365 篇低分 (<30) · 跳过 23 篇已分析 · 深度分析 2 篇",
+    "articles": [
+      {
+        "title": "Vibe Coding 原型与产品间的 100 小时差距",
+        "title_en": "The 100 hour gap between a vibecoded prototype and a working product",
+        "url": "https://news.ycombinator.com/item?id=47386636",
+        "hnUrl": "https://news.ycombinator.com/item?id=47386636",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47386636",
+        "points": 238,
+        "comments": 317,
+        "hnId": "47386636"
+      },
+      {
+        "title": "Show HN: ESP32 上的 OpenClaw 级代理",
+        "title_en": "Show HN: OpenClaw-class agents on ESP32 (and the IDE that makes it possible)",
+        "url": "https://news.ycombinator.com/item?id=47357515",
+        "hnUrl": "https://news.ycombinator.com/item?id=47357515",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47357515",
+        "points": 30,
+        "comments": 6,
+        "hnId": "47357515"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-16",
     "time": "12:30",
     "file": "datas/reports/2026-03-16/12-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-16 · 抓取 270 篇 · 过滤 240 篇低分 (<30) · 跳过 24 篇已分析 · 深度分析 10 篇",
