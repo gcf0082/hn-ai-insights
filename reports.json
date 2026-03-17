@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-18",
+    "time": "07:22",
+    "file": "datas/reports/2026-03-18/07-22-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-18 · 抓取 35 篇 · 过滤 18 篇低分 (<30) · 跳过 26 篇已分析 · 深度分析 9 篇",
+    "articles": [
+      {
+        "title": "GPT‑5.4 Mini 和 Nano 发布",
+        "title_en": "GPT‑5.4 Mini and Nano",
+        "url": "https://news.ycombinator.com/item?id=47415441",
+        "hnUrl": "https://news.ycombinator.com/item?id=47415441",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47415441",
+        "points": 200,
+        "comments": 123,
+        "hnId": "47415441"
+      },
+      {
+        "title": "Meta Horizon Worlds 即将停运",
+        "title_en": "Meta Horizon Worlds on Meta Quest is being discontinued",
+        "url": "https://news.ycombinator.com/item?id=47416940",
+        "hnUrl": "https://news.ycombinator.com/item?id=47416940",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47416940",
+        "points": 140,
+        "comments": 147,
+        "hnId": "47416940"
+      },
+      {
+        "title": "Meta 和 TikTok 纵容有害内容",
+        "title_en": "Meta and TikTok let harmful content rise to drove engagement, say whistleblowers",
+        "url": "https://news.ycombinator.com/item?id=47417814",
+        "hnUrl": "https://news.ycombinator.com/item?id=47417814",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47417814",
+        "points": 139,
+        "comments": 74,
+        "hnId": "47417814"
+      },
+      {
+        "title": "GSD：元提示与规范驱动开发系统",
+        "title_en": "Get Shit Done: A Meta-Prompting, Context Engineering and Spec-Driven Dev System",
+        "url": "https://news.ycombinator.com/item?id=47417804",
+        "hnUrl": "https://news.ycombinator.com/item?id=47417804",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47417804",
+        "points": 127,
+        "comments": 77,
+        "hnId": "47417804"
+      },
+      {
+        "title": "Unsloth Studio 发布",
+        "title_en": "Unsloth Studio",
+        "url": "https://news.ycombinator.com/item?id=47414032",
+        "hnUrl": "https://news.ycombinator.com/item?id=47414032",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47414032",
+        "points": 102,
+        "comments": 27,
+        "hnId": "47414032"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-18",
     "time": "01:30",
     "file": "datas/reports/2026-03-18/01-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-18 · 抓取 120 篇 · 过滤 85 篇低分 (<30) · 跳过 32 篇已分析 · 深度分析 3 篇",
