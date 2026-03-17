@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-17",
+    "time": "21:30",
+    "file": "datas/reports/2026-03-17/21-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-17 · 抓取 89 篇 · 过滤 3 篇低分 (<30) · 跳过 15 篇已分析 · 深度分析 10 篇",
+    "articles": [
+      {
+        "title": "Leanstral：用于可信编码和形式化证明的开源代理",
+        "title_en": "Leanstral: Open-source agent for trustworthy coding and formal proof engineering",
+        "url": "https://news.ycombinator.com/item?id=47404796",
+        "hnUrl": "https://news.ycombinator.com/item?id=47404796",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47404796",
+        "points": 617,
+        "comments": 136,
+        "hnId": "47404796"
+      },
+      {
+        "title": "我如何用 LLM 编写软件",
+        "title_en": "How I write software with LLMs",
+        "url": "https://news.ycombinator.com/item?id=47394022",
+        "hnUrl": "https://news.ycombinator.com/item?id=47394022",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47394022",
+        "points": 507,
+        "comments": 487,
+        "hnId": "47394022"
+      },
+      {
+        "title": "Chrome DevTools MCP 调试工具",
+        "title_en": "Chrome DevTools MCP (2025)",
+        "url": "https://news.ycombinator.com/item?id=47390817",
+        "hnUrl": "https://news.ycombinator.com/item?id=47390817",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47390817",
+        "points": 586,
+        "comments": 231,
+        "hnId": "47390817"
+      },
+      {
+        "title": "LLM 架构画廊",
+        "title_en": "LLM Architecture Gallery",
+        "url": "https://news.ycombinator.com/item?id=47388676",
+        "hnUrl": "https://news.ycombinator.com/item?id=47388676",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47388676",
+        "points": 566,
+        "comments": 42,
+        "hnId": "47388676"
+      },
+      {
+        "title": "我的可靠本地语音助手之旅",
+        "title_en": "My Journey to a reliable and enjoyable locally hosted voice assistant (2025)",
+        "url": "https://news.ycombinator.com/item?id=47398534",
+        "hnUrl": "https://news.ycombinator.com/item?id=47398534",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47398534",
+        "points": 390,
+        "comments": 119,
+        "hnId": "47398534"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-17",
     "time": "18:30",
     "file": "datas/reports/2026-03-17/18-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-17 · 抓取 35 篇 · 过滤 18 篇低分 (<30) · 跳过 15 篇已分析 · 深度分析 2 篇",
