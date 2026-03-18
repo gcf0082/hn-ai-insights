@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-18",
+    "time": "21:20",
+    "file": "datas/reports/2026-03-18/21-20-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-18 · 抓取 35 篇 · 过滤 18 篇低分 (<30) · 跳过 12 篇已分析 · 深度分析 5 篇",
+    "articles": [
+      {
+        "title": "衡量 AGI 进展：认知框架",
+        "title_en": "Measuring progress toward AGI: A cognitive framework",
+        "url": "https://news.ycombinator.com/item?id=47424458",
+        "hnUrl": "https://news.ycombinator.com/item?id=47424458",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47424458",
+        "points": 48,
+        "comments": 62,
+        "hnId": "47424458"
+      },
+      {
+        "title": "Eon 团队虚拟具身苍蝇模拟",
+        "title_en": "How the Eon Team Produced a Virtual Embodied Fly",
+        "url": "https://news.ycombinator.com/item?id=47393324",
+        "hnUrl": "https://news.ycombinator.com/item?id=47393324",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47393324",
+        "points": 42,
+        "comments": 10,
+        "hnId": "47393324"
+      },
+      {
+        "title": "2 行代码启动沙箱 AI 代理",
+        "title_en": "Launch an autonomous AI agent with sandboxed execution in 2 lines of code",
+        "url": "https://news.ycombinator.com/item?id=47420493",
+        "hnUrl": "https://news.ycombinator.com/item?id=47420493",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47420493",
+        "points": 48,
+        "comments": 20,
+        "hnId": "47420493"
+      },
+      {
+        "title": "OpenAI 新焦点：IPO 筹备",
+        "title_en": "OpenAI Has New Focus (On the IPO)",
+        "url": "https://news.ycombinator.com/item?id=47423976",
+        "hnUrl": "https://news.ycombinator.com/item?id=47423976",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47423976",
+        "points": 64,
+        "comments": 71,
+        "hnId": "47423976"
+      },
+      {
+        "title": "Kagi 考虑移除专业版助手",
+        "title_en": "Kagi is contemplating the removal of the assistant from its professional tier",
+        "url": "https://news.ycombinator.com/item?id=47423624",
+        "hnUrl": "https://news.ycombinator.com/item?id=47423624",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47423624",
+        "points": 37,
+        "comments": 62,
+        "hnId": "47423624"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-18",
     "time": "18:33",
     "file": "datas/reports/2026-03-18/18-33-37.md",
     "summary": "HN AI 每日分析 - 2026-03-18 · 抓取 89 篇 · 过滤 2 篇低分 (<30) · 跳过 11 篇已分析 · 深度分析 3 篇",
