@@ -1,258 +1,152 @@
 #!/usr/bin/env python3
 """
-HN AI 文章抓取和识别脚本
+HN AI 文章抓取脚本 - 最终版
 """
 
-import requests
 import re
-import json
 import sys
-from html.parser import HTMLParser
+import json
+import subprocess
 
-class HNParser(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.articles = []
-        self.current_article = {}
-        self.in_title = False
-        self.in_score = False
-        self.in_age = False
-        self.current_tag = None
-        
-    def handle_starttag(self, tag, attrs):
-        attrs_dict = dict(attrs)
-        
-        if tag == 'tr' and 'class' in attrs_dict and 'athing' in attrs_dict['class']:
-            self.current_article = {}
-            if 'id' in attrs_dict:
-                self.current_article['id'] = attrs_dict['id']
-        
-        elif tag == 'a' and 'class' in attrs_dict and 'titleline' in attrs_dict.get('class', ''):
-            self.in_title = True
-            self.current_article['title'] = ''
-            if 'href' in attrs_dict and attrs_dict['href'].startswith('http'):
-                self.current_article['source_url'] = attrs_dict['href']
-        
-        elif tag == 'a' and self.in_title and 'href' in attrs_dict:
-            self.current_article['hn_url'] = attrs_dict['href']
-            
-        elif tag == 'span' and 'class' in attrs_dict and attrs_dict['class'] == 'score':
-            self.in_score = True
-            self.current_article['score_text'] = ''
-            
-        elif tag == 'span' and 'class' in attrs_dict and 'age' in attrs_dict.get('class', ''):
-            self.in_age = True
-            
-        elif tag == 'a' and self.in_age and 'href' in attrs_dict and 'item?id=' in attrs_dict['href']:
-            # 提取评论数
-            parent = self.get_starttag_text()
-            
-        elif tag == 'span' and 'class' in attrs_dict and 'subline' in attrs_dict.get('class', ''):
-            # 解析 subtext 行获取评论数
-            pass
-    
-    def handle_endtag(self, tag):
-        if tag == 'a' and self.in_title:
-            self.in_title = False
-        elif tag == 'span' and self.in_score:
-            self.in_score = False
-            # 解析分数
-            if 'score_text' in self.current_article:
-                match = re.search(r'(\d+)', self.current_article['score_text'])
-                if match:
-                    self.current_article['points'] = int(match.group(1))
-                else:
-                    self.current_article['points'] = 0
-        elif tag == 'span' and self.in_age:
-            self.in_age = False
-        elif tag == 'tr' and 'class' in self.current_article:
-            pass
-    
-    def handle_data(self, data):
-        if self.in_title:
-            self.current_article['title'] += data
-        elif self.in_score:
-            self.current_article['score_text'] += data
-        elif self.current_article and 'id' in self.current_article:
-            # 尝试从 subtext 中提取评论数
-            if 'comments' not in self.current_article:
-                match = re.search(r'(\d+)\s*comments?', data)
-                if match:
-                    self.current_article['comments'] = int(match.group(1))
-                elif '0 comments' in data.lower() or data.strip() == 'discuss':
-                    self.current_article['comments'] = 0
-    
-    def feed_article(self, html):
-        self.feed(html)
-        return self.articles
+# AI 相关关键词
+AI_KEYWORDS = [
+    'AI', 'artificial intelligence', 'machine learning', 'ML', 'deep learning',
+    'neural network', 'LLM', 'large language model', 'transformer',
+    'GPT', 'Claude', 'Anthropic', 'OpenAI', 'Mistral', 'Gemini',
+    'stable diffusion', 'diffusion model', 'generative AI', 'gen AI',
+    'agent', 'autonomous', 'prompt', 'embedding', 'fine-tuning',
+    'inference', 'training', 'model', 'AI safety', 'alignment',
+    'RAG', 'retrieval', 'vector database', 'embeddings',
+    'Unsloth', 'forge', 'coding agent', 'AI coding', 'Copilot',
+    'meta-prompting', 'context engineering'
+]
 
 def fetch_hn_page(page=1):
-    """获取 HN 页面"""
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-    }
+    """使用 curl 抓取 HN 页面"""
     url = f'https://news.ycombinator.com/?p={page}' if page > 1 else 'https://news.ycombinator.com/'
-    response = requests.get(url, headers=headers, timeout=30)
-    return response.text
+    
+    result = subprocess.run(
+        ['curl', '-s', '-A', 'Mozilla/5.0', url],
+        capture_output=True,
+        text=True,
+        timeout=15
+    )
+    
+    return result.stdout
 
-def fetch_multiple_pages(max_pages=3):
-    """获取多页内容"""
-    all_html = ""
-    for page in range(1, max_pages + 1):
-        try:
-            html = fetch_hn_page(page)
-            all_html += html
-            print(f"   已抓取第 {page} 页", file=sys.stderr)
-        except Exception as e:
-            print(f"   第 {page} 页抓取失败：{e}", file=sys.stderr)
-            break
-    return all_html
+def parse_hn_stories(html):
+    """解析 HN 故事"""
+    stories = []
+    
+    # 找到所有故事起始位置
+    story_matches = list(re.finditer(r'<tr\s+class="athing\s+submission"\s+id="(\d+)">', html))
+    
+    for i, match in enumerate(story_matches):
+        story_id = match.group(1)
+        start_pos = match.end()
+        
+        # 查找标题
+        title_match = re.search(r'<span\s+class="titleline">\s*<a\s+href="([^"]+)"[^>]*>(.+?)</a>', html[start_pos:start_pos+600])
+        if not title_match:
+            continue
+        
+        url = title_match.group(1)
+        title = re.sub(r'&#x27;', "'", title_match.group(2))
+        title = re.sub(r'<[^>]+>', '', title).strip()
+        
+        # 查找来源
+        source_match = re.search(r'<span\s+class="sitestr">([^<]+)</span>', html[start_pos:start_pos+600])
+        source = source_match.group(1).strip() if source_match else ''
+        
+        # 在剩余 HTML 中查找分数 - 扩大搜索范围
+        remaining = html[start_pos:]
+        
+        # 查找分数 - 使用更宽松的正则
+        score_match = re.search(r'<span\s+class="score"[^>]*>(\d+)\s+points', remaining)
+        score = int(score_match.group(1)) if score_match else 0
+        
+        # 查找评论数
+        comments_match = re.search(r'(\d+)\s+comments?', remaining[:800])
+        comments = int(comments_match.group(1)) if comments_match else 0
+        
+        stories.append({
+            'id': story_id,
+            'title': title,
+            'url': url,
+            'source': source,
+            'score': score,
+            'comments': comments,
+            'hn_url': f'https://news.ycombinator.com/item?id={story_id}'
+        })
+    
+    return stories
 
-def is_ai_related(title, source_url=''):
-    """判断文章是否与 AI 相关"""
-    title_lower = title.lower()
-    source_lower = source_url.lower()
+def is_ai_related(title, source=''):
+    """判断是否 AI 相关"""
+    text = f"{title} {source}".lower()
     
-    ai_keywords = [
-        'ai ', ' ai,', ' ai.', ' ai!',
-        'artificial intelligence',
-        'machine learning', 'ml ', ' ml,',
-        'deep learning',
-        'neural network', 'neural networks',
-        'llm', 'llms',
-        'transformer', 'transformers',
-        'gpt', 'claude', 'gemini', 'llama',
-        'agent', 'agents', 'agentic',
-        'inference', 'inference engine',
-        'model', 'models',  # 需要结合上下文
-        'training', 'trained',
-        'fine-tuning', 'fine tuning',
-        'prompt', 'prompting',
-        'rag', 'retrieval-augmented',
-        'embedding', 'embeddings',
-        'diffusion', 'stable diffusion',
-        'generative', 'generation',
-        'nlp', 'natural language',
-        'computer vision',
-        'reinforcement learning',
-        'autonomous', 'auto-',
-        'hume.ai', 'openai', 'anthropic', 'meta ai',
-        'bitnet', 'vllm', 'ollama',
-        'gpu kernel', 'inference stack',
-    ]
-    
-    # 检查标题
-    for keyword in ai_keywords:
-        if keyword in title_lower:
-            return True
-    
-    # 检查来源
-    ai_domains = [
-        'hume.ai', 'openai.com', 'anthropic.com', 'ai.',
-        'arxiv.org', 'paperswithcode.com',
-        'huggingface', 'replicate',
-    ]
-    
-    for domain in ai_domains:
-        if domain in source_lower:
+    for keyword in AI_KEYWORDS:
+        if keyword.lower() in text:
             return True
     
     return False
 
-def parse_hn_html(html):
-    """解析 HN HTML 提取文章"""
-    articles = []
-    
-    # 提取所有 athing 行
-    article_pattern = r'<tr class="athing[^"]*"[^>]*id="(\d+)">'
-    article_ids = re.findall(article_pattern, html)
-    
-    for article_id in article_ids:
-        # 查找对应的标题区域
-        title_area_pattern = rf'id="{article_id}".*?<td class="title">(.*?)</td>'
-        title_match = re.search(title_area_pattern, html, re.DOTALL)
-        
-        if not title_match:
-            continue
-            
-        title_area = title_match.group(1)
-        
-        # 提取标题和链接
-        title_link_pattern = r'<a href="([^"]+)">([^<]+)</a>'
-        title_matches = re.findall(title_link_pattern, title_area)
-        
-        if not title_matches:
-            continue
-            
-        # 第一个链接是文章链接
-        source_url = title_matches[0][0]
-        title = title_matches[0][1].strip()
-        
-        # 查找分数 (在 subtext 行)
-        score_pattern = rf'id="{article_id}".*?<span class="score"[^>]*>(\d+) points</span>'
-        score_match = re.search(score_pattern, html, re.DOTALL)
-        points = int(score_match.group(1)) if score_match else 0
-        
-        # 查找评论数
-        comments_pattern = rf'id="{article_id}".*?href="item\?id={article_id}">(\d+)\s*comments?</a>'
-        comments_match = re.search(comments_pattern, html, re.DOTALL)
-        comments = int(comments_match.group(1)) if comments_match else 0
-        
-        # 处理相对链接
-        if source_url.startswith('item?'):
-            source_url = f'https://news.ycombinator.com/{source_url}'
-        elif not source_url.startswith('http'):
-            source_url = f'https://news.ycombinator.com/{source_url}'
-        
-        articles.append({
-            'id': article_id,
-            'source_url': source_url,
-            'title': title,
-            'points': points,
-            'comments': comments,
-            'hn_url': f'https://news.ycombinator.com/item?id={article_id}'
-        })
-    
-    return articles
-
 def main():
-    import os
-    print("📰 抓取 Hacker News...", file=sys.stderr)
+    """主函数"""
+    print("🕷️ 开始抓取 Hacker News...")
     
-    try:
-        html = fetch_multiple_pages(8)  # 抓取 8 页
-    except Exception as e:
-        print(f"❌ 抓取失败：{e}", file=sys.stderr)
-        sys.exit(1)
+    all_stories = []
+    pages_to_fetch = 3
     
-    print("🔍 解析文章...", file=sys.stderr)
-    articles = parse_hn_html(html)
-    print(f"   共找到 {len(articles)} 篇文章", file=sys.stderr)
+    for page in range(1, pages_to_fetch + 1):
+        print(f"   抓取第 {page} 页...")
+        try:
+            html = fetch_hn_page(page)
+            stories = parse_hn_stories(html)
+            all_stories.extend(stories)
+            print(f"   找到 {len(stories)} 篇文章")
+        except Exception as e:
+            print(f"   抓取第 {page} 页失败：{e}")
+    
+    print(f"\n📊 共抓取 {len(all_stories)} 篇文章")
     
     # 筛选 AI 相关文章
-    print("🤖 筛选 AI 相关文章...", file=sys.stderr)
-    ai_articles = [a for a in articles if is_ai_related(a['title'], a.get('source_url', ''))]
-    print(f"   找到 {len(ai_articles)} 篇 AI 相关文章", file=sys.stderr)
+    ai_stories_all = [s for s in all_stories if is_ai_related(s['title'], s['source'])]
+    print(f"\n🤖 AI 相关文章：{len(ai_stories_all)} 篇")
     
-    # 过滤分数>=30 的
-    print("📊 过滤分数>=30 的文章...", file=sys.stderr)
-    high_score_articles = [a for a in ai_articles if a['points'] >= 30]
-    low_score_count = len(ai_articles) - len(high_score_articles)
-    print(f"   高分文章：{len(high_score_articles)} 篇 | 低分过滤：{low_score_count} 篇", file=sys.stderr)
+    # 显示前 10 篇 AI 文章
+    print("\n所有 AI 相关文章:")
+    for s in ai_stories_all[:15]:
+        print(f"   [{s['score']}分] {s['title'][:50]}... (ID: {s['id']})")
+    
+    # 过滤分数>=30
+    high_score_stories = [s for s in ai_stories_all if s['score'] >= 30]
+    low_score_count = len(ai_stories_all) - len(high_score_stories)
+    print(f"\n🔥 分数>=30: {len(high_score_stories)} 篇 (过滤 {low_score_count} 篇低分)")
+    
+    # 按分数排序
+    high_score_stories.sort(key=lambda x: x['score'], reverse=True)
     
     # 输出结果
-    result = {
-        'total_articles': len(articles),
-        'ai_articles': len(ai_articles),
-        'low_score_filtered': low_score_count,
-        'high_score_articles': len(high_score_articles),
-        'articles': sorted(high_score_articles, key=lambda x: x['points'], reverse=True)
+    print(f"\n📋 高分 AI 文章列表:")
+    for i, story in enumerate(high_score_stories, 1):
+        title_short = story['title'][:50] + '...' if len(story['title']) > 50 else story['title']
+        print(f"  {i}. [{story['score']}分] {title_short} (ID: {story['id']})")
+    
+    # 保存为 JSON
+    output = {
+        'total_fetched': len(all_stories),
+        'ai_related': len(ai_stories_all),
+        'filtered_low_score': low_score_count,
+        'high_score_ai': len(high_score_stories),
+        'stories': high_score_stories
     }
     
-    # 输出 JSON 到 stdout
-    print(json.dumps(result, ensure_ascii=False, indent=2))
+    output_file = '/root/hacknews/.state/hn-raw.json'
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
     
-    return result
+    print(f"\n✅ 数据已保存到 {output_file}")
 
 if __name__ == '__main__':
     main()
