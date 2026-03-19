@@ -1,5 +1,63 @@
 [
   {
+    "date": "2026-03-20",
+    "time": "01:30",
+    "file": "datas/reports/2026-03-20/01-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-20 · 抓取 270 篇 · 过滤 215 篇低分 (<30) · 跳过 50 篇已分析 · 深度分析 5 篇",
+    "articles": [
+      {
+        "title": "Astral 加入 OpenAI",
+        "title_en": "Astral to Join OpenAI",
+        "url": "https://news.ycombinator.com/item?id=47438723",
+        "hnUrl": "https://news.ycombinator.com/item?id=47438723",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47438723",
+        "points": 755,
+        "comments": 475,
+        "hnId": "47438723"
+      },
+      {
+        "title": "Show HN: Kitten TTS 三款新模型 – 最小不到 25MB",
+        "title_en": "Show HN: Three new Kitten TTS models – smallest less than 25MB",
+        "url": "https://news.ycombinator.com/item?id=47441546",
+        "hnUrl": "https://news.ycombinator.com/item?id=47441546",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47441546",
+        "points": 75,
+        "comments": 16,
+        "hnId": "47441546"
+      },
+      {
+        "title": "通过神经细胞自动机预训练语言模型",
+        "title_en": "Pretraining Language Models via Neural Cellular Automata",
+        "url": "https://news.ycombinator.com/item?id=47388293",
+        "hnUrl": "https://news.ycombinator.com/item?id=47388293",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47388293",
+        "points": 80,
+        "comments": 14,
+        "hnId": "47388293"
+      },
+      {
+        "title": "基于 BEAM 的个人自主 AI 智能体",
+        "title_en": "A BEAM-native personal autonomous AI agent built on Elixir/OTP",
+        "url": "https://news.ycombinator.com/item?id=47431883",
+        "hnUrl": "https://news.ycombinator.com/item?id=47431883",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47431883",
+        "points": 30,
+        "comments": 1,
+        "hnId": "47431883"
+      },
+      {
+        "title": "政府在艺术家抗议后撤回 AI 版权提案",
+        "title_en": "Government backtracks on AI and copyright after outcry from major artists",
+        "url": "https://news.ycombinator.com/item?id=47427698",
+        "hnUrl": "https://news.ycombinator.com/item?id=47427698",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47427698",
+        "points": 30,
+        "comments": 10,
+        "hnId": "47427698"
+      }
+    ]
+  },
+  {
     "date": "2026-03-19",
     "time": "21:25",
     "file": "datas/reports/2026-03-19/21-25-00.md",
