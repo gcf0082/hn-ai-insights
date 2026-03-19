@@ -1,6 +1,34 @@
 [
   {
     "date": "2026-03-19",
+    "time": "18:30",
+    "file": "datas/reports/2026-03-19/18-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-19 · 抓取 300 篇 · 过滤 260 篇非 AI/低分 (<30) · 跳过 36 篇已分析 · 深度分析 2 篇",
+    "articles": [
+      {
+        "title": "8.1 万用户想要的 AI",
+        "title_en": "What 81,000 people want from AI",
+        "url": "https://news.ycombinator.com/item?id=47435156",
+        "hnUrl": "https://news.ycombinator.com/item?id=47435156",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47435156",
+        "points": 128,
+        "comments": 105,
+        "hnId": "47435156"
+      },
+      {
+        "title": "AI 聊天机器人验证妄想研究",
+        "title_en": "AI chatbots often validate delusions and suicidal thoughts, study finds",
+        "url": "https://news.ycombinator.com/item?id=47428718",
+        "hnUrl": "https://news.ycombinator.com/item?id=47428718",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47428718",
+        "points": 33,
+        "comments": 11,
+        "hnId": "47428718"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-19",
     "time": "12:30",
     "file": "datas/reports/2026-03-19/12-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-19 · 抓取 360 篇 · 过滤 25 篇低分 (<30) · 跳过 42 篇已分析 · 深度分析 8 篇",
