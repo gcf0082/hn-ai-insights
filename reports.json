@@ -1,6 +1,71 @@
 [
   {
     "date": "2026-03-20",
+    "time": "07:22",
+    "file": "datas/reports/2026-03-20/07-22-51.md",
+    "summary": "HN AI 每日分析 - 2026-03-20 · 抓取 29 篇 · 过滤 2 篇低分 (<30) · 跳过 6 篇已分析 · 深度分析 10 篇",
+    "articles": [
+      {
+        "title": "Google details new 24-hour process to sideload unverified Android apps",
+        "title_en": "A sufficiently detailed spec is code",
+        "url": "https://news.ycombinator.com/item?id=47442690",
+        "hnUrl": "https://news.ycombinator.com/item?id=47442690",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47442690",
+        "points": 393,
+        "comments": 0,
+        "hnId": "47442690"
+      },
+      {
+        "title": "Noq: n0&#x27;s new QUIC implementation in Rust",
+        "title_en": "Nightingale – open-source karaoke app that works with any song on your computer",
+        "url": "https://news.ycombinator.com/item?id=47443588",
+        "hnUrl": "https://news.ycombinator.com/item?id=47443588",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47443588",
+        "points": 128,
+        "comments": 0,
+        "hnId": "47443588"
+      },
+      {
+        "title": "Scaling Karpathy&#x27;s Autoresearch: What Happens When the Agent Gets a GPU Cluster",
+        "title_en": "Google details new 24-hour process to sideload unverified Android apps",
+        "url": "https://news.ycombinator.com/item?id=47442435",
+        "hnUrl": "https://news.ycombinator.com/item?id=47442435",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47442435",
+        "points": 104,
+        "comments": 0,
+        "hnId": "47442435"
+      },
+      {
+        "title": "Anthropic 对 OpenCode 采取法律行动",
+        "title_en": "Anthropic takes legal action against OpenCode",
+        "url": "https://news.ycombinator.com/item?id=47444748",
+        "hnUrl": "https://news.ycombinator.com/item?id=47444748",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47444748",
+        "points": 334,
+        "comments": 0,
+        "hnId": "47444748"
+      },
+      {
+        "title": "A rogue AI led to a serious security incident at Meta",
+        "title_en": "Tesla: Failure of the FSD&#x27;s degradation detection system [pdf]",
+        "url": "https://news.ycombinator.com/item?id=47444195",
+        "hnUrl": "https://news.ycombinator.com/item?id=47444195",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47444195",
+        "points": 117,
+        "comments": 0,
+        "hnId": "47444195"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-20",
+    "time": "07:21",
+    "file": "datas/reports/2026-03-20/07-21-18.md",
+    "summary": "HN AI 每日分析 - 2026-03-20 · 抓取 0 篇 · 过滤 0 篇低分 (<30) · 跳过 0 篇已分析 · 深度分析 0 篇",
+    "articles": []
+  },
+  {
+    "date": "2026-03-20",
     "time": "01:30",
     "file": "datas/reports/2026-03-20/01-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-20 · 抓取 270 篇 · 过滤 215 篇低分 (<30) · 跳过 50 篇已分析 · 深度分析 5 篇",
