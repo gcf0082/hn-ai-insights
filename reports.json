@@ -1,5 +1,63 @@
 [
   {
+    "date": "2026-03-21",
+    "time": "01:37",
+    "file": "datas/reports/2026-03-21/01-37-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-21 · 抓取 480 篇 · 过滤 450 篇低分 (<30) · 跳过 24 篇已分析 · 深度分析 6 篇",
+    "articles": [
+      {
+        "title": "MacBook M5 Pro 与 Qwen3.5 打造本地 AI 安全系统",
+        "title_en": "MacBook M5 Pro and Qwen3.5 = Local AI Security System",
+        "url": "https://news.ycombinator.com/item?id=47457107",
+        "hnUrl": "https://news.ycombinator.com/item?id=47457107",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47457107",
+        "points": 36,
+        "comments": 32,
+        "hnId": "47457107"
+      },
+      {
+        "title": "Super Micro 股价暴跌 25%，联合创始人因 25 亿美元 AI 芯片走私被起诉",
+        "title_en": "Super Micro Shares Plunge 25% After Co-Founder Charged in $2.5B Smuggling Plot",
+        "url": "https://news.ycombinator.com/item?id=47455365",
+        "hnUrl": "https://news.ycombinator.com/item?id=47455365",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47455365",
+        "points": 115,
+        "comments": 43,
+        "hnId": "47455365"
+      },
+      {
+        "title": "英国埃塞克斯警方因种族偏见研究暂停面部识别摄像头",
+        "title_en": "Essex police pause facial recognition camera use after study finds racial bias",
+        "url": "https://news.ycombinator.com/item?id=47452248",
+        "hnUrl": "https://news.ycombinator.com/item?id=47452248",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47452248",
+        "points": 38,
+        "comments": 35,
+        "hnId": "47452248"
+      },
+      {
+        "title": "AI (2014)",
+        "title_en": "AI (2014)",
+        "url": "https://news.ycombinator.com/item?id=47453010",
+        "hnUrl": "https://news.ycombinator.com/item?id=47453010",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47453010",
+        "points": 60,
+        "comments": 59,
+        "hnId": "47453010"
+      },
+      {
+        "title": "AI 并未扼杀开发者——正在制造 10 万亿美元维护危机",
+        "title_en": "AI Isn't Killing Developers–It's Creating a $10T Maintenance Crisis",
+        "url": "https://news.ycombinator.com/item?id=47440207",
+        "hnUrl": "https://news.ycombinator.com/item?id=47440207",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47440207",
+        "points": 34,
+        "comments": 12,
+        "hnId": "47440207"
+      }
+    ]
+  },
+  {
     "date": "2026-03-20",
     "time": "21:25",
     "file": "datas/reports/2026-03-20/21-25-10.md",
