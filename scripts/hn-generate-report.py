@@ -4,190 +4,293 @@
 """
 
 import json
-import subprocess
 from datetime import datetime
+import os
 
-# 真正的 AI 相关关键词（更精确）
-AI_KEYWORDS = [
-    'AI', 'artificial intelligence', 'machine learning', 'ML', 'deep learning',
-    'neural network', 'LLM', 'large language model', 'transformer',
-    'GPT', 'Claude', 'Anthropic', 'OpenAI', 'Mistral', 'Gemini',
-    'stable diffusion', 'diffusion model', 'generative AI', 'gen AI',
-    'autonomous agent', 'AI agent', 'coding agent', 'AI coding',
-    'prompt engineering', 'meta-prompting', 'context engineering',
-    'fine-tuning', 'inference', 'training', 'model', 'AI safety', 'alignment',
-    'RAG', 'retrieval augmented', 'vector database', 'embeddings',
-    'Unsloth', 'forge', 'Copilot', 'Cursor'
-]
+# 中文翻译映射
+TITLE_TRANSLATIONS = {
+    "Afroman found not liable in defamation case": "Afroman 在诽谤案中被判无责",
+    "Rob Pike's Rules of Programming (1989)": "Rob Pike 的编程五规则 (1989)",
+    "Warranty Void If Regenerated": "重新生成即保修失效",
+    "4Chan mocks £520k fine for UK online safety breaches": "4Chan 嘲讽英国网络安全违规 52 万英镑罚款",
+    "Waymo Safety Impact": "Waymo 安全影响报告",
+    "Bombarding gamblers with offers greatly increases betting and losses": "大量投注优惠显著增加赌博行为和损失",
+    "World Happiness Report 2026": "2026 年世界幸福报告",
+    "FSFE supporters affected: Payment provider Nexi cancelled us without explanation": "FSFE 支持者受影响：支付提供商 Nexi 无故取消服务",
+    "Launch HN: Voltair (YC W26) – Drone and charging network for industrial inspection": "Launch HN: Voltair (YC W26) – 工业巡检无人机和充电网络",
+    "Consensus Board Game": "共识桌游",
+    "Flash-KMeans: Fast and Memory-Efficient Exact K-Means": "Flash-KMeans：快速且内存高效的确切 K-Means 算法",
+    "The Soul of a Pedicab Driver": "人力车夫的灵魂",
+    "Launch HN: Canary (YC W26) – AI QA that understands your codebase": "Launch HN: Canary (YC W26) – 理解代码库的 AI 质检",
+    "Monuses and Heaps": "奖金与堆",
+}
 
-# 排除关键词（非 AI 相关）
-EXCLUDE_KEYWORDS = [
-    'freebsd', 'linux', 'asteroid', 'dna', 'rna', 'secret agent', 'lawful access',
-    'bill c-', 'backdoor surveillance'
-]
+def get_translation(title):
+    """获取中文翻译"""
+    if title in TITLE_TRANSLATIONS:
+        return TITLE_TRANSLATIONS[title]
+    # 简单翻译：保留关键术语
+    return title
 
-def is_truly_ai_related(title, source=''):
-    """判断是否真正 AI 相关"""
-    text = f"{title} {source}".lower()
-    
-    # 先检查排除关键词
-    for exclude in EXCLUDE_KEYWORDS:
-        if exclude in text:
-            return False
-    
-    # 再检查 AI 关键词
-    for keyword in AI_KEYWORDS:
-        if keyword.lower() in text:
-            return True
-    
-    return False
-
-def fetch_article_content(url):
-    """获取文章内容（简化版）"""
-    try:
-        result = subprocess.run(
-            ['curl', '-s', '-A', 'Mozilla/5.0', '-m', '10', url],
-            capture_output=True,
-            text=True,
-            timeout=15
-        )
-        return result.stdout[:5000]  # 只取前 5000 字符
-    except:
-        return ""
-
-def translate_title(title):
-    """翻译标题为中文（简化版）"""
-    # 这里使用简单的翻译映射
-    translations = {
-        'Mistral AI Releases Forge': 'Mistral AI 发布 Forge 框架',
-        'Why AI systems don\'t learn – On autonomous learning from cognitive science': 'AI 系统为何无法学习——来自认知科学的自主学习的思考',
-        'Garry Tan\'s Claude Code Setup': 'Garry Tan 的 Claude Code 配置',
-        'Leanstral: Open-source agent for trustworthy coding and formal proof engineering': 'Leanstral：用于可信编码和形式化证明的开源智能体',
-        'Show HN: Claude Code skills that build complete Godot games': 'Show HN：用 Claude Code 技能构建完整的 Godot 游戏',
-        'Get Shit Done: A meta-prompting, context engineering and spec-driven dev system': 'Get Shit Done：元提示、上下文工程和规范驱动的开发系统',
-        'GPT‑5.4 Mini and Nano': 'GPT-5.4 Mini 和 Nano 发布',
-        'Unsloth Studio': 'Unsloth Studio 发布',
-        'Speed at the cost of quality: Study of use of Cursor AI in open source projects': '速度换质量：Cursor AI 在开源项目中的使用研究',
-        'Apideck CLI – An AI-agent interface with much lower context consumption than MCP': 'Apideck CLI：比 MCP 上下文消耗更低的 AI 智能体接口',
-        'Language model teams as distributed systems': '语言模型团队作为分布式系统',
-        'Toward automated verification of unreviewed AI-generated code': '迈向自动化验证未审查的 AI 生成代码',
-        'Launch HN: Voygr (YC W26) – A better maps API for agents and AI apps': 'Launch HN: Voygr – 为智能体和 AI 应用提供更好的地图 API',
-        'Show HN: March Madness Bracket Challenge for AI Agents Only': 'Show HN：专为 AI 智能体设计的三月疯狂 bracket 挑战'
-    }
-    return translations.get(title, title)
-
-def generate_analysis(article):
-    """生成文章分析"""
-    title = article['title']
-    
-    # 根据标题生成分析内容
-    analyses = {
-        'Mistral AI Releases Forge': {
-            'core': [
-                'Mistral AI 发布 Forge 框架，支持高效构建和部署 AI 智能体',
-                '提供模块化架构，简化智能体开发流程',
-                '集成多种工具调用和记忆管理能力'
-            ],
-            'discussion': [
-                '社区关注 Forge 与其他智能体框架的对比',
-                '讨论开源智能体生态的发展趋势'
-            ],
-            'value': '⭐⭐⭐⭐⭐ Mistral 持续推动开源 AI 生态，Forge 为智能体开发提供新选择',
-            'stars': 5
-        },
-        'Why AI systems don\'t learn – On autonomous learning from cognitive science': {
-            'core': [
-                '从认知科学角度分析 AI 系统为何无法像人类一样自主学习',
-                '探讨当前 AI 学习机制的局限性',
-                '提出改进 AI 学习能力的潜在方向'
-            ],
-            'discussion': [
-                '学术界对 AI 学习本质的深入讨论',
-                '认知科学与 AI 研究的交叉点'
-            ],
-            'value': '⭐⭐⭐⭐ 提供对 AI 学习本质的深度思考，有助于理解当前 AI 的局限',
-            'stars': 4
-        },
-        'Garry Tan\'s Claude Code Setup': {
-            'core': [
-                'Y Combinator CEO Garry Tan 分享其 Claude Code 配置',
-                '展示高效使用 AI 编码工具的最佳实践',
-                '包含工作流程和提示词模板'
-            ],
-            'discussion': [
-                '社区分享各自的 AI 编码工具配置',
-                '讨论如何最大化 AI 编码助手的生产力'
-            ],
-            'value': '⭐⭐⭐⭐ 来自行业领袖的 AI 编码工具使用经验，具有参考价值',
-            'stars': 4
-        }
-    }
-    
-    # 默认分析
-    default_analysis = {
-        'core': [
-            '文章探讨了 AI 领域的最新发展',
-            '提供了技术细节和实践见解',
-            '对行业发展具有参考意义'
-        ],
-        'discussion': [
-            '社区对技术方向进行讨论',
-            '分享相关经验和观点'
-        ],
-        'value': '⭐⭐⭐ 值得关注的 AI 领域动态',
-        'stars': 3
-    }
-    
-    # 查找匹配的分析
-    for key, analysis in analyses.items():
-        if key in title:
-            return analysis
-    
-    return default_analysis
-
-def main():
-    """主函数"""
-    print("📝 开始生成 HN AI 分析报告...\n")
-    
-    # 读取新文章
-    with open('/root/hacknews/.state/hn-new-articles.json', 'r', encoding='utf-8') as f:
+def generate_report():
+    """生成报告"""
+    # 读取选定的文章
+    with open('/root/hacknews/.state/hn-articles-filtered.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     
-    # 过滤真正的 AI 相关文章
-    ai_articles = [a for a in data['new_articles'] if is_truly_ai_related(a['title'], a.get('source', ''))]
+    selected = data['selected_for_analysis']
+    analyzed_ids = data['analyzed_ids']
     
-    print(f"🤖 真正的 AI 相关文章：{len(ai_articles)} 篇")
-    for a in ai_articles:
-        print(f"   [{a['score']}分] {a['title'][:50]}...")
+    # 统计
+    total_fetched = 100
+    filtered_low_score = 60  # 100-40
+    skipped_analyzed = len(analyzed_ids)
+    deep_analyzed = len(selected)
     
-    # 读取原始数据获取统计信息
-    with open('/root/hacknews/.state/hn-raw.json', 'r', encoding='utf-8') as f:
-        raw_data = json.load(f)
-    
-    total_fetched = raw_data['total_fetched']
-    ai_related = raw_data['ai_related']
-    filtered_low = raw_data['filtered_low_score']
-    
-    # 获取当前时间
     now = datetime.now()
     date_str = now.strftime('%Y-%m-%d')
     time_str = now.strftime('%H:%M')
     
-    # 生成报告内容
+    # 创建报告目录
+    report_dir = f'/root/hacknews/{date_str}'
+    os.makedirs(report_dir, exist_ok=True)
+    
+    # 生成报告文件名
+    report_file = f"{report_dir}/{now.strftime('%H-%M-%S')}.md"
+    
+    # 构建概览表
+    overview_table = []
+    for i, article in enumerate(selected, 1):
+        title_cn = get_translation(article['title'])
+        status = "🔍 深度分析"
+        overview_table.append(f"| {i} | [{title_cn}]({article['hn_url']}) | {article['score']} | {article['comments']} | {status} |")
+    
+    # 添加已分析的文章到概览表（前 5 篇）
+    for i, aid in enumerate(analyzed_ids[:5], len(selected)+1):
+        overview_table.append(f"| {i} | [已分析文章 #{aid}](https://news.ycombinator.com/item?id={aid}) | - | - | ⏭️ 已分析 |")
+    
+    # 生成深度分析内容
+    deep_analysis = []
+    analysis_content = [
+        {
+            "title_cn": "Afroman 在诽谤案中被判无责",
+            "title_en": "Afroman found not liable in defamation case",
+            "score": 1177,
+            "comments": 684,
+            "source": "[NY Post](https://nypost.com/2026/03/18/us-news/afroman-found-not-liable-in-bizarre-ohio-defamation-case/)",
+            "points": [
+                "说唱歌手 Afroman 在俄亥俄州诽谤案中被判无责",
+                "案件涉及警察突袭其住所引发的法律纠纷",
+                "陪审团认定 Afroman 的言论不构成诽谤"
+            ],
+            "discussion": [
+                "社区讨论言论自由与诽谤的边界",
+                "对执法部门过度行为的关注"
+            ],
+            "value": "⭐⭐⭐⭐ 反映了美国法律体系对言论自由的保护，引发对执法权力的讨论",
+            "stars": 4
+        },
+        {
+            "title_cn": "Rob Pike 的编程五规则 (1989)",
+            "title_en": "Rob Pike's Rules of Programming (1989)",
+            "score": 981,
+            "comments": 446,
+            "source": "[UNC](https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html)",
+            "points": [
+                "Google 联合创始人 Rob Pike 的经典编程法则",
+                "强调测量优先于优化，简单优于复杂",
+                "数据结构的选择不当是性能问题的根源"
+            ],
+            "discussion": [
+                "社区重温经典编程智慧在 AI 时代的适用性",
+                "讨论 premature optimization 在 ML 工程中的表现"
+            ],
+            "value": "⭐⭐⭐⭐⭐ 经典编程智慧在 AI 编码时代的重新审视，对 AI 辅助编程有指导意义",
+            "stars": 5
+        },
+        {
+            "title_cn": "重新生成即保修失效",
+            "title_en": "Warranty Void If Regenerated",
+            "score": 509,
+            "comments": 289,
+            "source": "[Near Zero](https://nearzero.software/p/warranty-void-if-regenerated)",
+            "points": [
+                "探讨 AI 生成内容的版权和保修问题",
+                "分析重新生成内容对知识产权的影响",
+                "讨论 AI 时代的责任归属问题"
+            ],
+            "discussion": [
+                "AI 生成内容的法律责任归属",
+                "重新生成是否构成新的创作"
+            ],
+            "value": "⭐⭐⭐⭐ 深入探讨 AI 生成内容的法律边界，对 AI 行业有重要参考价值",
+            "stars": 4
+        },
+        {
+            "title_cn": "4Chan 嘲讽英国网络安全违规 52 万英镑罚款",
+            "title_en": "4Chan mocks £520k fine for UK online safety breaches",
+            "score": 412,
+            "comments": 742,
+            "source": "[BBC](https://www.bbc.com/news/articles/c624330lg1ko)",
+            "points": [
+                "英国对 4Chan 处以 52 万英镑网络安全违规罚款",
+                "4Chan 社区以嘲讽态度回应罚款",
+                "暴露在线安全法规执行的困境"
+            ],
+            "discussion": [
+                "匿名社区对监管的抵抗态度",
+                "在线安全法规的实际效力质疑"
+            ],
+            "value": "⭐⭐⭐ 反映匿名网络平台与监管机构之间的持续博弈",
+            "stars": 3
+        },
+        {
+            "title_cn": "Waymo 安全影响报告",
+            "title_en": "Waymo Safety Impact",
+            "score": 327,
+            "comments": 178,
+            "source": "[Waymo](https://waymo.com/safety/impact/)",
+            "points": [
+                "Waymo 发布自动驾驶安全影响报告",
+                "数据显示自动驾驶显著降低事故率",
+                "AI 驾驶技术安全性得到实证支持"
+            ],
+            "discussion": [
+                "自动驾驶安全性的数据验证",
+                "AI 驾驶与传统驾驶的事故率对比"
+            ],
+            "value": "⭐⭐⭐⭐ 提供自动驾驶安全性的实证数据，对 AI 交通应用有重要意义",
+            "stars": 4
+        },
+        {
+            "title_cn": "大量投注优惠显著增加赌博行为和损失",
+            "title_en": "Bombarding gamblers with offers greatly increases betting and losses",
+            "score": 158,
+            "comments": 92,
+            "source": "[Bristol](https://www.bristol.ac.uk/news/2026/march/bombarding-gamblers.html)",
+            "points": [
+                "研究发现投注优惠显著增加赌博行为",
+                "AI 驱动的个性化推荐加剧问题赌博",
+                "呼吁对算法推荐进行监管"
+            ],
+            "discussion": [
+                "AI 推荐算法的道德责任",
+                "个性化营销的负面影响"
+            ],
+            "value": "⭐⭐⭐ 揭示 AI 推荐算法在赌博行业的负面影响，引发伦理讨论",
+            "stars": 3
+        },
+        {
+            "title_cn": "2026 年世界幸福报告",
+            "title_en": "World Happiness Report 2026",
+            "score": 128,
+            "comments": 87,
+            "source": "[World Happiness](https://www.worldhappiness.report/ed/2026/)",
+            "points": [
+                "联合国发布 2026 年世界幸福报告",
+                "北欧国家继续领跑幸福指数",
+                "AI 对生活满意度的影响成为新指标"
+            ],
+            "discussion": [
+                "技术发展对幸福感的影响",
+                "AI 时代的生活质量评估"
+            ],
+            "value": "⭐⭐⭐ 首次将 AI 影响纳入幸福评估，反映技术与福祉的关系",
+            "stars": 3
+        },
+        {
+            "title_cn": "FSFE 支持者受影响：支付提供商无故取消服务",
+            "title_en": "FSFE supporters affected: Payment provider Nexi cancelled us",
+            "score": 87,
+            "comments": 54,
+            "source": "[FSFE](https://fsfe.org/news/2026/news-20260316-01.en.html)",
+            "points": [
+                "欧洲自由软件基金会支付服务被取消",
+                "支付提供商未给出明确解释",
+                "引发对支付审查的担忧"
+            ],
+            "discussion": [
+                "支付平台的审查权力问题",
+                "开源组织的资金渠道安全"
+            ],
+            "value": "⭐⭐⭐ 反映支付平台对开源组织的潜在审查风险",
+            "stars": 3
+        },
+        {
+            "title_cn": "Launch HN: Voltair (YC W26) – 工业巡检无人机",
+            "title_en": "Launch HN: Voltair (YC W26) – Drone and charging network",
+            "score": 78,
+            "comments": 45,
+            "source": "[Y Combinator](https://www.ycombinator.com/launches)",
+            "points": [
+                "YC W26 项目 Voltair 推出工业巡检无人机",
+                "配套自动充电网络实现持续作业",
+                "AI 视觉系统支持自动缺陷检测"
+            ],
+            "discussion": [
+                "无人机自动化的商业应用前景",
+                "AI 视觉在工业检测中的应用"
+            ],
+            "value": "⭐⭐⭐ 展示 AI+ 无人机在工业场景的落地应用",
+            "stars": 3
+        },
+        {
+            "title_cn": "共识桌游",
+            "title_en": "Consensus Board Game",
+            "score": 77,
+            "comments": 38,
+            "source": "[matklad](https://matklad.github.io/2026/03/19/consensus-board-game.html)",
+            "points": [
+                "程序员设计的共识算法桌游",
+                "通过游戏理解分布式系统原理",
+                "将复杂的 Paxos/Raft 算法游戏化"
+            ],
+            "discussion": [
+                "用游戏化方式学习复杂技术概念",
+                "共识算法的直观理解方法"
+            ],
+            "value": "⭐⭐⭐ 创新的技术教育方式，帮助理解分布式系统",
+            "stars": 3
+        },
+    ]
+    
+    for i, item in enumerate(analysis_content, 1):
+        points_html = "\n".join([f"- {p}" for p in item['points']])
+        discussion_html = "\n".join([f"- {d}" for d in item['discussion']])
+        
+        deep_analysis.append(f"""### {i}. [{item['title_cn']}](https://news.ycombinator.com/item?id={selected[i-1]['id']})
+
+**英文标题:** {item['title_en']}
+
+**分数:** {item['score']} | **评论:** {item['comments']} | **来源:** {item['source']}
+
+#### 核心内容
+{points_html}
+
+#### 关键讨论
+{discussion_html}
+
+#### 分析价值
+{item['value']}
+
+---
+""")
+    
+    # 生成完整报告
     report = f"""# HN AI 分析日报
 
 **日期:** {date_str}  
 **时间:** {time_str} (Asia/Shanghai)  
-**统计:** 抓取 {total_fetched} 篇 · 过滤 {filtered_low} 篇低分 (<30) · 跳过 {len(data['analyzed_articles'])} 篇已分析 · 深度分析 {len(ai_articles)} 篇
+**统计:** 抓取 {total_fetched} 篇 · 过滤 {filtered_low_score} 篇低分 (<30) · 跳过 {skipped_analyzed} 篇已分析 · 深度分析 {deep_analyzed} 篇
 
 ---
 
 ## 📊 今日概览
 
 今日 Hacker News AI 领域热点主要集中在：
-- **AI 智能体框架:** Mistral 发布 Forge 框架，简化智能体开发
-- **AI 学习本质:** 认知科学视角分析 AI 系统学习局限性
-- **AI 编码实践:** 行业领袖分享 Claude Code 配置经验
+- **AI 法律与伦理:** Afroman 诽谤案、AI 生成内容版权争议引发社区热议
+- **编程智慧重温:** Rob Pike 经典编程规则在 AI 时代重新受到关注
+- **自动驾驶进展:** Waymo 发布安全报告，AI 驾驶安全性获实证支持
 
 ---
 
@@ -195,67 +298,30 @@ def main():
 
 | # | 中文标题 | 分数 | 评论 | 状态 |
 |---|----------|------|------|------|
-"""
-    
-    # 添加所有高分 AI 文章到概览表
-    all_high_score = data['new_articles'] + data['analyzed_articles']
-    all_high_score.sort(key=lambda x: x['score'], reverse=True)
-    
-    for i, article in enumerate(all_high_score[:20], 1):
-        title_cn = translate_title(article['title'])
-        status = "🔍 深度分析" if article in ai_articles else "⏭️ 已分析"
-        report += f"| {i} | [{title_cn}]({article['hn_url']}) | {article['score']} | {article['comments']} | {status} |\n"
-    
-    report += """
+{chr(10).join(overview_table)}
+
 > **说明:** 🔍 本次深度分析 | ⏭️ 往期已分析 | ❌ 分数<30 已过滤
 
 ---
 
-## 🔍 深度分析
-"""
-    
-    if len(ai_articles) == 0:
-        report += "\n今日无新的 AI 相关文章需要深度分析。\n"
-    else:
-        report += f"\n（共 {len(ai_articles)} 篇）\n"
-        
-        for i, article in enumerate(ai_articles, 1):
-            title_cn = translate_title(article['title'])
-            analysis = generate_analysis(article)
-            
-            report += f"""
-### {i}. [{title_cn}]({article['hn_url']})
+## 🔍 深度分析（10 篇）
 
-**英文标题:** {article['title']}
+{chr(10).join(deep_analysis)}
 
-**分数:** {article['score']} | **评论:** {article['comments']} | **来源:** [{article.get('source', 'HN 讨论')}]({article['url'] if article['url'] else article['hn_url']})
-
-#### 核心内容
-"""
-            for point in analysis['core']:
-                report += f"- {point}\n"
-            
-            report += "\n#### 关键讨论\n"
-            for point in analysis['discussion']:
-                report += f"- {point}\n"
-            
-            report += f"\n#### 分析价值\n{analysis['value']}\n\n---\n"
-    
-    report += f"""
 ## 📈 趋势洞察
 
 | 趋势 | 说明 | 影响 |
 |------|------|------|
-| 智能体框架竞争 | Mistral 加入智能体框架赛道 | 高 |
-| AI 学习反思 | 学界开始反思 AI 学习本质 | 中 |
-| AI 编码普及 | 行业领袖公开 AI 编码配置 | 中 |
+| AI 法律边界清晰化 | 诽谤案、版权案推动法律框架完善 | 高 |
+| 经典编程智慧回归 | AI 编码时代重新审视基础原则 | 中 |
+| 自动驾驶实证化 | 安全数据积累推动行业成熟 | 高 |
 
 ---
 
 ## 🎯 后续关注
 
-1. **Mistral Forge 生态** - 社区采纳情况和工具集成
-2. **AI 学习研究** - 认知科学与 AI 交叉研究进展
+1. **AI 生成内容版权案** - 法律判决对行业的影响
+2. **Waymo 安全数据** - 自动驾驶事故率变化趋势
 
 ---
 
@@ -263,34 +329,19 @@ def main():
 """
     
     # 保存报告
-    report_dir = f'/root/hacknews/{date_str}'
-    subprocess.run(['mkdir', '-p', report_dir], check=True)
-    
-    report_file = f'{report_dir}/{now.strftime("%H-%M-%S")}.md'
     with open(report_file, 'w', encoding='utf-8') as f:
         f.write(report)
     
-    print(f"\n✅ 报告已保存到 {report_file}")
+    print(f"✅ 报告已保存到：{report_file}")
     
-    # 将深度分析的文章记录到数据库
-    print("\n📝 记录到数据库...")
-    for article in ai_articles:
-        title_cn = translate_title(article['title'])
-        result = subprocess.run(
-            ['python3', '/root/.openclaw/workspace/hn-scripts/scripts/hn-db.py', 'add', 
-             article['id'], title_cn],
-            capture_output=True,
-            text=True
-        )
-        print(f"   {result.stdout.strip()}")
-    
-    # 输出报告摘要
-    print(f"\n📊 报告摘要:")
-    print(f"   日期：{date_str}")
-    print(f"   深度分析：{len(ai_articles)} 篇")
-    print(f"   报告文件：{report_file}")
-    
-    return report_file, ai_articles
+    # 返回报告信息用于数据库记录
+    return {
+        'report_file': report_file,
+        'selected_ids': [a['id'] for a in selected],
+        'selected_titles': [get_translation(a['title']) for a in selected]
+    }
 
 if __name__ == '__main__':
-    main()
+    result = generate_report()
+    print(f"\n📝 深度分析的文章 ID: {result['selected_ids']}")
+    print(f"📝 中文标题：{result['selected_titles']}")

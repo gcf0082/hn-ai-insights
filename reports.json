@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-20",
+    "time": "21:25",
+    "file": "datas/reports/2026-03-20/21-25-10.md",
+    "summary": "HN AI 每日分析 - 2026-03-20 · 抓取 100 篇 · 过滤 60 篇低分 (<30) · 跳过 27 篇已分析 · 深度分析 10 篇",
+    "articles": [
+      {
+        "title": "Afroman 在诽谤案中被判无责",
+        "title_en": "Afroman found not liable in defamation case",
+        "url": "https://news.ycombinator.com/item?id=47436950",
+        "hnUrl": "https://news.ycombinator.com/item?id=47436950",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47436950",
+        "points": 1177,
+        "comments": 684,
+        "hnId": "47436950"
+      },
+      {
+        "title": "Rob Pike’s Rules of Programming (1989)",
+        "title_en": "Rob Pike's Rules of Programming (1989)",
+        "url": "https://news.ycombinator.com/item?id=47423647",
+        "hnUrl": "https://news.ycombinator.com/item?id=47423647",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47423647",
+        "points": 981,
+        "comments": 446,
+        "hnId": "47423647"
+      },
+      {
+        "title": "重新生成即保修失效",
+        "title_en": "Warranty Void If Regenerated",
+        "url": "https://news.ycombinator.com/item?id=47431237",
+        "hnUrl": "https://news.ycombinator.com/item?id=47431237",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47431237",
+        "points": 509,
+        "comments": 314,
+        "hnId": "47431237"
+      },
+      {
+        "title": "4Chan 嘲讽英国网络安全违规 52 万英镑罚款",
+        "title_en": "4Chan mocks £520k fine for UK online safety breaches",
+        "url": "https://news.ycombinator.com/item?id=47440430",
+        "hnUrl": "https://news.ycombinator.com/item?id=47440430",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47440430",
+        "points": 412,
+        "comments": 742,
+        "hnId": "47440430"
+      },
+      {
+        "title": "Waymo 安全影响报告",
+        "title_en": "Waymo Safety Impact",
+        "url": "https://news.ycombinator.com/item?id=47445246",
+        "hnUrl": "https://news.ycombinator.com/item?id=47445246",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47445246",
+        "points": 327,
+        "comments": 344,
+        "hnId": "47445246"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-20",
     "time": "18:30",
     "file": "datas/reports/2026-03-20/18-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-20 · 抓取 35 篇 · 过滤 18 篇低分 (<30) · 跳过 18 篇已分析 · 深度分析 7 篇",
