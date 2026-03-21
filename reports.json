@@ -1,5 +1,63 @@
 [
   {
+    "date": "2026-03-22",
+    "time": "01:30",
+    "file": "datas/reports/2026-03-22/01-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-22 · 抓取 200+ 篇 · 过滤 180+ 篇低分 (<30) · 跳过 187 篇已分析 · 深度分析 7 篇",
+    "articles": [
+      {
+        "title": "封锁互联网档案馆无法阻止 AI，但会抹去网络历史记录",
+        "title_en": "Blocking the Internet Archive Won't Stop AI, But It Will Erase the Web's Historical Record",
+        "url": "https://news.ycombinator.com/item?id=47464818",
+        "hnUrl": "https://news.ycombinator.com/item?id=47464818",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47464818",
+        "points": 337,
+        "comments": 96,
+        "hnId": "47464818"
+      },
+      {
+        "title": "欧洲资深记者因 AI 生成引语被停职",
+        "title_en": "Senior European journalist suspended over AI-generated quotes",
+        "url": "https://news.ycombinator.com/item?id=47467566",
+        "hnUrl": "https://news.ycombinator.com/item?id=47467566",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47467566",
+        "points": 35,
+        "comments": 10,
+        "hnId": "47467566"
+      },
+      {
+        "title": "AI Team OS：将 Claude Code 变成自管理 AI 团队",
+        "title_en": "AI Team OS – Turn Claude Code into a Self-Managing AI Team",
+        "url": "https://news.ycombinator.com/item?id=47465550",
+        "hnUrl": "https://news.ycombinator.com/item?id=47465550",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47465550",
+        "points": 34,
+        "comments": 10,
+        "hnId": "47465550"
+      },
+      {
+        "title": "Claude dispatch：从任何地方给 Claude 分配任务",
+        "title_en": "Claude dispatch: assign tasks to Claude from anywhere",
+        "url": "https://news.ycombinator.com/item?id=47461151",
+        "hnUrl": "https://news.ycombinator.com/item?id=47461151",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47461151",
+        "points": 34,
+        "comments": 1,
+        "hnId": "47461151"
+      },
+      {
+        "title": "微软确认 Windows 11 重大更新：更少 Copilot",
+        "title_en": "Microsoft confirms a major Windows 11 update with faster Explorer, less Copilot",
+        "url": "https://news.ycombinator.com/item?id=47460191",
+        "hnUrl": "https://news.ycombinator.com/item?id=47460191",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47460191",
+        "points": 35,
+        "comments": 12,
+        "hnId": "47460191"
+      }
+    ]
+  },
+  {
     "date": "2026-03-21",
     "time": "21:30",
     "file": "datas/reports/2026-03-21/21-30-00.md",
