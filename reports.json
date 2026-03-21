@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-21",
+    "time": "12:30",
+    "file": "datas/reports/2026-03-21/12-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-21 · 抓取 180 篇 · 过滤 165 篇低分 (<30) · 跳过 6 篇已分析 · 深度分析 9 篇",
+    "articles": [
+      {
+        "title": "OpenCode – 开源 AI 编码助手",
+        "title_en": "OpenCode – Open source AI coding agent",
+        "url": "https://news.ycombinator.com/item?id=47460525",
+        "hnUrl": "https://news.ycombinator.com/item?id=47460525",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47460525",
+        "points": 561,
+        "comments": 257,
+        "hnId": "47460525"
+      },
+      {
+        "title": "Flash-KMeans：快速精确 K-Means 算法",
+        "title_en": "Attention Residuals",
+        "url": "https://news.ycombinator.com/item?id=47409055",
+        "hnUrl": "https://news.ycombinator.com/item?id=47409055",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47409055",
+        "points": 177,
+        "comments": 14,
+        "hnId": "47409055"
+      },
+      {
+        "title": "Attention Residuals 新架构",
+        "title_en": "Flash-KMeans: Fast and Memory-Efficient Exact K-Means",
+        "url": "https://news.ycombinator.com/item?id=47458595",
+        "hnUrl": "https://news.ycombinator.com/item?id=47458595",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47458595",
+        "points": 139,
+        "comments": 20,
+        "hnId": "47458595"
+      },
+      {
+        "title": "Google 搜索用 AI 替换新闻标题",
+        "title_en": "Google Search is now using AI to replace headlines",
+        "url": "https://news.ycombinator.com/item?id=47455224",
+        "hnUrl": "https://news.ycombinator.com/item?id=47455224",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47455224",
+        "points": 55,
+        "comments": 13,
+        "hnId": "47455224"
+      },
+      {
+        "title": "Wikipedia RFC：禁止 LLM 贡献",
+        "title_en": "Wikipedia RFC on banning LLM contributions",
+        "url": "https://news.ycombinator.com/item?id=47458671",
+        "hnUrl": "https://news.ycombinator.com/item?id=47458671",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47458671",
+        "points": 38,
+        "comments": 1,
+        "hnId": "47458671"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-21",
     "time": "01:37",
     "file": "datas/reports/2026-03-21/01-37-00.md",
     "summary": "HN AI 每日分析 - 2026-03-21 · 抓取 480 篇 · 过滤 450 篇低分 (<30) · 跳过 24 篇已分析 · 深度分析 6 篇",
