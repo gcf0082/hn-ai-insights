@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-21",
+    "time": "21:30",
+    "file": "datas/reports/2026-03-21/21-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-21 · 抓取 270 篇 · 过滤 215 篇低分 (<30) · 跳过 53 篇已分析 · 深度分析 10 篇",
+    "articles": [
+      {
+        "title": "Atuin v18.13 – 更好的搜索、PTY 代理和 AI",
+        "title_en": "Atuin v18.13 – better search, a PTY proxy, and AI for your shell",
+        "url": "https://news.ycombinator.com/item?id=47465824",
+        "hnUrl": "https://news.ycombinator.com/item?id=47465824",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47465824",
+        "points": 51,
+        "comments": 31,
+        "hnId": "47465824"
+      },
+      {
+        "title": "Parallel Perl – JIT 自动并行解释器",
+        "title_en": "Parallel Perl – Autoparallelizing interpreter with JIT",
+        "url": "https://news.ycombinator.com/item?id=47424592",
+        "hnUrl": "https://news.ycombinator.com/item?id=47424592",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47424592",
+        "points": 135,
+        "comments": 43,
+        "hnId": "47424592"
+      },
+      {
+        "title": "No AI in Node.js Core",
+        "title_en": "No AI in Node.js Core",
+        "url": "https://news.ycombinator.com/item?id=47444714",
+        "hnUrl": "https://news.ycombinator.com/item?id=47444714",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47444714",
+        "points": 61,
+        "comments": 35,
+        "hnId": "47444714"
+      },
+      {
+        "title": "Mamba-3",
+        "title_en": "Mamba-3",
+        "url": "https://news.ycombinator.com/item?id=47419391",
+        "hnUrl": "https://news.ycombinator.com/item?id=47419391",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47419391",
+        "points": 171,
+        "comments": 24,
+        "hnId": "47419391"
+      },
+      {
+        "title": "MacBook M5 Pro 和 Qwen3.5 = 本地 AI 安全系统",
+        "title_en": "MacBook M5 Pro and Qwen3.5 = Local AI Security System",
+        "url": "https://news.ycombinator.com/item?id=47457107",
+        "hnUrl": "https://news.ycombinator.com/item?id=47457107",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47457107",
+        "points": 163,
+        "comments": 149,
+        "hnId": "47457107"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-21",
     "time": "18:30",
     "file": "datas/reports/2026-03-21/18-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-21 · 抓取 180 篇 · 过滤 155 篇低分 (<30) · 跳过 21 篇已分析 · 深度分析 4 篇",
