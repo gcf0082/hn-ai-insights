@@ -1,5 +1,33 @@
 [
   {
+    "date": "2026-03-23",
+    "time": "01:30",
+    "file": "datas/reports/2026-03-23/01-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-23 · 抓取 60 篇 · 过滤 35 篇低分 (<30) · 跳过 23 篇已分析 · 深度分析 2 篇",
+    "articles": [
+      {
+        "title": "Brute-forcing my algorithmic ignorance with an LLM in 7 days",
+        "title_en": "Brute-forcing my algorithmic ignorance with an LLM in 7 days",
+        "url": "https://news.ycombinator.com/item?id=47476776",
+        "hnUrl": "https://news.ycombinator.com/item?id=47476776",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47476776",
+        "points": 59,
+        "comments": 33,
+        "hnId": "47476776"
+      },
+      {
+        "title": "Ask HN: AI productivity gains – do you fire devs or build better products?",
+        "title_en": "Ask HN: AI productivity gains – do you fire devs or build better products?",
+        "url": "https://news.ycombinator.com/item?id=47475859",
+        "hnUrl": "https://news.ycombinator.com/item?id=47475859",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47475859",
+        "points": 44,
+        "comments": 73,
+        "hnId": "47475859"
+      }
+    ]
+  },
+  {
     "date": "2026-03-22",
     "time": "21:20",
     "file": "datas/reports/2026-03-22/21-20-00.md",
