@@ -1,6 +1,34 @@
 [
   {
     "date": "2026-03-22",
+    "time": "12:30",
+    "file": "datas/reports/2026-03-22/12-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-22 · 抓取 360+ 篇 · 过滤 330+ 篇低分 (<30) · 跳过 28 篇已分析 · 深度分析 10 篇",
+    "articles": [
+      {
+        "title": "AI 对游戏开发就业的影响：求职危机",
+        "title_en": "The Impact of AI on Game Dev Jobs. Open to Work Crisis",
+        "url": "https://news.ycombinator.com/item?id=47471943",
+        "hnUrl": "https://news.ycombinator.com/item?id=47471943",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47471943",
+        "points": 61,
+        "comments": 42,
+        "hnId": "47471943"
+      },
+      {
+        "title": "为何手工艺爱好者正在失去他们的手艺",
+        "title_en": "Why craft-lovers are losing their craft",
+        "url": "https://news.ycombinator.com/item?id=47473178",
+        "hnUrl": "https://news.ycombinator.com/item?id=47473178",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47473178",
+        "points": 63,
+        "comments": 68,
+        "hnId": "47473178"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-22",
     "time": "07:20",
     "file": "datas/reports/2026-03-22/07-20-00.md",
     "summary": "HN AI 每日分析 - 2026-03-22 · 抓取 300+ 篇 · 过滤 270+ 篇低分 (<30) · 跳过 224 篇已分析 · 深度分析 3 篇",
