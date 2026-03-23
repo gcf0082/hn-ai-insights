@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-23",
+    "time": "18:30",
+    "file": "datas/reports/2026-03-23/18-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-23 · 抓取 240 篇 · 过滤 215 篇低分 (<30) · 跳过 20 篇已分析 · 深度分析 5 篇",
+    "articles": [
+      {
+        "title": "Palantir 扩展英国政府数据访问",
+        "title_en": "Palantir extends reach into British state as gets access to sensitive FCA data",
+        "url": "https://news.ycombinator.com/item?id=47480200",
+        "hnUrl": "https://news.ycombinator.com/item?id=47480200",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47480200",
+        "points": 190,
+        "comments": 61,
+        "hnId": "47480200"
+      },
+      {
+        "title": "vibe-coding 垃圾邮件泛滥",
+        "title_en": "They're vibe-coding spam now",
+        "url": "https://news.ycombinator.com/item?id=47482760",
+        "hnUrl": "https://news.ycombinator.com/item?id=47482760",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47482760",
+        "points": 96,
+        "comments": 55,
+        "hnId": "47482760"
+      },
+      {
+        "title": "Walmart: ChatGPT 结账转化率低 3 倍",
+        "title_en": "Walmart: ChatGPT checkout converted 3x worse than website",
+        "url": "https://news.ycombinator.com/item?id=47444812",
+        "hnUrl": "https://news.ycombinator.com/item?id=47444812",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47444812",
+        "points": 74,
+        "comments": 58,
+        "hnId": "47444812"
+      },
+      {
+        "title": "Transformer 电路直觉指南",
+        "title_en": "Intuitions for Transformer Circuits",
+        "url": "https://news.ycombinator.com/item?id=47484227",
+        "hnUrl": "https://news.ycombinator.com/item?id=47484227",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47484227",
+        "points": 58,
+        "comments": 4,
+        "hnId": "47484227"
+      },
+      {
+        "title": "KV 缓存视频压缩降低量化误差",
+        "title_en": "Apply video compression on KV cache to 10,000x less error at Q4 quant",
+        "url": "https://news.ycombinator.com/item?id=47483455",
+        "hnUrl": "https://news.ycombinator.com/item?id=47483455",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47483455",
+        "points": 31,
+        "comments": 4,
+        "hnId": "47483455"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-23",
     "time": "12:30",
     "file": "datas/reports/2026-03-23/12-30-56.md",
     "summary": "HN AI 每日分析 - 2026-03-23 · 抓取 4 篇 · 过滤 0 篇低分 (<30) · 跳过 3 篇已分析 · 深度分析 1 篇",
