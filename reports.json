@@ -1,5 +1,63 @@
 [
   {
+    "date": "2026-03-25",
+    "time": "01:30",
+    "file": "datas/reports/2026-03-25/01-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-25 · 抓取 42 篇 · 过滤 15 篇低分 (<30) · 跳过 28 篇已分析 · 深度分析 7 篇",
+    "articles": [
+      {
+        "title": "在 32GB Mac 上通过 NVMe 流式传输运行 1T 参数模型",
+        "title_en": "Run a 1T parameter model on a 32gb Mac by streaming tensors from NVMe",
+        "url": "https://news.ycombinator.com/item?id=47504695",
+        "hnUrl": "https://news.ycombinator.com/item?id=47504695",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47504695",
+        "points": 59,
+        "comments": 30,
+        "hnId": "47504695"
+      },
+      {
+        "title": "Show HN: Gemini 可原生嵌入视频，我构建了亚秒级视频搜索",
+        "title_en": "Show HN: Gemini can now natively embed video, so I built sub-second video search",
+        "url": "https://news.ycombinator.com/item?id=47503617",
+        "hnUrl": "https://news.ycombinator.com/item?id=47503617",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47503617",
+        "points": 53,
+        "comments": 19,
+        "hnId": "47503617"
+      },
+      {
+        "title": "AI 应用都去哪儿了？",
+        "title_en": "So where are all the AI apps?",
+        "url": "https://news.ycombinator.com/item?id=47503006",
+        "hnUrl": "https://news.ycombinator.com/item?id=47503006",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47503006",
+        "points": 232,
+        "comments": 244,
+        "hnId": "47503006"
+      },
+      {
+        "title": "LLM 神经解剖学 II：现代 LLM 黑客技术与通用语言 hints",
+        "title_en": "LLM Neuroanatomy II: Modern LLM Hacking and Hints of a Universal Language?",
+        "url": "https://news.ycombinator.com/item?id=47500709",
+        "hnUrl": "https://news.ycombinator.com/item?id=47500709",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47500709",
+        "points": 69,
+        "comments": 26,
+        "hnId": "47500709"
+      },
+      {
+        "title": "NanoClaw 采用 OneCLI Agent Vault",
+        "title_en": "NanoClaw Adopts OneCLI Agent Vault",
+        "url": "https://news.ycombinator.com/item?id=47501840",
+        "hnUrl": "https://news.ycombinator.com/item?id=47501840",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47501840",
+        "points": 95,
+        "comments": 27,
+        "hnId": "47501840"
+      }
+    ]
+  },
+  {
     "date": "2026-03-24",
     "time": "21:25",
     "file": "datas/reports/2026-03-24/21-25-00.md",
