@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-24",
+    "time": "12:30",
+    "file": "datas/reports/2026-03-24/12-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-24 · 抓取 270 篇 · 过滤 253 篇低分 (<30) · 跳过 11 篇已分析 · 深度分析 6 篇",
+    "articles": [
+      {
+        "title": "Epoch 确认 GPT-5.4 Pro 解决前沿数学开放问题",
+        "title_en": "Epoch confirms GPT5.4 Pro solved a frontier math open problem",
+        "url": "https://news.ycombinator.com/item?id=47497757",
+        "hnUrl": "https://news.ycombinator.com/item?id=47497757",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47497757",
+        "points": 141,
+        "comments": 31,
+        "hnId": "47497757"
+      },
+      {
+        "title": "Show HN: Cq – AI 编码代理的 Stack Overflow",
+        "title_en": "Show HN: Cq – Stack Overflow for AI coding agents",
+        "url": "https://news.ycombinator.com/item?id=47491466",
+        "hnUrl": "https://news.ycombinator.com/item?id=47491466",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47491466",
+        "points": 96,
+        "comments": 29,
+        "hnId": "47491466"
+      },
+      {
+        "title": "我创建了第一个 AI 辅助的 Pull Request",
+        "title_en": "I created my first AI-assisted pull request",
+        "url": "https://news.ycombinator.com/item?id=47497679",
+        "hnUrl": "https://news.ycombinator.com/item?id=47497679",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47497679",
+        "points": 60,
+        "comments": 64,
+        "hnId": "47497679"
+      },
+      {
+        "title": "AI 繁荣可能加剧财富分化，BlackRock CEO 警告",
+        "title_en": "AI boom risks widening wealth divide, says BlackRock's Larry Fink",
+        "url": "https://news.ycombinator.com/item?id=47496583",
+        "hnUrl": "https://news.ycombinator.com/item?id=47496583",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47496583",
+        "points": 47,
+        "comments": 21,
+        "hnId": "47496583"
+      },
+      {
+        "title": "Show HN: Littlebird – 屏幕阅读是 AI 缺失的环节",
+        "title_en": "Show HN: Littlebird – Screenreading is the missing link in AI",
+        "url": "https://news.ycombinator.com/item?id=47492649",
+        "hnUrl": "https://news.ycombinator.com/item?id=47492649",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47492649",
+        "points": 39,
+        "comments": 19,
+        "hnId": "47492649"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-24",
     "time": "07:20",
     "file": "datas/reports/2026-03-24/07-20-00.md",
     "summary": "HN AI 每日分析 - 2026-03-24 · 抓取 150 篇 · 过滤 131 篇低分 (<30) · 跳过 14 篇已分析 · 深度分析 5 篇",
