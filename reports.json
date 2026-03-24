@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-25",
+    "time": "07:22",
+    "file": "datas/reports/2026-03-25/07-22-07.md",
+    "summary": "HN AI 每日分析 - 2026-03-25 · 抓取 150 篇 · 过滤 120 篇低分 (<30) · 跳过 22 篇已分析 · 深度分析 8 篇",
+    "articles": [
+      {
+        "title": "LiteLLM PyPI 包遭投毒",
+        "title_en": "Tell HN: Litellm 1.82.7 and 1.82.8 on PyPI are compromised",
+        "url": "https://news.ycombinator.com/item?id=47501426",
+        "hnUrl": "https://news.ycombinator.com/item?id=47501426",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47501426",
+        "points": 422,
+        "comments": 353,
+        "hnId": "47501426"
+      },
+      {
+        "title": "厌倦讨论 AI 了吗？",
+        "title_en": "Is anybody else bored of talking about AI?",
+        "url": "https://news.ycombinator.com/item?id=47508745",
+        "hnUrl": "https://news.ycombinator.com/item?id=47508745",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47508745",
+        "points": 391,
+        "comments": 298,
+        "hnId": "47508745"
+      },
+      {
+        "title": "ARM AGI CPU 发布",
+        "title_en": "Arm AGI CPU",
+        "url": "https://news.ycombinator.com/item?id=47506251",
+        "hnUrl": "https://news.ycombinator.com/item?id=47506251",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47506251",
+        "points": 238,
+        "comments": 194,
+        "hnId": "47506251"
+      },
+      {
+        "title": "迪士尼退出 OpenAI 合作",
+        "title_en": "Disney Exits OpenAI Deal After AI Giant Shutters Sora",
+        "url": "https://news.ycombinator.com/item?id=47509234",
+        "hnUrl": "https://news.ycombinator.com/item?id=47509234",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47509234",
+        "points": 188,
+        "comments": 82,
+        "hnId": "47509234"
+      },
+      {
+        "title": "OpenAI 将停止 Sora 平台",
+        "title_en": "OpenAI set to discontinue Sora video platform",
+        "url": "https://news.ycombinator.com/item?id=47508246",
+        "hnUrl": "https://news.ycombinator.com/item?id=47508246",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47508246",
+        "points": 134,
+        "comments": 42,
+        "hnId": "47508246"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-25",
     "time": "01:30",
     "file": "datas/reports/2026-03-25/01-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-25 · 抓取 42 篇 · 过滤 15 篇低分 (<30) · 跳过 28 篇已分析 · 深度分析 7 篇",
