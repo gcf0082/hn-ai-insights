@@ -1,6 +1,64 @@
 [
   {
     "date": "2026-03-25",
+    "time": "18:30",
+    "file": "datas/reports/2026-03-25/18-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-25 · 抓取 450+ 篇 · 过滤 400+ 篇低分 (<30) · 跳过 40+ 篇已分析 · 深度分析 6 篇",
+    "articles": [
+      {
+        "title": "TurboQuant：用极致压缩重塑 AI 效率",
+        "title_en": "TurboQuant: Redefining AI efficiency with extreme compression",
+        "url": "https://news.ycombinator.com/item?id=47513475",
+        "hnUrl": "https://news.ycombinator.com/item?id=47513475",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47513475",
+        "points": 169,
+        "comments": 34,
+        "hnId": "47513475"
+      },
+      {
+        "title": "Show HN：AI Roundtable – 让 200 个模型辩论你的问题",
+        "title_en": "Show HN: AI Roundtable – Let 200 models debate your question",
+        "url": "https://news.ycombinator.com/item?id=47507666",
+        "hnUrl": "https://news.ycombinator.com/item?id=47507666",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47507666",
+        "points": 61,
+        "comments": 49,
+        "hnId": "47507666"
+      },
+      {
+        "title": "Show HN：我在 PS2 上运行语言模型",
+        "title_en": "Show HN: I ran a language model on a PlayStation 2",
+        "url": "https://news.ycombinator.com/item?id=47470405",
+        "hnUrl": "https://news.ycombinator.com/item?id=47470405",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47470405",
+        "points": 35,
+        "comments": 11,
+        "hnId": "47470405"
+      },
+      {
+        "title": "伊朗袭击亚马逊数据中心凸显行业脆弱性",
+        "title_en": "Iranian strikes on Amazon data centers highlight industry's vulnerability",
+        "url": "https://news.ycombinator.com/item?id=47506057",
+        "hnUrl": "https://news.ycombinator.com/item?id=47506057",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47506057",
+        "points": 31,
+        "comments": 7,
+        "hnId": "47506057"
+      },
+      {
+        "title": "NumKong：面向所有人的 2000 个混合精度内核",
+        "title_en": "NumKong: 2'000 Mixed Precision Kernels for All",
+        "url": "https://news.ycombinator.com/item?id=47459447",
+        "hnUrl": "https://news.ycombinator.com/item?id=47459447",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47459447",
+        "points": 47,
+        "comments": 6,
+        "hnId": "47459447"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-25",
     "time": "12:30",
     "file": "datas/reports/2026-03-25/12-30-00.md",
     "summary": "HN AI 每日分析 - 2026-03-25 · 抓取 35 篇 · 过滤 18 篇低分 (<30) · 跳过 13 篇已分析 · 深度分析 4 篇",
