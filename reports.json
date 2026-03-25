@@ -1,6 +1,54 @@
 [
   {
     "date": "2026-03-25",
+    "time": "12:30",
+    "file": "datas/reports/2026-03-25/12-30-00.md",
+    "summary": "HN AI 每日分析 - 2026-03-25 · 抓取 35 篇 · 过滤 18 篇低分 (<30) · 跳过 13 篇已分析 · 深度分析 4 篇",
+    "articles": [
+      {
+        "title": "Transformers 是贝叶斯网络",
+        "title_en": "Transformers Are Bayesian Networks",
+        "url": "https://news.ycombinator.com/item?id=47460404",
+        "hnUrl": "https://news.ycombinator.com/item?id=47460404",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47460404",
+        "points": 32,
+        "comments": 20,
+        "hnId": "47460404"
+      },
+      {
+        "title": "Welcome to FastMCP",
+        "title_en": "Welcome to FastMCP",
+        "url": "https://news.ycombinator.com/item?id=47508149",
+        "hnUrl": "https://news.ycombinator.com/item?id=47508149",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47508149",
+        "points": 66,
+        "comments": 47,
+        "hnId": "47508149"
+      },
+      {
+        "title": "沙箱化 AI 代理，速度提升 100 倍",
+        "title_en": "Sandboxing AI agents, 100x faster",
+        "url": "https://news.ycombinator.com/item?id=47502448",
+        "hnUrl": "https://news.ycombinator.com/item?id=47502448",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47502448",
+        "points": 31,
+        "comments": 9,
+        "hnId": "47502448"
+      },
+      {
+        "title": "Palantir 将不再从纽约人健康数据中获利",
+        "title_en": "Palantir Will No Longer Profit Off of New Yorkers' Health Data",
+        "url": "https://news.ycombinator.com/item?id=47505377",
+        "hnUrl": "https://news.ycombinator.com/item?id=47505377",
+        "sourceUrl": "https://news.ycombinator.com/item?id=47505377",
+        "points": 39,
+        "comments": 1,
+        "hnId": "47505377"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-25",
     "time": "07:22",
     "file": "datas/reports/2026-03-25/07-22-07.md",
     "summary": "HN AI 每日分析 - 2026-03-25 · 抓取 150 篇 · 过滤 120 篇低分 (<30) · 跳过 22 篇已分析 · 深度分析 8 篇",
